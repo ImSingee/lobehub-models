@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "6c1c60ee27d7d637366b33bfcc08a84ac86f7d1a",
-    "generatedAt": "2026-03-06T03:50:20.248Z",
+    "commitHash": "169d5afa939f4ceff2b1704ae30b71508b9b836e",
+    "generatedAt": "2026-03-07T03:44:41.642Z",
     "providerCount": 72,
-    "modelCount": 1919
+    "modelCount": 1924
   },
   "providers": {
     "search1api": {
@@ -22252,13 +22252,60 @@
           "functionCall": true,
           "reasoning": true,
           "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1114112,
+        "description": "Gemini 3.1 Flash-Lite Preview is Google's most cost-efficient multimodal model, optimized for high-volume agentic tasks, translation, and data processing.",
+        "displayName": "Gemini 3.1 Flash-Lite Preview",
+        "enabled": true,
+        "id": "gemini-3.1-flash-lite-preview",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.025,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-04",
+        "settings": {
+          "extendParams": [
+            "thinkingLevel5",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
           "video": true,
           "vision": true
         },
         "contextWindowTokens": 1114112,
         "description": "Gemini 2.5 Pro is Google's most advanced reasoning model, able to reason over code, math, and STEM problems and analyze large datasets, codebases, and documents with long context.",
         "displayName": "Gemini 2.5 Pro",
-        "enabled": true,
         "id": "gemini-2.5-pro",
         "maxOutput": 65536,
         "pricing": {
@@ -22491,6 +22538,132 @@
         "settings": {
           "extendParams": [
             "imageAspectRatio"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-5.4 is OpenAI's latest model for complex professional work and a drop-in replacement for GPT-5.2 and GPT-5.3 Codex.",
+        "displayName": "GPT-5.4",
+        "enabled": true,
+        "id": "gpt-5.4",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.25,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 15,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 22.5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-05",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ReasoningEffort",
+            "textVerbosity"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-5.4 Pro uses more compute to think harder and provide the best answers for the hardest problems.",
+        "displayName": "GPT-5.4 Pro",
+        "enabled": true,
+        "id": "gpt-5.4-pro",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 30,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 60,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 180,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 270,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-05",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ProReasoningEffort"
           ]
         },
         "type": "chat"
@@ -23594,8 +23767,9 @@
         "id": "gemini-3.1-flash-image-preview:image",
         "parameters": {
           "aspectRatio": {
-            "default": "1:1",
+            "default": "auto",
             "enum": [
+              "auto",
               "1:1",
               "2:3",
               "3:2",
@@ -23661,8 +23835,9 @@
         "id": "gemini-3-pro-image-preview:image",
         "parameters": {
           "aspectRatio": {
-            "default": "1:1",
+            "default": "auto",
             "enum": [
+              "auto",
               "1:1",
               "2:3",
               "3:2",
@@ -23722,8 +23897,9 @@
         "id": "gemini-2.5-flash-image:image",
         "parameters": {
           "aspectRatio": {
-            "default": "1:1",
+            "default": "auto",
             "enum": [
+              "auto",
               "1:1",
               "2:3",
               "3:2",
@@ -25651,6 +25827,54 @@
           "functionCall": true,
           "reasoning": true,
           "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1114112,
+        "description": "Gemini 3.1 Flash-Lite Preview is Google's most cost-efficient multimodal model, optimized for high-volume agentic tasks, translation, and data processing.",
+        "displayName": "Gemini 3.1 Flash-Lite Preview",
+        "enabled": true,
+        "id": "gemini-3.1-flash-lite-preview",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.025,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-04",
+        "settings": {
+          "extendParams": [
+            "thinkingLevel5",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
           "video": true,
           "vision": true
         },
@@ -26711,8 +26935,9 @@
         "releasedAt": "2026-02-26",
         "parameters": {
           "aspectRatio": {
-            "default": "1:1",
+            "default": "auto",
             "enum": [
+              "auto",
               "1:1",
               "2:3",
               "3:2",
@@ -26778,8 +27003,9 @@
         "releasedAt": "2025-11-18",
         "parameters": {
           "aspectRatio": {
-            "default": "1:1",
+            "default": "auto",
             "enum": [
+              "auto",
               "1:1",
               "2:3",
               "3:2",
@@ -26839,8 +27065,9 @@
         "releasedAt": "2025-08-26",
         "parameters": {
           "aspectRatio": {
-            "default": "1:1",
+            "default": "auto",
             "enum": [
+              "auto",
               "1:1",
               "2:3",
               "3:2",
@@ -54122,6 +54349,54 @@
           "functionCall": true,
           "reasoning": true,
           "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1114112,
+        "description": "Gemini 3.1 Flash-Lite Preview is Google's most cost-efficient multimodal model, optimized for high-volume agentic tasks, translation, and data processing.",
+        "displayName": "Gemini 3.1 Flash-Lite Preview",
+        "enabled": true,
+        "id": "gemini-3.1-flash-lite-preview",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.025,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-04",
+        "settings": {
+          "extendParams": [
+            "thinkingLevel5",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
           "video": true,
           "vision": true
         },
@@ -54743,8 +55018,9 @@
         "releasedAt": "2025-08-26",
         "parameters": {
           "aspectRatio": {
-            "default": "1:1",
+            "default": "auto",
             "enum": [
+              "auto",
               "1:1",
               "2:3",
               "3:2",
