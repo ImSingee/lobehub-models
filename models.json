@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "7d599a980fdf828dc3b1d2779c6d29b3a68c057e",
-    "generatedAt": "2026-04-10T04:05:35.466Z",
-    "providerCount": 78,
-    "modelCount": 2078
+    "commitHash": "d47f4fec76f7a0f253934a37f06211cd9a3e67eb",
+    "generatedAt": "2026-04-11T03:54:15.797Z",
+    "providerCount": 79,
+    "modelCount": 2087
   },
   "providers": {
     "zhipu": {
@@ -657,7 +657,7 @@
     },
     "kimiCodingPlan": {
       "chatModels": [],
-      "checkModel": "k2p5",
+      "checkModel": "kimi-k2.5",
       "description": "Kimi Code from Moonshot AI provides access to Kimi models including K2.5 for coding tasks.",
       "disableBrowserRequest": true,
       "id": "kimicodingplan",
@@ -817,6 +817,22 @@
         "showModelFetcher": true
       },
       "url": "https://cloud.tencent.com/document/api/1772/115365"
+    },
+    "streamlake": {
+      "chatModels": [],
+      "checkModel": "KAT-Coder-Air-V1",
+      "description": "StreamLake is an enterprise-level model service and AI computing cloud platform, integrating high-performance model inference, low-cost model customization, and fully-managed services to help enterprises focus on AI application innovation without worrying about the complexity and cost of underlying computing resources.",
+      "id": "streamlake",
+      "modelsUrl": "https://www.streamlake.com/document/WANQING/mdrax1ixkgpgh1ms1na",
+      "name": "StreamLake",
+      "settings": {
+        "proxyUrl": {
+          "placeholder": "https://wanqing.streamlakeapi.com/api/gateway/v1/endpoints"
+        },
+        "sdkType": "openai",
+        "showModelFetcher": false
+      },
+      "url": "https://www.streamlake.com/product/wanqing"
     },
     "deepseek": {
       "chatModels": [],
@@ -3058,6 +3074,12 @@
           "prompt": {
             "default": ""
           },
+          "resolution": {
+            "default": "hd",
+            "enum": [
+              "hd"
+            ]
+          },
           "size": {
             "default": "1280x1280",
             "enum": [
@@ -3069,6 +3091,9 @@
               "1728x960",
               "960x1728"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -3094,6 +3119,13 @@
           "prompt": {
             "default": ""
           },
+          "resolution": {
+            "default": "standard",
+            "enum": [
+              "hd",
+              "standard"
+            ]
+          },
           "size": {
             "default": "1024x1024",
             "enum": [
@@ -3105,6 +3137,9 @@
               "1440x720",
               "720x1440"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -3130,6 +3165,13 @@
           "prompt": {
             "default": ""
           },
+          "resolution": {
+            "default": "standard",
+            "enum": [
+              "hd",
+              "standard"
+            ]
+          },
           "size": {
             "default": "1024x1024",
             "enum": [
@@ -3141,6 +3183,9 @@
               "1440x720",
               "720x1440"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -3176,14 +3221,12 @@
               4
             ]
           },
-          "endImageUrl": {
-            "default": null
-          },
           "generateAudio": {
             "default": true
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 3
           },
           "prompt": {
             "default": ""
@@ -3472,6 +3515,13 @@
           "prompt": {
             "default": ""
           },
+          "resolution": {
+            "default": "speed",
+            "enum": [
+              "speed",
+              "quality"
+            ]
+          },
           "size": {
             "default": "1920x1080",
             "enum": [
@@ -3483,6 +3533,9 @@
               "2048x1080",
               "3840x2160"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -3513,6 +3566,13 @@
           "prompt": {
             "default": ""
           },
+          "resolution": {
+            "default": "speed",
+            "enum": [
+              "speed",
+              "quality"
+            ]
+          },
           "size": {
             "default": "1920x1080",
             "enum": [
@@ -3525,6 +3585,9 @@
               "2048x1080",
               "3840x2160"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -3555,6 +3618,13 @@
           "prompt": {
             "default": ""
           },
+          "resolution": {
+            "default": "speed",
+            "enum": [
+              "speed",
+              "quality"
+            ]
+          },
           "size": {
             "default": "1920x1080",
             "enum": [
@@ -3567,6 +3637,9 @@
               "2048x1080",
               "3840x2160"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7502,6 +7575,9 @@
             "max": 4096,
             "min": 256,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
           }
         },
         "pricing": {
@@ -7545,6 +7621,12 @@
             "max": 4096,
             "min": 256,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7588,6 +7670,12 @@
             "max": 4096,
             "min": 256,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7608,7 +7696,6 @@
         "description": "Qwen Image Editing Model supports multi-image input and multi-image output, enabling precise in-image text editing, object addition, removal, or relocation, subject action modification, image style transfer, and enhanced visual detail.",
         "displayName": "Qwen Image Edit Max",
         "id": "qwen-image-edit-max",
-        "enabled": true,
         "organization": "Qwen",
         "parameters": {
           "height": {
@@ -7631,6 +7718,12 @@
             "max": 2048,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7650,7 +7743,6 @@
       {
         "description": "Qwen Image Editing Model supports multi-image input and multi-image output, enabling precise in-image text editing, object addition, removal, or relocation, subject action modification, image style transfer, and enhanced visual detail.",
         "displayName": "Qwen Image Edit Plus",
-        "enabled": true,
         "id": "qwen-image-edit-plus",
         "organization": "Qwen",
         "parameters": {
@@ -7674,6 +7766,12 @@
             "max": 2048,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7693,7 +7791,6 @@
       {
         "description": "Qwen Image Edit is an image-to-image model that edits images based on input images and text prompts, enabling precise adjustments and creative transformations.",
         "displayName": "Qwen Image Edit",
-        "enabled": true,
         "id": "qwen-image-edit",
         "organization": "Qwen",
         "parameters": {
@@ -7705,6 +7802,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7724,7 +7827,6 @@
       {
         "description": "Qwen Image Generation Model (Max series) delivers enhanced realism and visual naturalness compared with the Plus series, effectively reducing AI-generated artifacts, and demonstrating outstanding performance in human appearance, texture details, and text rendering.",
         "displayName": "Qwen Image Max",
-        "enabled": true,
         "id": "qwen-image-max",
         "organization": "Qwen",
         "parameters": {
@@ -7743,6 +7845,12 @@
               "1140x1472",
               "928x1664"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7762,7 +7870,6 @@
       {
         "description": "It supports a wide range of artistic styles and is particularly proficient at rendering complex text within images, enabling integrated image–text layout design.",
         "displayName": "Qwen Image Plus",
-        "enabled": true,
         "id": "qwen-image-plus",
         "organization": "Qwen",
         "parameters": {
@@ -7781,6 +7888,12 @@
               "1140x1472",
               "928x1664"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7800,7 +7913,6 @@
       {
         "description": "Qwen-Image is a general image generation model supporting multiple art styles and strong complex text rendering, especially Chinese and English. It supports multi-line layouts, paragraph-level text, and fine detail for complex text-image layouts.",
         "displayName": "Qwen Image",
-        "enabled": true,
         "id": "qwen-image",
         "organization": "Qwen",
         "parameters": {
@@ -7819,6 +7931,12 @@
               "1140x1472",
               "928x1664"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7862,6 +7980,12 @@
             "max": 11585,
             "min": 271,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7905,6 +8029,12 @@
             "max": 5792,
             "min": 271,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7948,6 +8078,12 @@
             "max": 2880,
             "min": 640,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -7988,6 +8124,12 @@
             "max": 2880,
             "min": 640,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8030,6 +8172,12 @@
             "max": 2560,
             "min": 384,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8069,6 +8217,12 @@
             "max": 2880,
             "min": 640,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8108,6 +8262,12 @@
             "max": 1440,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8147,6 +8307,12 @@
             "max": 1440,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8186,6 +8352,12 @@
             "max": 1440,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8225,6 +8397,12 @@
             "max": 1440,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8264,6 +8442,12 @@
             "max": 1440,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8346,6 +8530,9 @@
               "1k",
               "2k"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8390,6 +8577,9 @@
               "2k",
               "4k"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8404,299 +8594,6 @@
           ]
         },
         "releasedAt": "2026-03-26",
-        "type": "image"
-      },
-      {
-        "description": "FLUX.1 [schnell] is the most advanced open-source few-step model, surpassing similar competitors and even strong non-distilled models like Midjourney v6.0 and DALL-E 3 (HD). It is finely tuned to preserve pretraining diversity, significantly improving visual quality, instruction following, size/aspect variation, font handling, and output diversity.",
-        "displayName": "FLUX.1 [schnell]",
-        "id": "flux-schnell",
-        "organization": "Qwen",
-        "parameters": {
-          "prompt": {
-            "default": ""
-          },
-          "seed": {
-            "default": null
-          },
-          "size": {
-            "default": "1024x1024",
-            "enum": [
-              "512x1024",
-              "768x512",
-              "768x1024",
-              "1024x576",
-              "576x1024",
-              "1024x1024"
-            ]
-          },
-          "steps": {
-            "default": 4,
-            "max": 12,
-            "min": 1
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "imageGeneration",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "image"
-            }
-          ]
-        },
-        "releasedAt": "2024-08-07",
-        "type": "image"
-      },
-      {
-        "description": "FLUX.1 [dev] is an open-weights distilled model for non-commercial use. It keeps near-pro image quality and instruction following while running more efficiently, using resources better than same-size standard models.",
-        "displayName": "FLUX.1 [dev]",
-        "id": "flux-dev",
-        "organization": "Qwen",
-        "parameters": {
-          "prompt": {
-            "default": ""
-          },
-          "seed": {
-            "default": null
-          },
-          "size": {
-            "default": "1024x1024",
-            "enum": [
-              "512x1024",
-              "768x512",
-              "768x1024",
-              "1024x576",
-              "576x1024",
-              "1024x1024"
-            ]
-          },
-          "steps": {
-            "default": 50,
-            "max": 50,
-            "min": 1
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "imageGeneration",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "image"
-            }
-          ]
-        },
-        "releasedAt": "2024-08-07",
-        "type": "image"
-      },
-      {
-        "description": "FLUX.1 [merged] combines the deep features explored in \"DEV\" with the high-speed advantages of \"Schnell\", extending performance limits and broadening applications.",
-        "displayName": "FLUX.1 [merged]",
-        "id": "flux-merged",
-        "organization": "Qwen",
-        "parameters": {
-          "prompt": {
-            "default": ""
-          },
-          "seed": {
-            "default": null
-          },
-          "size": {
-            "default": "1024x1024",
-            "enum": [
-              "512x1024",
-              "768x512",
-              "768x1024",
-              "1024x576",
-              "576x1024",
-              "1024x1024"
-            ]
-          },
-          "steps": {
-            "default": 30,
-            "max": 30,
-            "min": 1
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "imageGeneration",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "image"
-            }
-          ]
-        },
-        "releasedAt": "2024-08-22",
-        "type": "image"
-      },
-      {
-        "description": "stable-diffusion-3.5-large is an 800M-parameter MMDiT text-to-image model with excellent quality and prompt alignment, supporting 1-megapixel images and efficient runs on consumer hardware.",
-        "displayName": "StableDiffusion 3.5 Large",
-        "id": "stable-diffusion-3.5-large",
-        "organization": "Qwen",
-        "parameters": {
-          "height": {
-            "default": 1024,
-            "max": 1024,
-            "min": 512,
-            "step": 128
-          },
-          "prompt": {
-            "default": ""
-          },
-          "steps": {
-            "default": 40,
-            "max": 500,
-            "min": 1
-          },
-          "width": {
-            "default": 1024,
-            "max": 1024,
-            "min": 512,
-            "step": 128
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "imageGeneration",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "image"
-            }
-          ]
-        },
-        "releasedAt": "2024-10-25",
-        "type": "image"
-      },
-      {
-        "description": "stable-diffusion-3.5-large-turbo applies adversarial diffusion distillation (ADD) to stable-diffusion-3.5-large for faster speed.",
-        "displayName": "StableDiffusion 3.5 Large Turbo",
-        "id": "stable-diffusion-3.5-large-turbo",
-        "organization": "Qwen",
-        "parameters": {
-          "height": {
-            "default": 1024,
-            "max": 1024,
-            "min": 512,
-            "step": 128
-          },
-          "prompt": {
-            "default": ""
-          },
-          "steps": {
-            "default": 40,
-            "max": 500,
-            "min": 1
-          },
-          "width": {
-            "default": 1024,
-            "max": 1024,
-            "min": 512,
-            "step": 128
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "imageGeneration",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "image"
-            }
-          ]
-        },
-        "releasedAt": "2024-10-25",
-        "type": "image"
-      },
-      {
-        "description": "stable-diffusion-xl brings major improvements over v1.5 and matches top open text-to-image results. Improvements include a 3x larger UNet backbone, a refinement module for better image quality, and more efficient training techniques.",
-        "displayName": "StableDiffusion xl",
-        "id": "stable-diffusion-xl",
-        "organization": "Qwen",
-        "parameters": {
-          "height": {
-            "default": 1024,
-            "max": 1024,
-            "min": 512,
-            "step": 128
-          },
-          "prompt": {
-            "default": ""
-          },
-          "steps": {
-            "default": 50,
-            "max": 500,
-            "min": 1
-          },
-          "width": {
-            "default": 1024,
-            "max": 1024,
-            "min": 512,
-            "step": 128
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "imageGeneration",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "image"
-            }
-          ]
-        },
-        "releasedAt": "2024-04-09",
-        "type": "image"
-      },
-      {
-        "description": "stable-diffusion-v1.5 is initialized from the v1.2 checkpoint and fine-tuned for 595k steps on \"laion-aesthetics v2 5+\" at 512x512 resolution, reducing text conditioning by 10% to improve classifier-free guidance sampling.",
-        "displayName": "StableDiffusion v1.5",
-        "id": "stable-diffusion-v1.5",
-        "organization": "Qwen",
-        "parameters": {
-          "height": {
-            "default": 512,
-            "max": 1024,
-            "min": 512,
-            "step": 128
-          },
-          "prompt": {
-            "default": ""
-          },
-          "steps": {
-            "default": 50,
-            "max": 500,
-            "min": 1
-          },
-          "width": {
-            "default": 512,
-            "max": 1024,
-            "min": 512,
-            "step": 128
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "imageGeneration",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "image"
-            }
-          ]
-        },
-        "releasedAt": "2024-04-09",
         "type": "image"
       },
       {
@@ -8728,6 +8625,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8765,8 +8668,9 @@
             "max": 10,
             "min": 2
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 5
           },
           "prompt": {
             "default": ""
@@ -8780,6 +8684,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8829,6 +8739,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8874,6 +8790,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8915,6 +8837,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8945,8 +8873,9 @@
           "generateAudio": {
             "default": true
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 5
           },
           "prompt": {
             "default": ""
@@ -8968,6 +8897,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -8994,8 +8929,9 @@
             "max": 10,
             "min": 2
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 5
           },
           "prompt": {
             "default": ""
@@ -9017,6 +8953,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9064,6 +9006,12 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9105,6 +9053,12 @@
               "720P",
               "1080P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9153,6 +9107,12 @@
               "1632x1248",
               "1248x1632"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9196,6 +9156,12 @@
               "720P",
               "1080P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9237,6 +9203,12 @@
             "enum": [
               "720P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9277,6 +9249,12 @@
               "720P",
               "1080P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9316,6 +9294,12 @@
               "480P",
               "1080P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9358,6 +9342,12 @@
               "1632x1248",
               "1248x1632"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9399,6 +9389,12 @@
               "480P",
               "720P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9437,6 +9433,12 @@
             "enum": [
               "720P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9479,6 +9481,12 @@
               "1088x832",
               "832x1088"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9509,6 +9517,9 @@
           "prompt": {
             "default": ""
           },
+          "promptExtend": {
+            "default": false
+          },
           "size": {
             "default": "1280x720",
             "enum": [
@@ -9518,6 +9529,9 @@
               "1088x832",
               "832x1088"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9571,6 +9585,9 @@
               "720p",
               "1080p"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9611,8 +9628,9 @@
           "generateAudio": {
             "default": true
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 7
           },
           "prompt": {
             "default": ""
@@ -9623,6 +9641,9 @@
               "720p",
               "1080p"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9685,6 +9706,9 @@
               "1674x1238",
               "1238x1674"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9746,6 +9770,9 @@
               "1674x1238",
               "1238x1674"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9804,6 +9831,9 @@
               "1674x1238",
               "1238x1674"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9849,6 +9879,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9893,6 +9926,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9933,6 +9969,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -9973,6 +10012,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10021,6 +10063,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10068,6 +10113,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10112,6 +10160,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10156,6 +10207,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10181,8 +10235,9 @@
             "max": 10,
             "min": 1
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 7
           },
           "prompt": {
             "default": ""
@@ -10217,6 +10272,9 @@
               "1080x1440",
               "1080x1920"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10242,8 +10300,9 @@
             "max": 10,
             "min": 1
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 7
           },
           "prompt": {
             "default": ""
@@ -10278,6 +10337,9 @@
               "1080x1440",
               "1080x1920"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10349,6 +10411,9 @@
               "1184x1776",
               "1920x832"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10410,6 +10475,9 @@
               "1440x1920",
               "1080x1920"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10456,6 +10524,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10504,6 +10575,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10553,6 +10627,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10604,6 +10681,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -10635,8 +10715,9 @@
           "generateAudio": {
             "default": true
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 7
           },
           "prompt": {
             "default": ""
@@ -10668,6 +10749,9 @@
               "1440x1920",
               "1080x1920"
             ]
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -15367,6 +15451,182 @@
         },
         "releasedAt": "2025-08-04",
         "type": "image"
+      },
+      {
+        "description": "Seedance 2.0 by ByteDance is the most powerful video generation model, supporting multimodal reference video generation, video editing, video extension, text-to-video, and image-to-video with synchronized audio.",
+        "displayName": "Seedance 2.0",
+        "enabled": true,
+        "id": "doubao-seedance-2-0-260128",
+        "organization": "ByteDance",
+        "parameters": {
+          "aspectRatio": {
+            "default": "adaptive",
+            "enum": [
+              "adaptive",
+              "16:9",
+              "9:16",
+              "1:1",
+              "4:3",
+              "3:4",
+              "21:9"
+            ]
+          },
+          "duration": {
+            "default": 5,
+            "max": 15,
+            "min": 4
+          },
+          "endImageUrl": {
+            "aspectRatio": {
+              "max": 2.5,
+              "min": 0.4
+            },
+            "default": null,
+            "height": {
+              "max": 6000,
+              "min": 300
+            },
+            "maxFileSize": 31457280,
+            "requiresImageUrl": true,
+            "width": {
+              "max": 6000,
+              "min": 300
+            }
+          },
+          "generateAudio": {
+            "default": true
+          },
+          "imageUrls": {
+            "aspectRatio": {
+              "max": 2.5,
+              "min": 0.4
+            },
+            "default": [],
+            "height": {
+              "max": 6000,
+              "min": 300
+            },
+            "maxFileSize": 31457280,
+            "width": {
+              "max": 6000,
+              "min": 300
+            }
+          },
+          "prompt": {
+            "default": ""
+          },
+          "resolution": {
+            "default": "720p",
+            "enum": [
+              "480p",
+              "720p"
+            ]
+          },
+          "seed": {
+            "default": null
+          }
+        },
+        "pricing": {
+          "approximatePricePerVideo": 0.82,
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 7.56,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-01-28",
+        "type": "video"
+      },
+      {
+        "description": "Seedance 2.0 Fast by ByteDance offers the same capabilities as Seedance 2.0 with faster generation speeds at a more competitive price.",
+        "displayName": "Seedance 2.0 Fast",
+        "enabled": true,
+        "id": "doubao-seedance-2-0-fast-260128",
+        "organization": "ByteDance",
+        "parameters": {
+          "aspectRatio": {
+            "default": "adaptive",
+            "enum": [
+              "adaptive",
+              "16:9",
+              "9:16",
+              "1:1",
+              "4:3",
+              "3:4",
+              "21:9"
+            ]
+          },
+          "duration": {
+            "default": 5,
+            "max": 15,
+            "min": 4
+          },
+          "endImageUrl": {
+            "aspectRatio": {
+              "max": 2.5,
+              "min": 0.4
+            },
+            "default": null,
+            "height": {
+              "max": 6000,
+              "min": 300
+            },
+            "maxFileSize": 31457280,
+            "requiresImageUrl": true,
+            "width": {
+              "max": 6000,
+              "min": 300
+            }
+          },
+          "generateAudio": {
+            "default": true
+          },
+          "imageUrls": {
+            "aspectRatio": {
+              "max": 2.5,
+              "min": 0.4
+            },
+            "default": [],
+            "height": {
+              "max": 6000,
+              "min": 300
+            },
+            "maxFileSize": 31457280,
+            "width": {
+              "max": 6000,
+              "min": 300
+            }
+          },
+          "prompt": {
+            "default": ""
+          },
+          "resolution": {
+            "default": "720p",
+            "enum": [
+              "480p",
+              "720p"
+            ]
+          },
+          "seed": {
+            "default": null
+          }
+        },
+        "pricing": {
+          "approximatePricePerVideo": 0.66,
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 6.08,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-01-28",
+        "type": "video"
       },
       {
         "description": "Seedance 1.5 Pro by ByteDance supports text-to-video, image-to-video (first frame, first+last frame), and audio generation synchronized with visuals.",
@@ -37275,6 +37535,19 @@
           "prompt": {
             "default": ""
           },
+          "promptExtend": {
+            "default": "off",
+            "enum": [
+              "off",
+              "standard"
+            ]
+          },
+          "watermark": {
+            "default": false
+          },
+          "webSearch": {
+            "default": false
+          },
           "width": {
             "default": 2048,
             "max": 16384,
@@ -37287,7 +37560,7 @@
           "units": [
             {
               "name": "imageGeneration",
-              "rate": 0,
+              "rate": 0.22,
               "strategy": "fixed",
               "unit": "image"
             }
@@ -37315,6 +37588,16 @@
           },
           "prompt": {
             "default": ""
+          },
+          "promptExtend": {
+            "default": "off",
+            "enum": [
+              "off",
+              "standard"
+            ]
+          },
+          "watermark": {
+            "default": false
           },
           "width": {
             "default": 2048,
@@ -37357,6 +37640,17 @@
           "prompt": {
             "default": ""
           },
+          "promptExtend": {
+            "default": "off",
+            "enum": [
+              "off",
+              "standard",
+              "fast"
+            ]
+          },
+          "watermark": {
+            "default": false
+          },
           "width": {
             "default": 2048,
             "max": 16384,
@@ -37381,7 +37675,6 @@
       {
         "description": "Seedream 3.0 is an image generation model from ByteDance Seed, supporting text and image inputs with highly controllable, high-quality image generation. It generates images from text prompts.",
         "displayName": "Seedream 3.0 Text-to-Image",
-        "enabled": true,
         "id": "doubao-seedream-3-0-t2i-250415",
         "parameters": {
           "cfg": {
@@ -37401,6 +37694,9 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           },
           "width": {
             "default": 1024,
@@ -37426,7 +37722,6 @@
       {
         "description": "The Doubao image model from ByteDance Seed supports text and image inputs with highly controllable, high-quality image generation. It supports text-guided image editing, with output sizes between 512 and 1536 on the long side.",
         "displayName": "SeedEdit 3.0 Image-to-Image",
-        "enabled": true,
         "id": "doubao-seededit-3-0-i2i-250628",
         "parameters": {
           "cfg": {
@@ -37444,10 +37739,212 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "imageGeneration",
+              "rate": 0.259,
+              "strategy": "fixed",
+              "unit": "image"
+            }
+          ]
         },
         "releasedAt": "2025-06-28",
         "type": "image"
+      },
+      {
+        "description": "Seedance 2.0 by ByteDance is the most powerful video generation model, supporting multimodal reference video generation, video editing, video extension, text-to-video, and image-to-video with synchronized audio.",
+        "displayName": "Seedance 2.0",
+        "enabled": true,
+        "id": "doubao-seedance-2-0-260128",
+        "organization": "ByteDance",
+        "parameters": {
+          "aspectRatio": {
+            "default": "adaptive",
+            "enum": [
+              "adaptive",
+              "16:9",
+              "9:16",
+              "1:1",
+              "4:3",
+              "3:4",
+              "21:9"
+            ]
+          },
+          "duration": {
+            "default": 5,
+            "max": 15,
+            "min": 4
+          },
+          "endImageUrl": {
+            "aspectRatio": {
+              "max": 2.5,
+              "min": 0.4
+            },
+            "default": null,
+            "height": {
+              "max": 6000,
+              "min": 300
+            },
+            "maxFileSize": 31457280,
+            "requiresImageUrl": true,
+            "width": {
+              "max": 6000,
+              "min": 300
+            }
+          },
+          "generateAudio": {
+            "default": true
+          },
+          "imageUrls": {
+            "aspectRatio": {
+              "max": 2.5,
+              "min": 0.4
+            },
+            "default": [],
+            "height": {
+              "max": 6000,
+              "min": 300
+            },
+            "maxFileSize": 31457280,
+            "width": {
+              "max": 6000,
+              "min": 300
+            }
+          },
+          "prompt": {
+            "default": ""
+          },
+          "resolution": {
+            "default": "720p",
+            "enum": [
+              "480p",
+              "720p"
+            ]
+          },
+          "seed": {
+            "default": null
+          },
+          "watermark": {
+            "default": false
+          },
+          "webSearch": {
+            "default": false
+          }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 37,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-01-28",
+        "type": "video"
+      },
+      {
+        "description": "Seedance 2.0 Fast by ByteDance offers the same capabilities as Seedance 2.0 with faster generation speeds at a more competitive price.",
+        "displayName": "Seedance 2.0 Fast",
+        "enabled": true,
+        "id": "doubao-seedance-2-0-fast-260128",
+        "organization": "ByteDance",
+        "parameters": {
+          "aspectRatio": {
+            "default": "adaptive",
+            "enum": [
+              "adaptive",
+              "16:9",
+              "9:16",
+              "1:1",
+              "4:3",
+              "3:4",
+              "21:9"
+            ]
+          },
+          "duration": {
+            "default": 5,
+            "max": 15,
+            "min": 4
+          },
+          "endImageUrl": {
+            "aspectRatio": {
+              "max": 2.5,
+              "min": 0.4
+            },
+            "default": null,
+            "height": {
+              "max": 6000,
+              "min": 300
+            },
+            "maxFileSize": 31457280,
+            "requiresImageUrl": true,
+            "width": {
+              "max": 6000,
+              "min": 300
+            }
+          },
+          "generateAudio": {
+            "default": true
+          },
+          "imageUrls": {
+            "aspectRatio": {
+              "max": 2.5,
+              "min": 0.4
+            },
+            "default": [],
+            "height": {
+              "max": 6000,
+              "min": 300
+            },
+            "maxFileSize": 31457280,
+            "width": {
+              "max": 6000,
+              "min": 300
+            }
+          },
+          "prompt": {
+            "default": ""
+          },
+          "resolution": {
+            "default": "720p",
+            "enum": [
+              "480p",
+              "720p"
+            ]
+          },
+          "seed": {
+            "default": null
+          },
+          "watermark": {
+            "default": false
+          },
+          "webSearch": {
+            "default": false
+          }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 46,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-01-28",
+        "type": "video"
       },
       {
         "description": "Seedance 1.5 Pro by ByteDance supports text-to-video, image-to-video (first frame, first+last frame), and audio generation synchronized with visuals.",
@@ -37525,7 +38022,29 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "pricingParams": [
+                  "generateAudio"
+                ],
+                "prices": {
+                  "false": 8,
+                  "true": 16
+                }
+              },
+              "name": "videoGeneration",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
         },
         "releasedAt": "2025-12-15",
         "type": "video"
@@ -37584,7 +38103,21 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 4.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
         },
         "releasedAt": "2025-10-15",
         "type": "video"
@@ -37660,7 +38193,21 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
         },
         "releasedAt": "2025-05-28",
         "type": "video"
@@ -37702,17 +38249,18 @@
               "min": 300
             }
           },
-          "imageUrl": {
+          "imageUrls": {
             "aspectRatio": {
               "max": 2.5,
               "min": 0.4
             },
-            "default": null,
+            "default": [],
             "height": {
               "max": 6000,
               "min": 300
             },
             "maxFileSize": 31457280,
+            "maxCount": 4,
             "width": {
               "max": 6000,
               "min": 300
@@ -37736,7 +38284,21 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 10,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
         },
         "releasedAt": "2025-04-28",
         "type": "video"
@@ -37779,7 +38341,21 @@
           },
           "seed": {
             "default": null
+          },
+          "watermark": {
+            "default": false
           }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 10,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
         },
         "releasedAt": "2025-04-28",
         "type": "video"
@@ -38285,11 +38861,14 @@
           "video": true,
           "vision": true
         },
+        "config": {
+          "deploymentName": "k2p5"
+        },
         "contextWindowTokens": 262144,
         "description": "Kimi K2.5 is Kimi's most versatile model to date, featuring a native multimodal architecture that supports both vision and text inputs, 'thinking' and 'non-thinking' modes, and both conversational and agent tasks.",
         "displayName": "Kimi K2.5",
         "enabled": true,
-        "id": "k2p5",
+        "id": "kimi-k2.5",
         "maxOutput": 32768,
         "organization": "Moonshot",
         "releasedAt": "2026-01-27",
@@ -42707,6 +43286,585 @@
         "type": "chat"
       }
     ],
+    "streamlake": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "The latest high-performance model from the Kuaishou Kwaipilot team, designed for complex enterprise projects and SaaS integration. It excels in code-related scenarios and is compatible with various types of agent frameworks (Claude Code, OpenCode, KiloCode), natively supports OpenClaw, and is optimized specifically for front-end page aesthetics.",
+        "displayName": "KAT-Coder-Pro-V2",
+        "enabled": true,
+        "id": "KAT-Coder-Pro-V2",
+        "maxOutput": 81920,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 2.1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.42,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-25",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Designed for Agentic Coding, it comprehensively covers programming tasks and scenarios, achieving intelligent behavior emergence through large-scale reinforcement learning, significantly outperforming similar models in code writing performance.",
+        "displayName": "KAT-Coder-Pro-V1",
+        "id": "KAT-Coder-Pro-V1",
+        "maxOutput": 32768,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 2.1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.42,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-10-23",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 131072,
+        "description": "KAT-Coder-Exp-72B is the RL innovation experimental version in the KAT-Coder series, achieving a remarkable performance of 74.6% on the SWE-Bench verified benchmark, setting a new record for open-source models. It focuses on Agentic Coding and currently only supports the SWE-Agent scaffold, but can also be used for simple conversations.",
+        "displayName": "KAT-Coder-Exp-72B-1010",
+        "id": "KAT-Coder-Exp-72B-1010",
+        "maxOutput": 32768,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-10-15",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 131072,
+        "description": "A lightweight version within the KAT-Coder series. Specifically designed for Agentic Coding, it comprehensively covers programming tasks and scenarios. Leveraging large-scale agent-based reinforcement learning, it enables emergent intelligent behaviors and significantly outperforms comparable models in coding performance.",
+        "displayName": "KAT-Coder-Air-V1",
+        "enabled": true,
+        "id": "KAT-Coder-Air-V1",
+        "maxOutput": 32768,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-10-15",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "GLM-5-Turbo is a foundation model deeply optimized for agentic scenarios. It has been specifically optimized for core requirements of agent tasks from the training phase, enhancing key capabilities such as tool invocation, command following, and long-chain execution. It is ideal for building high-performance agent assistants.",
+        "displayName": "GLM-5-Turbo",
+        "id": "GLM-5-Turbo",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 1.2,
+                  "[0.032, infinity]": 1.8
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 5,
+                  "[0.032, infinity]": 7
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 22,
+                  "[0.032, infinity]": 26
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-15",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "GLM-5 is Zhipu’s next-generation flagship foundation model, purpose-built for Agentic Engineering. It delivers reliable productivity in complex systems engineering and long-horizon agentic tasks. In coding and agent capabilities, GLM-5 achieves state-of-the-art performance among open-source models. In real-world programming scenarios, its user experience approaches that of Claude Opus 4.5. It excels at complex systems engineering and long-horizon agent tasks, making it an ideal foundation model for general-purpose agent assistants.",
+        "displayName": "GLM-5",
+        "id": "GLM-5",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 1,
+                  "[0.032, infinity]": 1.5
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 4,
+                  "[0.032, infinity]": 6
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 18,
+                  "[0.032, infinity]": 22
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-12",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "First self-evolving model with top-tier coding and agentic performance (~60 tps).",
+        "displayName": "MiniMax M2.7",
+        "id": "MiniMax-M2.7",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.42,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 2.625,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 2.1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-18",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "Top-tier performance and ultimate cost-effectiveness, easily handling complex tasks (approx. 60 tps).",
+        "displayName": "MiniMax M2.5",
+        "id": "MiniMax-M2.5",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.21,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 2.625,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 2.1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-12",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true,
+          "video": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Kimi K2.5 is the most capable Kimi model, delivering open-source SOTA in agent tasks, coding, and vision understanding. It supports multimodal inputs and both thinking and non-thinking modes.",
+        "displayName": "Kimi K2.5",
+        "id": "Kimi-K2.5",
+        "maxOutput": 32768,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.7,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 21,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-01-27",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Qwen3.5 Plus supports text, image, and video input. Its performance on pure text tasks is comparable to Qwen3 Max, with better performance and lower cost. Its multimodal capabilities are significantly improved compared to the Qwen3 VL series.",
+        "displayName": "Qwen3.5 Plus",
+        "id": "Qwen3.5-Plus",
+        "maxOutput": 65536,
+        "organization": "Qwen",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.128]": 0.8,
+                  "[0.128, 0.256]": 2,
+                  "[0.256, infinity]": 4
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.128]": 4.8,
+                  "[0.128, 0.256]": 12,
+                  "[0.256, infinity]": 24
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-15",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "MiMo-V2-Pro is specifically designed for high-intensity agent workflows in real-world scenarios. It features over 1 trillion total parameters (42B activated parameters), adopts an innovative hybrid attention architecture, and supports an ultra-long context length of up to 1 million tokens. Built on a powerful foundational model, we continuously scale computational resources across a broader range of agent scenarios, further expanding the action space of intelligence and achieving significant generalization—from coding to real-world task execution (“claw”).",
+        "displayName": "MiMo-V2 Pro",
+        "id": "MiMo-V2-Pro",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 7,
+                  "upTo": 0.256
+                },
+                {
+                  "rate": 14,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 21,
+                  "upTo": 0.256
+                },
+                {
+                  "rate": 42,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-18",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 131072,
+        "description": "deepseek-v3.2 introduces sparse attention mechanism, aiming to improve training and inference efficiency when processing long texts, priced lower than deepseek-v3.1.",
+        "displayName": "DeepSeek V3.2",
+        "id": "DeepSeek-V3.2",
+        "maxOutput": 65536,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-12-01",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "vision": true
+        },
+        "contextWindowTokens": 8192,
+        "description": "DeepSeek-OCR is a vision-language model from DeepSeek AI focused on OCR and \"context optical compression.\" It explores compressing context from images, efficiently processes documents, and converts them to structured text (e.g., Markdown). It accurately recognizes text in images, suited for document digitization, text extraction, and structured processing.",
+        "displayName": "DeepSeek OCR",
+        "id": "DeepSeek-OCR",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.216,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0.216,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-10-20",
+        "type": "chat"
+      }
+    ],
     "deepseek": [
       {
         "abilities": {
@@ -43727,6 +44885,71 @@
           "extendParams": [
             "enableReasoning",
             "reasoningBudgetToken"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 198000,
+        "description": "GLM-5.1 is a next-generation flagship model designed for agent engineering, using a Mixture of Experts (MoE) architecture with 754B parameters. It significantly enhances programming capabilities, achieving leading results on SWE-Bench Pro, and substantially outperforms its predecessor on benchmarks like NL2Repo and Terminal-Bench 2.0. Designed for long-duration agent tasks, it handles ambiguous questions with better judgment, decomposes complex tasks, executes experiments, analyzes results, and continuously optimizes through hundreds of iterations and thousands of tool calls.",
+        "displayName": "GLM-5.1 (Pro)",
+        "id": "Pro/zai-org/GLM-5.1",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 1.3,
+                  "[0.032, infinity]": 2
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 6,
+                  "[0.032, infinity]": 8
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 24,
+                  "[0.032, infinity]": 28
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-08",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken32k"
           ]
         },
         "type": "chat"
@@ -49086,93 +50309,6 @@
       {
         "abilities": {
           "functionCall": true,
-          "reasoning": true,
-          "search": true
-        },
-        "contextWindowTokens": 204800,
-        "description": "Beginning the journey of recursive self-improvement. Optimized for top real-world engineering, professional office delivery, and character-rich interaction.",
-        "displayName": "MiniMax M2.7",
-        "enabled": true,
-        "id": "MiniMax-M2.7",
-        "maxOutput": 131072,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 0.42,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput_cacheWrite",
-              "rate": 2.625,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 2.1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 8.4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2026-03-18",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "search": true
-        },
-        "contextWindowTokens": 204800,
-        "description": "Same performance as M2.7, with significantly faster inference for low-latency coding and refactoring.",
-        "displayName": "MiniMax M2.7 highspeed",
-        "id": "MiniMax-M2.7-highspeed",
-        "maxOutput": 131072,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 0.42,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput_cacheWrite",
-              "rate": 2.625,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 4.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16.8,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2026-03-18",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
           "reasoning": true
         },
         "contextWindowTokens": 204800,
@@ -49620,7 +50756,24 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "imageGeneration",
+              "rate": 0.025,
+              "strategy": "fixed",
+              "unit": "image"
+            }
+          ]
         },
         "releasedAt": "2025-02-28",
         "type": "image"
@@ -49651,7 +50804,24 @@
           },
           "seed": {
             "default": null
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "imageGeneration",
+              "rate": 0.025,
+              "strategy": "fixed",
+              "unit": "image"
+            }
+          ]
         },
         "releasedAt": "2025-02-28",
         "type": "image"
@@ -49681,6 +50851,12 @@
               "768P",
               "1080P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -49722,6 +50898,12 @@
               "768P",
               "1080P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -49767,6 +50949,12 @@
               "768P",
               "1080P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -49805,6 +50993,12 @@
             "enum": [
               "720P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "releasedAt": "2025-02-11",
@@ -49829,6 +51023,12 @@
             "enum": [
               "720P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "releasedAt": "2025-02-11",
@@ -49856,6 +51056,12 @@
             "enum": [
               "720P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "releasedAt": "2025-03-03",
@@ -49883,6 +51089,12 @@
             "enum": [
               "720P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "releasedAt": "2025-03-03",
@@ -49898,6 +51110,12 @@
           },
           "prompt": {
             "default": ""
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "releasedAt": "2025-01-10",
@@ -49922,6 +51140,12 @@
             "enum": [
               "720P"
             ]
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "releasedAt": "2025-03-03",
@@ -51680,8 +52904,9 @@
           "endImageUrl": {
             "default": null
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 3
           },
           "prompt": {
             "default": ""
@@ -51735,8 +52960,9 @@
           "endImageUrl": {
             "default": null
           },
-          "imageUrl": {
-            "default": null
+          "imageUrls": {
+            "default": [],
+            "maxCount": 3
           },
           "prompt": {
             "default": ""
@@ -55237,6 +56463,12 @@
             "max": 2048,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -61996,6 +63228,9 @@
               "1472x1104",
               "1104x1472"
             ]
+          },
+          "promptExtend": {
+            "default": false
           }
         },
         "pricing": {
@@ -62031,6 +63266,9 @@
             "max": 2048,
             "min": 512,
             "step": 1
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62070,6 +63308,9 @@
             "max": 2048,
             "min": 512,
             "step": 1
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62114,6 +63355,12 @@
             "max": 2048,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62155,6 +63402,12 @@
             "max": 2048,
             "min": 512,
             "step": 1
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62198,6 +63451,9 @@
             "max": 2048,
             "min": 512,
             "step": 1
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62231,6 +63487,12 @@
           },
           "prompt": {
             "default": ""
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62263,6 +63525,12 @@
           },
           "prompt": {
             "default": ""
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62295,6 +63563,12 @@
           },
           "prompt": {
             "default": ""
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62327,6 +63601,12 @@
           },
           "prompt": {
             "default": ""
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
@@ -62358,6 +63638,12 @@
           },
           "prompt": {
             "default": ""
+          },
+          "promptExtend": {
+            "default": false
+          },
+          "watermark": {
+            "default": false
           }
         },
         "pricing": {
