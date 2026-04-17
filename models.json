@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "d47f4fec76f7a0f253934a37f06211cd9a3e67eb",
-    "generatedAt": "2026-04-16T04:07:58.860Z",
+    "commitHash": "93603ae83b37f5002fabab8314b8362ca6cc8faf",
+    "generatedAt": "2026-04-17T04:07:13.494Z",
     "providerCount": 79,
-    "modelCount": 2087
+    "modelCount": 2089
   },
   "providers": {
     "zhipu": {
@@ -1498,6 +1498,74 @@
   },
   "models": {
     "zhipu": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "GLM-5.1 is Zhipu’s latest flagship model, aligned with Claude Opus 4.6 on overall and coding capabilities. It excels at long-horizon tasks, able to autonomously plan, execute, and iterate for up to 8 hours in a single task, making it an ideal foundation for Autonomous Agents and long-horizon Coding Agents.",
+        "displayName": "GLM-5.1",
+        "enabled": true,
+        "id": "glm-5.1",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 1.3,
+                  "[0.032, infinity]": 2
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 6,
+                  "[0.032, infinity]": 8
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 24,
+                  "[0.032, infinity]": 28
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-27",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
@@ -14472,6 +14540,48 @@
         "abilities": {
           "functionCall": true,
           "reasoning": true,
+          "search": false
+        },
+        "contextWindowTokens": 200000,
+        "description": "Zai's latest flagship model, aligned with Claude Opus 4.6 on overall and coding capabilities. Excels at long-horizon tasks with autonomous work up to 8 hours, an ideal foundation for Autonomous Agents and long-horizon Coding Agents.",
+        "displayName": "GLM-5.1",
+        "enabled": true,
+        "id": "glm-5.1",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.26,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 4.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-27",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
           "search": true
         },
         "contextWindowTokens": 200000,
@@ -14515,7 +14625,7 @@
         "abilities": {
           "functionCall": true,
           "reasoning": true,
-          "search": true
+          "search": false
         },
         "contextWindowTokens": 1000000,
         "description": "Xiaomi MiMo-V2-Pro features over 1 trillion parameters (42B activated), an innovative hybrid attention architecture, and supports ultra-long context up to 1M tokens. Designed for high-intensity agent workflows with strong generalization from coding to real-world task execution.",
@@ -14582,8 +14692,7 @@
         "settings": {
           "extendParams": [
             "enableReasoning"
-          ],
-          "searchImpl": "params"
+          ]
         },
         "type": "chat"
       },
@@ -14591,7 +14700,7 @@
         "abilities": {
           "functionCall": true,
           "reasoning": true,
-          "search": true,
+          "search": false,
           "video": true,
           "vision": true
         },
@@ -14633,8 +14742,7 @@
         "settings": {
           "extendParams": [
             "enableReasoning"
-          ],
-          "searchImpl": "params"
+          ]
         },
         "type": "chat"
       },
@@ -14642,7 +14750,7 @@
         "abilities": {
           "functionCall": true,
           "reasoning": true,
-          "search": true
+          "search": false
         },
         "contextWindowTokens": 262144,
         "description": "MiMo-V2-Flash is a 309B MoE model (15B activated) optimized for extreme inference efficiency. It ranks among the top open-source models in agent benchmarks while delivering 2x generation speed at minimal cost.",
@@ -14682,8 +14790,7 @@
         "settings": {
           "extendParams": [
             "enableReasoning"
-          ],
-          "searchImpl": "params"
+          ]
         },
         "type": "chat"
       },
