@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "57e3940bc6626e8c6743f97bc08053bfe80907f9",
-    "generatedAt": "2026-04-27T04:18:59.140Z",
-    "providerCount": 79,
-    "modelCount": 2089
+    "commitHash": "682657ba501b5b9dc46fb472aac9184f773b7c5c",
+    "generatedAt": "2026-04-28T04:20:47.031Z",
+    "providerCount": 81,
+    "modelCount": 2163
   },
   "providers": {
     "zhipu": {
@@ -369,6 +369,27 @@
       },
       "url": "https://developers.cloudflare.com/workers-ai/models"
     },
+    "opencodeCodingPlan": {
+      "chatModels": [],
+      "checkModel": "glm-5.1",
+      "description": "OpenCode Go is a $10/month subscription providing reliable access to curated open coding models: GLM, Kimi, MiMo, Qwen, MiniMax.",
+      "disableBrowserRequest": true,
+      "id": "opencodecodingplan",
+      "modelList": {
+        "showModelFetcher": false
+      },
+      "modelsUrl": "https://opencode.ai/go",
+      "name": "OpenCode Go",
+      "settings": {
+        "disableBrowserRequest": true,
+        "proxyUrl": {
+          "placeholder": "https://opencode.ai/zen/go/v1"
+        },
+        "sdkType": "openai",
+        "showModelFetcher": false
+      },
+      "url": "https://opencode.ai/go"
+    },
     "aihubmix": {
       "apiKeyUrl": "https://lobe.li/9mZhb4T",
       "chatModels": [],
@@ -681,6 +702,1482 @@
       },
       "url": "https://platform.moonshot.ai"
     },
+    "opencodeZen": {
+      "chatModels": [
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 200000,
+          "description": "Claude Haiku 3.5 by Anthropic — fast and cost-efficient model with vision support.",
+          "displayName": "Claude Haiku 3.5",
+          "enabled": false,
+          "id": "claude-3-5-haiku",
+          "maxOutput": 8192,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.8,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 4,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.08,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 1,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2024-10-22",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 200000,
+          "description": "Claude Haiku 4.5 by Anthropic — next-gen Haiku with enhanced reasoning and vision.",
+          "displayName": "Claude Haiku 4.5",
+          "enabled": false,
+          "id": "claude-haiku-4-5",
+          "maxOutput": 32000,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.1,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 1.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-10-15",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 200000,
+          "description": "Claude Opus 4.1 by Anthropic — premium reasoning model with deep analysis capabilities.",
+          "displayName": "Claude Opus 4.1",
+          "enabled": false,
+          "id": "claude-opus-4-1",
+          "maxOutput": 32000,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 15,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 1.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 18.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-08-05",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 200000,
+          "description": "Claude Opus 4.5 by Anthropic — flagship model with top-tier reasoning and coding.",
+          "displayName": "Claude Opus 4.5",
+          "enabled": false,
+          "id": "claude-opus-4-5",
+          "maxOutput": 32000,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 6.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-11-24",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1000000,
+          "description": "Claude Opus 4.6 by Anthropic — 1M context window flagship with advanced reasoning.",
+          "displayName": "Claude Opus 4.6",
+          "enabled": false,
+          "id": "claude-opus-4-6",
+          "maxOutput": 32000,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 6.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-05",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1000000,
+          "description": "Claude Opus 4.7 by Anthropic — latest Opus with state-of-the-art reasoning and coding.",
+          "displayName": "Claude Opus 4.7",
+          "enabled": true,
+          "id": "claude-opus-4-7",
+          "maxOutput": 32000,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 6.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-04-16",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1000000,
+          "description": "Claude Sonnet 4 by Anthropic — balanced model with strong coding and reasoning abilities.",
+          "displayName": "Claude Sonnet 4",
+          "enabled": false,
+          "id": "claude-sonnet-4",
+          "maxOutput": 32000,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 15,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 3.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-05-22",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1000000,
+          "description": "Claude Sonnet 4.5 by Anthropic — improved Sonnet with enhanced coding performance.",
+          "displayName": "Claude Sonnet 4.5",
+          "enabled": false,
+          "id": "claude-sonnet-4-5",
+          "maxOutput": 32000,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 15,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 3.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-09-29",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1000000,
+          "description": "Claude Sonnet 4.6 by Anthropic — latest Sonnet with superior coding and tool use.",
+          "displayName": "Claude Sonnet 4.6",
+          "enabled": false,
+          "id": "claude-sonnet-4-6",
+          "maxOutput": 32000,
+          "organization": "Anthropic",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 15,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 3.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-17",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1048576,
+          "description": "Gemini 3 Flash by Google — ultra-fast model with multimodal input support.",
+          "displayName": "Gemini 3 Flash",
+          "enabled": false,
+          "id": "gemini-3-flash",
+          "maxOutput": 32000,
+          "organization": "Google",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.05,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-12-17",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1048576,
+          "description": "Gemini 3.1 Pro by Google — premium multimodal model with 1M context window.",
+          "displayName": "Gemini 3.1 Pro",
+          "enabled": true,
+          "id": "gemini-3.1-pro",
+          "maxOutput": 32000,
+          "organization": "Google",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 12,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-19",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true
+          },
+          "contextWindowTokens": 204800,
+          "description": "GLM-5 by Zhipu AI — high-performance coding model with strong reasoning abilities.",
+          "displayName": "GLM-5",
+          "enabled": false,
+          "id": "glm-5",
+          "maxOutput": 32000,
+          "organization": "Zhipu",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 3.2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-11",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true
+          },
+          "contextWindowTokens": 204800,
+          "description": "GLM-5.1 by Zhipu AI — latest generation coding model with enhanced reasoning.",
+          "displayName": "GLM-5.1",
+          "enabled": true,
+          "id": "glm-5.1",
+          "maxOutput": 32000,
+          "organization": "Zhipu",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.4,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 4.4,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.26,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-04-07",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5 by OpenAI — flagship model with advanced reasoning and multimodal input.",
+          "displayName": "GPT-5",
+          "enabled": false,
+          "id": "gpt-5",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.07,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 8.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.107,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-08-07",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5 Codex by OpenAI — coding-specialized variant with tool use support.",
+          "displayName": "GPT-5 Codex",
+          "enabled": false,
+          "id": "gpt-5-codex",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.07,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 8.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.107,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-09-15",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5 Nano by OpenAI — lightweight and cost-efficient model.",
+          "displayName": "GPT-5 Nano",
+          "enabled": false,
+          "id": "gpt-5-nano",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-08-07",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.1 by OpenAI — improved GPT-5 with better reasoning accuracy.",
+          "displayName": "GPT-5.1",
+          "enabled": false,
+          "id": "gpt-5.1",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.07,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 8.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.107,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-11-13",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.1 Codex by OpenAI — coding-focused variant with enhanced tool use.",
+          "displayName": "GPT-5.1 Codex",
+          "enabled": false,
+          "id": "gpt-5.1-codex",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.07,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 8.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.107,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-11-13",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.1 Codex Max by OpenAI — maximum capability Codex variant.",
+          "displayName": "GPT-5.1 Codex Max",
+          "enabled": false,
+          "id": "gpt-5.1-codex-max",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 10,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.125,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-11-13",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.1 Codex Mini by OpenAI — compact coding model with strong capabilities.",
+          "displayName": "GPT-5.1 Codex Mini",
+          "enabled": false,
+          "id": "gpt-5.1-codex-mini",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.025,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-11-13",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.2 by OpenAI — upgraded reasoning and multimodal processing.",
+          "displayName": "GPT-5.2",
+          "enabled": false,
+          "id": "gpt-5.2",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 14,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.175,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-12-11",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.2 Codex by OpenAI — coding-specialized with improved tool call accuracy.",
+          "displayName": "GPT-5.2 Codex",
+          "enabled": false,
+          "id": "gpt-5.2-codex",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 14,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.175,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-01-14",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.3 Codex by OpenAI — latest Codex with enhanced code understanding.",
+          "displayName": "GPT-5.3 Codex",
+          "enabled": false,
+          "id": "gpt-5.3-codex",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 14,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.175,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-24",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true
+          },
+          "contextWindowTokens": 128000,
+          "description": "GPT-5.3 Codex Spark by OpenAI — compact coding model optimized for speed.",
+          "displayName": "GPT-5.3 Codex Spark",
+          "enabled": false,
+          "id": "gpt-5.3-codex-spark",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 1.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 14,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.175,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-12",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1050000,
+          "description": "GPT-5.4 by OpenAI — next-gen model with 1M+ context window and multimodal input.",
+          "displayName": "GPT-5.4",
+          "enabled": true,
+          "id": "gpt-5.4",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 2.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 15,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-03-05",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.4 Mini by OpenAI — efficient model balancing cost and performance.",
+          "displayName": "GPT-5.4 Mini",
+          "enabled": false,
+          "id": "gpt-5.4-mini",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.75,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 4.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.075,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-03-17",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "files": true,
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 400000,
+          "description": "GPT-5.4 Nano by OpenAI — ultra-lightweight model for high-throughput tasks.",
+          "displayName": "GPT-5.4 Nano",
+          "enabled": false,
+          "id": "gpt-5.4-nano",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 1.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.02,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-03-17",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 1050000,
+          "description": "GPT-5.4 Pro by OpenAI — most capable model with maximum context and reasoning.",
+          "displayName": "GPT-5.4 Pro",
+          "enabled": false,
+          "id": "gpt-5.4-pro",
+          "maxOutput": 32000,
+          "organization": "OpenAI",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 30,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 180,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 30,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-03-05",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 262144,
+          "description": "Kimi K2.5 by Moonshot AI — advanced reasoning model with image and video input support.",
+          "displayName": "Kimi K2.5",
+          "enabled": false,
+          "id": "kimi-k2.5",
+          "maxOutput": 32000,
+          "organization": "Moonshot",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.6,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.08,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-01-27",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true
+          },
+          "contextWindowTokens": 204800,
+          "description": "MiniMax M2.5 — efficient coding model with strong reasoning abilities.",
+          "displayName": "MiniMax M2.5",
+          "enabled": false,
+          "id": "minimax-m2.5",
+          "maxOutput": 32000,
+          "organization": "MiniMax",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 1.2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.06,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-12",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true
+          },
+          "contextWindowTokens": 204800,
+          "description": "MiniMax M2.5 Free — free tier coding model with full reasoning capabilities.",
+          "displayName": "MiniMax M2.5 Free",
+          "enabled": true,
+          "id": "minimax-m2.5-free",
+          "maxOutput": 32000,
+          "organization": "MiniMax",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-12",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true
+          },
+          "contextWindowTokens": 204800,
+          "description": "Nemotron 3 Super Free by Nvidia — free tier reasoning model with strong coding support.",
+          "displayName": "Nemotron 3 Super Free",
+          "enabled": true,
+          "id": "nemotron-3-super-free",
+          "maxOutput": 32000,
+          "organization": "Nvidia",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-03-11",
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 262144,
+          "description": "Qwen3.5 Plus by Alibaba — cost-effective coding model with vision support.",
+          "displayName": "Qwen3.5 Plus",
+          "enabled": false,
+          "id": "qwen3.5-plus",
+          "maxOutput": 32000,
+          "organization": "Alibaba",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 1.2,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.02,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 0.25,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-02-16",
+          "settings": {
+            "extendParams": [
+              "reasoningEffort"
+            ]
+          },
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true,
+            "vision": true
+          },
+          "contextWindowTokens": 262144,
+          "description": "Qwen3.6 Plus by Alibaba — latest Qwen coding model with enhanced reasoning and vision.",
+          "displayName": "Qwen3.6 Plus",
+          "enabled": false,
+          "id": "qwen3.6-plus",
+          "maxOutput": 32000,
+          "organization": "Alibaba",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0.5,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 3,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0.05,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 0.625,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2026-04-02",
+          "settings": {
+            "extendParams": [
+              "reasoningEffort"
+            ]
+          },
+          "type": "chat"
+        },
+        {
+          "abilities": {
+            "functionCall": true,
+            "reasoning": true
+          },
+          "contextWindowTokens": 200000,
+          "description": "Big Pickle by OpenCode — free open-weights model with strong coding capabilities.",
+          "displayName": "Big Pickle",
+          "enabled": true,
+          "id": "big-pickle",
+          "maxOutput": 32000,
+          "organization": "OpenCode",
+          "pricing": {
+            "currency": "USD",
+            "units": [
+              {
+                "name": "textInput",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textOutput",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheRead",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              },
+              {
+                "name": "textInput_cacheWrite",
+                "rate": 0,
+                "strategy": "fixed",
+                "unit": "millionTokens"
+              }
+            ]
+          },
+          "releasedAt": "2025-10-17",
+          "type": "chat"
+        }
+      ],
+      "checkModel": "claude-sonnet-4-5",
+      "description": "OpenCode Zen provides access to curated models from OpenAI, Anthropic, Moonshot, MiniMax, Zhipu, Qwen, and more via a single API key.",
+      "id": "opencodezen",
+      "modelList": {
+        "showModelFetcher": true
+      },
+      "modelsUrl": "https://opencode.ai/zen",
+      "name": "OpenCode Zen",
+      "settings": {
+        "proxyUrl": {
+          "placeholder": "https://opencode.ai/zen/v1"
+        },
+        "sdkType": "openai",
+        "showModelFetcher": true
+      },
+      "url": "https://opencode.ai/zen"
+    },
     "ai360": {
       "chatModels": [],
       "checkModel": "360gpt-turbo",
@@ -836,8 +2333,8 @@
     },
     "deepseek": {
       "chatModels": [],
-      "checkModel": "deepseek-chat",
-      "description": "DeepSeek focuses on AI research and applications; its latest DeepSeek-V3 benchmarks surpass open models like Qwen2.5-72B and Llama-3.1-405B, aligning with leading closed models such as GPT-4o and Claude-3.5-Sonnet.",
+      "checkModel": "deepseek-v4-flash",
+      "description": "DeepSeek focuses on AI research and applications. Its latest DeepSeek V4 family ships in Flash and Pro variants with a 1M context window and hybrid thinking — competitive with leading closed frontier models on reasoning and agent benchmarks.",
       "id": "deepseek",
       "modelList": {
         "showModelFetcher": true
@@ -4744,6 +6241,45 @@
           "vision": true
         },
         "contextWindowTokens": 262144,
+        "description": "The Qwen3.6 35B-A3B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse Mixture-of-Experts (MoE) design, achieving higher inference efficiency. Compared to the 3.5-35B-A3B model, it delivers significant improvements in agentic coding capabilities, mathematical reasoning, code reasoning, spatial intelligence, as well as object localization and target detection.",
+        "displayName": "Qwen3.6-35B-A3B",
+        "id": "qwen3.6-35b-a3b",
+        "maxOutput": 65536,
+        "organization": "Qwen",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 10.8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-16",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
         "description": "Supports text, image, and video inputs. For text-only tasks, its performance is comparable to Qwen3 Max, offering higher efficiency and lower cost. In multimodal capabilities, it delivers significant improvements over the Qwen3 VL series.",
         "displayName": "Qwen3.5-397B-A17B",
         "id": "qwen3.5-397b-a17b",
@@ -4785,6 +6321,7 @@
         "releasedAt": "2026-02-16",
         "settings": {
           "extendParams": [
+            "enableReasoning",
             "reasoningBudgetToken"
           ]
         },
@@ -4839,6 +6376,7 @@
         "releasedAt": "2026-02-24",
         "settings": {
           "extendParams": [
+            "enableReasoning",
             "reasoningBudgetToken"
           ]
         },
@@ -4893,6 +6431,7 @@
         "releasedAt": "2026-02-24",
         "settings": {
           "extendParams": [
+            "enableReasoning",
             "reasoningBudgetToken"
           ]
         },
@@ -4947,6 +6486,7 @@
         "releasedAt": "2026-02-24",
         "settings": {
           "extendParams": [
+            "enableReasoning",
             "reasoningBudgetToken"
           ]
         },
@@ -5493,12 +7033,100 @@
           "vision": true
         },
         "config": {
+          "deploymentName": "qwen3.6-flash"
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Qwen3.6 native vision-language Flash model delivers significantly improved performance compared to the 3.5-Flash version. This model focuses on enhancing agentic coding capabilities (substantially outperforming its predecessor across multiple code-agent benchmarks), as well as improving mathematical reasoning and code reasoning abilities. On the vision side, it shows notable gains in spatial intelligence, with particularly strong improvements in object localization and target detection.",
+        "displayName": "Qwen3.6 Flash",
+        "enabled": true,
+        "id": "qwen3.6-flash",
+        "maxOutput": 65536,
+        "organization": "Qwen",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 0.12,
+                  "[0.256, infinity]": 0.48
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 1.5,
+                  "[0.256, infinity]": 6
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput_cacheWrite",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 1.2,
+                  "[0.256, infinity]": 4.8
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 7.2,
+                  "[0.256, infinity]": 28.8
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-16",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "video": true,
+          "vision": true
+        },
+        "config": {
           "deploymentName": "qwen3.5-flash"
         },
         "contextWindowTokens": 1000000,
-        "description": "Fastest and lowest-cost Qwen model, ideal for simple tasks.",
+        "description": "The Qwen3.5 native vision-language Flash model is built on a hybrid architecture that combines a linear attention mechanism with a sparse Mixture-of-Experts (MoE) design, achieving higher inference efficiency. Compared to the 3 series, it delivers substantial improvements in both pure text and multimodal performance. It also offers fast response times, balancing inference speed and overall capability.",
         "displayName": "Qwen3.5 Flash",
-        "enabled": true,
         "id": "qwen3.5-flash",
         "maxOutput": 65536,
         "organization": "Qwen",
@@ -5718,12 +7346,100 @@
           "vision": true
         },
         "config": {
+          "deploymentName": "qwen3.6-plus"
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Qwen 3.6-Plus introduces major upgrades in coding capabilities, with a focus on Agentic Coding and front-end development, significantly enhancing the Vibe Coding experience. Its reasoning ability across general scenarios has been further improved. In terms of multimodality, capabilities such as universal recognition, OCR, and object localization have been substantially enhanced. It also fixes known issues from the Qwen 3.5-Plus release. Usage remains the same as Qwen 3.5-Plus.",
+        "displayName": "Qwen3.6 Plus",
+        "enabled": true,
+        "id": "qwen3.6-plus",
+        "maxOutput": 65536,
+        "organization": "Qwen",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 0.2,
+                  "[0.256, infinity]": 0.8
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 2.5,
+                  "[0.256, infinity]": 10
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput_cacheWrite",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 2,
+                  "[0.256, infinity]": 8
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 12,
+                  "[0.256, infinity]": 48
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-02",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "video": true,
+          "vision": true
+        },
+        "config": {
           "deploymentName": "qwen3.5-plus"
         },
         "contextWindowTokens": 1000000,
         "description": "Qwen3.5 Plus supports text, image, and video input. Its performance on pure text tasks is comparable to Qwen3 Max, with better performance and lower cost. Its multimodal capabilities are significantly improved compared to the Qwen3 VL series.",
         "displayName": "Qwen3.5 Plus",
-        "enabled": true,
         "id": "qwen3.5-plus",
         "maxOutput": 65536,
         "organization": "Qwen",
@@ -5871,6 +7587,78 @@
             }
           ]
         },
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true
+        },
+        "config": {
+          "deploymentName": "qwen3.6-max-preview"
+        },
+        "contextWindowTokens": 262144,
+        "description": "The largest closed-source model in the Qwen3.6 series. It delivers stronger world knowledge, instruction following, and agentic coding performance for complex tasks. It is text-only, supports thinking mode by default, explicit caching, and function calling.",
+        "displayName": "Qwen3.6 Max Preview",
+        "id": "qwen3.6-max-preview",
+        "maxOutput": 65536,
+        "organization": "Qwen",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.128]": 1.8,
+                  "[0.128, infinity]": 3
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.128]": 9,
+                  "[0.128, infinity]": 15
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.128]": 54,
+                  "[0.128, infinity]": 90
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-18",
         "settings": {
           "extendParams": [
             "enableReasoning",
@@ -10424,6 +12212,81 @@
         "type": "video"
       },
       {
+        "description": "C1 is a large-scale model for the film and television industry launched by PixVerse in late March 2026. Its t2v (text-to-video) capability enables precise control over video generation through prompts, accurately reproducing various cinematic language techniques such as push, pull, pan, tilt, and tracking shots, with smooth camera movements and well-controlled perspective transitions. The model supports up to 15-second video generation, includes music with direct video output, and supports multiple languages.",
+        "displayName": "PixVerse C1 T2V",
+        "enabled": true,
+        "id": "pixverse/pixverse-c1-t2v",
+        "parameters": {
+          "duration": {
+            "default": 5,
+            "max": 15,
+            "min": 1
+          },
+          "generateAudio": {
+            "default": true
+          },
+          "prompt": {
+            "default": ""
+          },
+          "seed": {
+            "default": null
+          },
+          "size": {
+            "default": "1280x720",
+            "enum": [
+              "640x360",
+              "640x480",
+              "640x640",
+              "480x640",
+              "360x640",
+              "640x432",
+              "432x640",
+              "640x288",
+              "1024x576",
+              "1024x768",
+              "1024x1024",
+              "768x1024",
+              "576x1024",
+              "1024x688",
+              "688x1024",
+              "1024x448",
+              "1280x720",
+              "1280x960",
+              "1280x1280",
+              "960x1280",
+              "720x1280",
+              "1200x800",
+              "800x1200",
+              "1280x560",
+              "1920x1080",
+              "1920x1440",
+              "1808x1808",
+              "1440x1920",
+              "1080x1920",
+              "1776x1184",
+              "1184x1776",
+              "1920x832"
+            ]
+          },
+          "watermark": {
+            "default": false
+          }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 0.39,
+              "strategy": "fixed",
+              "unit": "second"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-07",
+        "type": "video"
+      },
+      {
         "description": "V6 is PixVerse’s new model launched at the end of March 2026. Its t2v (text-to-video) model allows precise control of video visuals through prompts, accurately reproducing various cinematic techniques. Camera movements such as push, pull, pan, tilt, tracking, and follow are smooth and natural, with precise and controllable perspective switching. It supports up to 15-second videos, direct output of music and video, and multiple languages.",
         "displayName": "PixVerse V6 T2V",
         "enabled": true,
@@ -10489,12 +12352,13 @@
           "units": [
             {
               "name": "videoGeneration",
-              "rate": 0.53,
+              "rate": 0.36,
               "strategy": "fixed",
               "unit": "second"
             }
           ]
         },
+        "releasedAt": "2026-03-30",
         "type": "video"
       },
       {
@@ -10562,6 +12426,56 @@
         "type": "video"
       },
       {
+        "description": "C1 is a large-scale model for the film and television industry launched by PixVerse in late March 2026. Its it2v (image-to-video) capability not only provides prompt controllability similar to t2v (text-to-video), but also preserves the color, saturation, scenes, and character features of reference images with high fidelity. Compared to V6, it offers enhanced prompt interpretation, stronger creativity, and delivers fight choreography and visual effects (such as spells) closer to professional cinematic standards. The model supports up to 15-second video generation, includes music with direct video output, and supports multiple languages. It is particularly well-suited for short-duration shots such as single-person close-ups, monologues, freeze-frame or slow-motion sequences, and transitional establishing shots.",
+        "displayName": "PixVerse C1 IT2V",
+        "enabled": true,
+        "id": "pixverse/pixverse-c1-it2v",
+        "parameters": {
+          "duration": {
+            "default": 5,
+            "max": 15,
+            "min": 1
+          },
+          "generateAudio": {
+            "default": true
+          },
+          "imageUrl": {
+            "default": null
+          },
+          "prompt": {
+            "default": ""
+          },
+          "resolution": {
+            "default": "720P",
+            "enum": [
+              "360P",
+              "540P",
+              "720P",
+              "1080P"
+            ]
+          },
+          "seed": {
+            "default": null
+          },
+          "watermark": {
+            "default": false
+          }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 0.39,
+              "strategy": "fixed",
+              "unit": "second"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-07",
+        "type": "video"
+      },
+      {
         "description": "V6 is PixVerse’s new model launched at the end of March 2026. Its it2v (image-to-video) model ranks second globally. In addition to the prompt-control capabilities of t2v (text-to-video), it2v can accurately reproduce the colors, saturation, scenes, and character features of reference images, delivering stronger character emotions and high-speed motion performance. It supports up to 15-second videos, direct output of music and video, and multiple languages. Ideal for scenarios such as e-commerce product close-ups, advertising promos, and simulated C4D modeling to showcase product structures, with one-click direct output.",
         "displayName": "PixVerse V6 IT2V",
         "enabled": true,
@@ -10602,12 +12516,13 @@
           "units": [
             {
               "name": "videoGeneration",
-              "rate": 0.53,
+              "rate": 0.36,
               "strategy": "fixed",
               "unit": "second"
             }
           ]
         },
+        "releasedAt": "2026-03-30",
         "type": "video"
       },
       {
@@ -10662,6 +12577,59 @@
         "type": "video"
       },
       {
+        "description": "C1 is a large-scale model for the film and television industry launched by PixVerse in late March 2026. Its kf2v (keyframe-to-video) capability enables smooth and natural transitions between any two input images. The model supports up to 15-second video generation, includes music with direct video output, and supports multiple languages.",
+        "displayName": "PixVerse C1 KF2V",
+        "enabled": true,
+        "id": "pixverse/pixverse-c1-kf2v",
+        "parameters": {
+          "duration": {
+            "default": 5,
+            "max": 15,
+            "min": 1
+          },
+          "endImageUrl": {
+            "default": null
+          },
+          "generateAudio": {
+            "default": true
+          },
+          "imageUrl": {
+            "default": null
+          },
+          "prompt": {
+            "default": ""
+          },
+          "resolution": {
+            "default": "720P",
+            "enum": [
+              "360P",
+              "540P",
+              "720P",
+              "1080P"
+            ]
+          },
+          "seed": {
+            "default": null
+          },
+          "watermark": {
+            "default": false
+          }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 0.39,
+              "strategy": "fixed",
+              "unit": "second"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-07",
+        "type": "video"
+      },
+      {
         "description": "V6 is PixVerse’s new model launched at the end of March 2026. Its kf2v (keyframe-to-video) model can seamlessly connect any two images, producing smoother and more natural video transitions. It supports up to 15-second videos, direct output of music and video, and multiple languages.",
         "displayName": "PixVerse V6 KF2V",
         "enabled": true,
@@ -10705,12 +12673,13 @@
           "units": [
             {
               "name": "videoGeneration",
-              "rate": 0.53,
+              "rate": 0.36,
               "strategy": "fixed",
               "unit": "second"
             }
           ]
         },
+        "releasedAt": "2026-03-30",
         "type": "video"
       },
       {
@@ -10765,6 +12734,84 @@
             }
           ]
         },
+        "type": "video"
+      },
+      {
+        "description": "C1 is a large-scale model for the film and television industry launched by PixVerse in late March 2026. Its r2v (reference-to-video) capability supports inputting 2–7 images, intelligently blending multiple subjects while retaining prompt controllability similar to t2v (text-to-video), as well as the consistency and creativity of it2v (image-to-video). It delivers fight choreography and visual effects (e.g., spells and action sequences) closer to professional cinematic standards. The model supports up to 15-second video generation, includes music with direct video output, and handles multiple languages. It is well-suited for complex scenes such as multi-character group shots, dialogues, and interactions, particularly in medium and wide shots. If a single multi-panel storyboard image is provided (supporting up to a 9-panel grid), it can generate a continuous multi-shot video sequence in one click.",
+        "displayName": "PixVerse C1 R2V",
+        "id": "pixverse/pixverse-c1-r2v",
+        "parameters": {
+          "duration": {
+            "default": 5,
+            "max": 15,
+            "min": 1
+          },
+          "generateAudio": {
+            "default": true
+          },
+          "imageUrls": {
+            "default": [],
+            "maxCount": 7
+          },
+          "prompt": {
+            "default": ""
+          },
+          "seed": {
+            "default": null
+          },
+          "size": {
+            "default": "1280x720",
+            "enum": [
+              "640x360",
+              "640x480",
+              "640x640",
+              "480x640",
+              "360x640",
+              "640x432",
+              "432x640",
+              "640x288",
+              "1024x576",
+              "1024x768",
+              "1024x1024",
+              "768x1024",
+              "576x1024",
+              "1024x688",
+              "688x1024",
+              "1024x448",
+              "1280x720",
+              "1280x960",
+              "1280x1280",
+              "960x1280",
+              "720x1280",
+              "1200x800",
+              "800x1200",
+              "1280x560",
+              "1920x1080",
+              "1920x1440",
+              "1808x1808",
+              "1440x1920",
+              "1080x1920",
+              "1776x1184",
+              "1184x1776",
+              "1920x832"
+            ]
+          },
+          "watermark": {
+            "default": false
+          }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "videoGeneration",
+              "rate": 0.39,
+              "strategy": "fixed",
+              "unit": "second"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-07",
         "type": "video"
       },
       {
@@ -11801,6 +13848,152 @@
           "structuredOutput": true
         },
         "contextWindowTokens": 1000000,
+        "description": "MiMo-V2.5-Pro is Xiaomi's most capable flagship model to date, delivering significant improvements in general agentic capabilities, complex software engineering, and long-horizon tasks. It retains the 1T total / 42B active hybrid-attention architecture with a 1M context window, and can sustain complex long-horizon tasks spanning more than a thousand tool calls. Performance on demanding agentic benchmarks (ClawEval, GDPVal, SWE-bench Pro) is comparable to Claude Opus 4.6.",
+        "displayName": "MiMo-V2.5 Pro",
+        "enabled": true,
+        "id": "mimo-v2.5-pro",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 1.4,
+                  "upTo": 0.256
+                },
+                {
+                  "rate": 2.8,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 7,
+                  "upTo": 0.256
+                },
+                {
+                  "rate": 14,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 21,
+                  "upTo": 0.256
+                },
+                {
+                  "rate": 42,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "MiMo-V2.5 is a native omni-modal Agent foundation model that understands images, video, audio, and text in a unified architecture, with a 1M context window. It delivers Pro-level agentic performance at roughly half the inference cost of MiMo-V2.5-Pro, with improved multimodal perception over MiMo-V2-Omni. Its built-in agentic capabilities (browsing, understanding, reasoning, execution) and faster inference make it well-suited to latency-sensitive and multi-step agent frameworks such as OpenClaw.",
+        "displayName": "MiMo-V2.5",
+        "enabled": true,
+        "id": "mimo-v2.5",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.56,
+                  "upTo": 0.256
+                },
+                {
+                  "rate": 1.12,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.8,
+                  "upTo": 0.256
+                },
+                {
+                  "rate": 5.6,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 14,
+                  "upTo": 0.256
+                },
+                {
+                  "rate": 28,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 1000000,
         "description": "MiMo-V2-Pro is specifically designed for high-intensity agent workflows in real-world scenarios. It features over 1 trillion total parameters (42B activated parameters), adopts an innovative hybrid attention architecture, and supports an ultra-long context length of up to 1 million tokens. Built on a powerful foundational model, we continuously scale computational resources across a broader range of agent scenarios, further expanding the action space of intelligence and achieving significant generalization—from coding to real-world task execution (“claw”).",
         "displayName": "MiMo-V2 Pro",
         "enabled": true,
@@ -12294,6 +14487,60 @@
             "disableContextCaching",
             "enableReasoning",
             "reasoningBudgetToken"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Opus 4.7 is Anthropic's most capable generally available model for complex reasoning and agentic coding.",
+        "displayName": "Claude Opus 4.7",
+        "enabled": true,
+        "id": "claude-opus-4-7",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 6.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-16",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "disableContextCaching",
+            "enableAdaptiveThinking",
+            "opus47Effort"
           ]
         },
         "type": "chat"
@@ -13006,6 +15253,78 @@
           "extendParams": [
             "imageAspectRatio"
           ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-5.5 is OpenAI's latest frontier model for complex professional work, coding, and agentic tasks.",
+        "displayName": "GPT-5.5",
+        "enabled": true,
+        "id": "gpt-5.5",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 10,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 1,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 30,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 45,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-23",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
         },
         "type": "chat"
       },
@@ -13758,30 +16077,127 @@
       },
       {
         "abilities": {
-          "functionCall": true
+          "functionCall": true,
+          "reasoning": true
         },
-        "contextWindowTokens": 65536,
-        "description": "DeepSeek V3.2 balances reasoning and output length for daily QA and agent tasks. Public benchmarks reach GPT-5 levels, and it is the first to integrate thinking into tool use, leading open-source agent evaluations.",
-        "displayName": "DeepSeek V3.2",
+        "contextWindowTokens": 1000000,
+        "description": "DeepSeek V4 Flash is the cost-efficient member of the V4 family with a 1M context window and hybrid thinking. Toggle thinking via the `thinking` parameter; non-thinking mode targets latency-sensitive workflows while thinking mode enables deeper reasoning.",
+        "displayName": "DeepSeek V4 Flash",
         "enabled": true,
-        "id": "deepseek-chat",
+        "id": "deepseek-v4-flash",
+        "maxOutput": 384000,
         "pricing": {
           "units": [
             {
-              "name": "textInput",
-              "rate": 0.56,
+              "name": "textInput_cacheRead",
+              "rate": 0.0028,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
-              "name": "textInput_cacheRead",
-              "rate": 0.07,
+              "name": "textInput",
+              "rate": 0.14,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 1.68,
+              "rate": 0.28,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-24",
+        "settings": {
+          "extendParamOptions": {
+            "enableReasoning": {
+              "defaultValue": true,
+              "includeBudget": false
+            }
+          },
+          "extendParams": [
+            "enableReasoning",
+            "deepseekV4ReasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "DeepSeek V4 Pro is the flagship of the V4 family, purpose-built for high-intensity reasoning, agent workflows, and long-horizon planning with a 1M context window. Thinking mode is on by default and toggleable via the `thinking` parameter.",
+        "displayName": "DeepSeek V4 Pro",
+        "enabled": true,
+        "id": "deepseek-v4-pro",
+        "maxOutput": 384000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.003625,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.435,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0.87,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-24",
+        "settings": {
+          "extendParamOptions": {
+            "enableReasoning": {
+              "defaultValue": true,
+              "includeBudget": false
+            }
+          },
+          "extendParams": [
+            "enableReasoning",
+            "deepseekV4ReasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Compatibility alias for DeepSeek V4 Flash non-thinking mode. Slated for deprecation — use DeepSeek V4 Flash instead.",
+        "displayName": "DeepSeek V3.2 (routes to V4 Flash)",
+        "id": "deepseek-chat",
+        "legacy": true,
+        "maxOutput": 384000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.0028,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.14,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0.28,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -13795,28 +16211,29 @@
           "functionCall": true,
           "reasoning": true
         },
-        "contextWindowTokens": 65536,
-        "description": "DeepSeek V3.2 Thinking is a deep reasoning model that generates chain-of-thought before outputs for higher accuracy, with top competition results and reasoning comparable to Gemini-3.0-Pro.",
-        "displayName": "DeepSeek V3.2 Thinking",
-        "enabled": true,
+        "contextWindowTokens": 1000000,
+        "description": "Compatibility alias for DeepSeek V4 Flash thinking mode. Slated for deprecation — use DeepSeek V4 Flash instead.",
+        "displayName": "DeepSeek V3.2 Thinking (routes to V4 Flash)",
         "id": "deepseek-reasoner",
+        "legacy": true,
+        "maxOutput": 384000,
         "pricing": {
           "units": [
             {
+              "name": "textInput_cacheRead",
+              "rate": 0.0028,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
               "name": "textInput",
-              "rate": 0.55,
+              "rate": 0.14,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 2.19,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput_cacheRead",
-              "rate": 0.14,
+              "rate": 0.28,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -14002,6 +16419,50 @@
         "abilities": {
           "functionCall": true,
           "reasoning": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Kimi K2.6 is Kimi's latest and most capable model, delivering stronger long-horizon coding, instruction following, and self-correction while supporting text, image, and video inputs plus chat and agent tasks.",
+        "displayName": "Kimi K2.6",
+        "enabled": true,
+        "id": "kimi-k2.6",
+        "maxOutput": 32768,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.95,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.16,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-20",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
           "search": true,
           "structuredOutput": true,
           "video": true,
@@ -14052,7 +16513,6 @@
         "contextWindowTokens": 262144,
         "description": "kimi-k2 is an MoE foundation model with strong coding and agent capabilities (1T total params, 32B active). Based on kimi-k2-0711-preview, with enhanced agentic coding abilities and better context understanding.",
         "displayName": "Kimi K2",
-        "enabled": true,
         "id": "kimi-k2-0905-preview",
         "pricing": {
           "units": [
@@ -14090,7 +16550,6 @@
         "contextWindowTokens": 262144,
         "description": "High-speed version of kimi-k2, always aligned with the latest kimi-k2. Same model parameters, output speed up to 60–100 tokens/sec.",
         "displayName": "Kimi K2 Turbo",
-        "enabled": true,
         "id": "kimi-k2-turbo-preview",
         "pricing": {
           "units": [
@@ -14129,7 +16588,6 @@
         "contextWindowTokens": 262144,
         "description": "K2 thinking model with general agentic and reasoning capabilities, specializing in deep reasoning tasks via multi-step tool use.",
         "displayName": "Kimi K2 Thinking",
-        "enabled": true,
         "id": "kimi-k2-thinking",
         "pricing": {
           "units": [
@@ -14168,7 +16626,6 @@
         "contextWindowTokens": 262144,
         "description": "High-speed version of kimi-k2-thinking, suitable for scenarios requiring both deep reasoning and extremely fast responses.",
         "displayName": "Kimi K2 Thinking Turbo",
-        "enabled": true,
         "id": "kimi-k2-thinking-turbo",
         "pricing": {
           "units": [
@@ -14618,6 +17075,158 @@
             "enableReasoning"
           ],
           "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": false
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Xiaomi MiMo-V2.5-Pro is the flagship of the MiMo-V2.5 series. It retains the 1T total / 42B active hybrid-attention architecture with a 1M context window, and delivers major gains in general agentic capabilities, complex software engineering, and long-horizon tasks (more than a thousand tool calls per task). Performance on demanding agentic benchmarks is comparable to Claude Opus 4.6.",
+        "displayName": "MiMo-V2.5 Pro",
+        "enabled": true,
+        "id": "mimo-v2.5-pro",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 1,
+                  "upTo": 256000
+                },
+                {
+                  "rate": 2,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.2,
+                  "upTo": 256000
+                },
+                {
+                  "rate": 0.4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 3,
+                  "upTo": 256000
+                },
+                {
+                  "rate": 6,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": false,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Xiaomi MiMo-V2.5 is a native omni-modal Agent foundation model with 1M context that understands images, video, audio, and text in a unified architecture. It delivers Pro-level agentic performance at roughly half the inference cost, with stronger multimodal perception than MiMo-V2-Omni and faster inference — a strong fit for latency-sensitive, multi-step agent frameworks.",
+        "displayName": "MiMo-V2.5",
+        "enabled": true,
+        "id": "mimo-v2.5",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.4,
+                  "upTo": 256000
+                },
+                {
+                  "rate": 0.8,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.08,
+                  "upTo": 256000
+                },
+                {
+                  "rate": 0.16,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 256000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
         },
         "type": "chat"
       },
@@ -15106,6 +17715,72 @@
         "type": "image"
       },
       {
+        "description": "OpenAI's next-generation multimodal image model with native reasoning, up to 4K resolution, near-perfect text rendering, and high-fidelity multilingual support.",
+        "displayName": "GPT Image 2",
+        "enabled": true,
+        "id": "gpt-image-2",
+        "parameters": {
+          "imageUrls": {
+            "default": [],
+            "maxCount": 1,
+            "maxFileSize": 5242880
+          },
+          "prompt": {
+            "default": ""
+          },
+          "size": {
+            "default": "auto",
+            "enum": [
+              "auto",
+              "1024x1024",
+              "1536x1024",
+              "1024x1536",
+              "2048x2048",
+              "2048x1152",
+              "3840x2160",
+              "2160x3840"
+            ]
+          }
+        },
+        "pricing": {
+          "approximatePricePerImage": 0.053,
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 1.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput_cacheRead",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageOutput",
+              "rate": 30,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-21",
+        "type": "image"
+      },
+      {
         "description": "An enhanced GPT Image 1 model with 4× faster generation, more precise editing, and improved text rendering.",
         "displayName": "GPT Image 1.5",
         "enabled": true,
@@ -15114,7 +17789,7 @@
           "imageUrls": {
             "default": [],
             "maxCount": 1,
-            "maxFileSize": 5
+            "maxFileSize": 5242880
           },
           "prompt": {
             "default": ""
@@ -15175,7 +17850,7 @@
           "imageUrls": {
             "default": [],
             "maxCount": 1,
-            "maxFileSize": 5
+            "maxFileSize": 5242880
           },
           "prompt": {
             "default": ""
@@ -15563,7 +18238,7 @@
         "description": "Seedance 2.0 by ByteDance is the most powerful video generation model, supporting multimodal reference video generation, video editing, video extension, text-to-video, and image-to-video with synchronized audio.",
         "displayName": "Seedance 2.0",
         "enabled": true,
-        "id": "doubao-seedance-2-0-260128",
+        "id": "dreamina-seedance-2-0-260128",
         "organization": "ByteDance",
         "parameters": {
           "aspectRatio": {
@@ -15613,6 +18288,7 @@
               "max": 6000,
               "min": 300
             },
+            "maxCount": 9,
             "maxFileSize": 31457280,
             "width": {
               "max": 6000,
@@ -15626,7 +18302,8 @@
             "default": "720p",
             "enum": [
               "480p",
-              "720p"
+              "720p",
+              "1080p"
             ]
           },
           "seed": {
@@ -15634,12 +18311,21 @@
           }
         },
         "pricing": {
-          "approximatePricePerVideo": 0.82,
+          "approximatePricePerVideo": 0.76,
           "units": [
             {
+              "lookup": {
+                "pricingParams": [
+                  "resolution"
+                ],
+                "prices": {
+                  "1080p": 7.7,
+                  "480p": 7,
+                  "720p": 7
+                }
+              },
               "name": "videoGeneration",
-              "rate": 7.56,
-              "strategy": "fixed",
+              "strategy": "lookup",
               "unit": "millionTokens"
             }
           ]
@@ -15651,7 +18337,7 @@
         "description": "Seedance 2.0 Fast by ByteDance offers the same capabilities as Seedance 2.0 with faster generation speeds at a more competitive price.",
         "displayName": "Seedance 2.0 Fast",
         "enabled": true,
-        "id": "doubao-seedance-2-0-fast-260128",
+        "id": "dreamina-seedance-2-0-fast-260128",
         "organization": "ByteDance",
         "parameters": {
           "aspectRatio": {
@@ -15701,6 +18387,7 @@
               "max": 6000,
               "min": 300
             },
+            "maxCount": 9,
             "maxFileSize": 31457280,
             "width": {
               "max": 6000,
@@ -15722,11 +18409,11 @@
           }
         },
         "pricing": {
-          "approximatePricePerVideo": 0.66,
+          "approximatePricePerVideo": 0.6,
           "units": [
             {
               "name": "videoGeneration",
-              "rate": 6.08,
+              "rate": 5.6,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -22328,6 +25015,31 @@
       {
         "abilities": {
           "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration.",
+        "displayName": "Kimi K2.6",
+        "enabled": true,
+        "id": "kimi-k2.6",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin.",
+        "displayName": "GLM-5.1",
+        "enabled": true,
+        "id": "glm-5.1",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
           "reasoning": true
         },
         "contextWindowTokens": 204800,
@@ -22389,7 +25101,6 @@
         "contextWindowTokens": 200000,
         "description": "A strong reasoning and agentic model from Z.ai with 744B total parameters (40B active), built for complex systems engineering and long-horizon tasks.",
         "displayName": "GLM-5",
-        "enabled": true,
         "id": "glm-5",
         "type": "chat"
       },
@@ -22402,7 +25113,6 @@
         "contextWindowTokens": 262144,
         "description": "Kimi K2.5 is an open-source, native multimodal agentic model that seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms.",
         "displayName": "Kimi K2.5",
-        "enabled": true,
         "id": "kimi-k2.5",
         "type": "chat"
       },
@@ -23917,6 +26627,320 @@
         "contextWindowTokens": 128000,
         "displayName": "llama 3.1 8b",
         "id": "@cf/meta/llama-3.1-8b-instruct-fast",
+        "type": "chat"
+      }
+    ],
+    "opencodeCodingPlan": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "GLM-5.1 by Zhipu AI — latest generation coding model with enhanced reasoning and tool use capabilities.",
+        "displayName": "GLM-5.1",
+        "enabled": true,
+        "id": "glm-5.1",
+        "maxOutput": 32000,
+        "organization": "Zhipu",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 4.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-07",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "GLM-5 by Zhipu AI — high-performance coding model with strong reasoning abilities.",
+        "displayName": "GLM-5",
+        "enabled": false,
+        "id": "glm-5",
+        "maxOutput": 32000,
+        "organization": "Zhipu",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-11",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Kimi K2.5 by Moonshot AI — advanced reasoning model with vision support for images and video input.",
+        "displayName": "Kimi K2.5",
+        "enabled": false,
+        "id": "kimi-k2.5",
+        "maxOutput": 32000,
+        "organization": "Moonshot",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.6,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-01-27",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "MiMo-V2-Omni by Xiaomi — multimodal model supporting text, image, audio, and PDF input.",
+        "displayName": "MiMo-V2 Omni",
+        "enabled": false,
+        "id": "mimo-v2-omni",
+        "maxOutput": 32000,
+        "organization": "Xiaomi",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-18",
+        "settings": {
+          "extendParams": [
+            "reasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Qwen3.6-Plus by Alibaba — latest Qwen coding model with strong reasoning and vision capabilities.",
+        "displayName": "Qwen3.6 Plus",
+        "enabled": true,
+        "id": "qwen3.6-plus",
+        "maxOutput": 32000,
+        "organization": "Alibaba",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-02",
+        "settings": {
+          "extendParams": [
+            "reasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "MiniMax M2.5 — efficient coding model with strong reasoning and function call support.",
+        "displayName": "MiniMax M2.5",
+        "enabled": false,
+        "id": "minimax-m2.5",
+        "maxOutput": 32000,
+        "organization": "MiniMax",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-12",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "MiniMax M2.7 — latest MiniMax coding model with improved reasoning and tool use.",
+        "displayName": "MiniMax M2.7",
+        "enabled": true,
+        "id": "minimax-m2.7",
+        "maxOutput": 32000,
+        "organization": "MiniMax",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-18",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "MiMo-V2-Pro by Xiaomi — high-throughput model with 1M token context window.",
+        "displayName": "MiMo-V2 Pro",
+        "enabled": false,
+        "id": "mimo-v2-pro",
+        "maxOutput": 32000,
+        "organization": "Xiaomi",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-18",
+        "settings": {
+          "extendParams": [
+            "reasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Qwen3.5-Plus by Alibaba — cost-effective coding model with vision support for image and video input.",
+        "displayName": "Qwen3.5 Plus",
+        "enabled": false,
+        "id": "qwen3.5-plus",
+        "maxOutput": 32000,
+        "organization": "Alibaba",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-16",
+        "settings": {
+          "extendParams": [
+            "reasoningEffort"
+          ]
+        },
         "type": "chat"
       }
     ],
@@ -32672,6 +35696,334 @@
         "abilities": {
           "functionCall": true,
           "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-5.4"
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-5.4 is the frontier model for complex professional work with highest reasoning capability.",
+        "displayName": "GPT-5.4",
+        "enabled": true,
+        "id": "gpt-5.4",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.25,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 15,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 22.5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-05",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-5.4-pro"
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-5.4 Pro uses more compute to think harder and provide consistently better answers, available in the Responses API only.",
+        "displayName": "GPT-5.4 Pro",
+        "id": "gpt-5.4-pro",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 30,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 60,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 180,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 270,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-05",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ProReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-5.4-mini"
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.4 mini is OpenAI's strongest mini model for coding, computer use, and subagents.",
+        "displayName": "GPT-5.4 mini",
+        "enabled": true,
+        "id": "gpt-5.4-mini",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.075,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 4.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-18",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-5.4-nano"
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.4 nano is OpenAI's cheapest GPT-5.4-class model for simple high-volume tasks.",
+        "displayName": "GPT-5.4 nano",
+        "enabled": true,
+        "id": "gpt-5.4-nano",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.02,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-18",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-5.2"
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.2 is a flagship model for coding and agentic workflows with stronger reasoning and long-context performance.",
+        "displayName": "GPT-5.2",
+        "id": "gpt-5.2",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.175,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 14,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-12-11",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-5.1"
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.1 is a flagship model optimized for coding and agent tasks with configurable reasoning effort and longer context.",
+        "displayName": "GPT-5.1",
+        "id": "gpt-5.1",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.125,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 10,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-11-13",
+        "settings": {
+          "extendParams": [
+            "gpt5_1ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
           "structuredOutput": true,
           "vision": true
         },
@@ -35692,60 +39044,6 @@
           "searchImpl": "params"
         },
         "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "vision": true
-        },
-        "contextWindowTokens": 200000,
-        "description": "Claude 3 Haiku is Anthropic’s fastest and most compact model, designed for near-instant responses with fast, accurate performance.",
-        "displayName": "Claude 3 Haiku",
-        "id": "claude-3-haiku-20240307",
-        "maxOutput": 4096,
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 0.03,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 0.25,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 1.25,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "lookup": {
-                "prices": {
-                  "1h": 0.5,
-                  "5m": 0.3
-                },
-                "pricingParams": [
-                  "ttl"
-                ]
-              },
-              "name": "textInput_cacheWrite",
-              "strategy": "lookup",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2024-03-07",
-        "settings": {
-          "extendParams": [
-            "disableContextCaching"
-          ]
-        },
-        "type": "chat"
       }
     ],
     "cohere": [
@@ -37919,6 +41217,7 @@
               "max": 6000,
               "min": 300
             },
+            "maxCount": 9,
             "maxFileSize": 31457280,
             "width": {
               "max": 6000,
@@ -37932,7 +41231,8 @@
             "default": "720p",
             "enum": [
               "480p",
-              "720p"
+              "720p",
+              "1080p"
             ]
           },
           "seed": {
@@ -38013,6 +41313,7 @@
               "max": 6000,
               "min": 300
             },
+            "maxCount": 9,
             "maxFileSize": 31457280,
             "width": {
               "max": 6000,
@@ -38026,7 +41327,8 @@
             "default": "720p",
             "enum": [
               "480p",
-              "720p"
+              "720p",
+              "1080p"
             ]
           },
           "seed": {
@@ -39007,6 +42309,1464 @@
         "type": "chat"
       }
     ],
+    "opencodeZen": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "Claude Haiku 3.5 by Anthropic — fast and cost-efficient model with vision support.",
+        "displayName": "Claude Haiku 3.5",
+        "enabled": false,
+        "id": "claude-3-5-haiku",
+        "maxOutput": 8192,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.08,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2024-10-22",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "Claude Haiku 4.5 by Anthropic — next-gen Haiku with enhanced reasoning and vision.",
+        "displayName": "Claude Haiku 4.5",
+        "enabled": false,
+        "id": "claude-haiku-4-5",
+        "maxOutput": 32000,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 1.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-10-15",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "Claude Opus 4.1 by Anthropic — premium reasoning model with deep analysis capabilities.",
+        "displayName": "Claude Opus 4.1",
+        "enabled": false,
+        "id": "claude-opus-4-1",
+        "maxOutput": 32000,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 18.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-08-05",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "Claude Opus 4.5 by Anthropic — flagship model with top-tier reasoning and coding.",
+        "displayName": "Claude Opus 4.5",
+        "enabled": false,
+        "id": "claude-opus-4-5",
+        "maxOutput": 32000,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 6.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-11-24",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Opus 4.6 by Anthropic — 1M context window flagship with advanced reasoning.",
+        "displayName": "Claude Opus 4.6",
+        "enabled": false,
+        "id": "claude-opus-4-6",
+        "maxOutput": 32000,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 6.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-05",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Opus 4.7 by Anthropic — latest Opus with state-of-the-art reasoning and coding.",
+        "displayName": "Claude Opus 4.7",
+        "enabled": true,
+        "id": "claude-opus-4-7",
+        "maxOutput": 32000,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 6.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-16",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Sonnet 4 by Anthropic — balanced model with strong coding and reasoning abilities.",
+        "displayName": "Claude Sonnet 4",
+        "enabled": false,
+        "id": "claude-sonnet-4",
+        "maxOutput": 32000,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 3.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-05-22",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Sonnet 4.5 by Anthropic — improved Sonnet with enhanced coding performance.",
+        "displayName": "Claude Sonnet 4.5",
+        "enabled": false,
+        "id": "claude-sonnet-4-5",
+        "maxOutput": 32000,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 3.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-09-29",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Sonnet 4.6 by Anthropic — latest Sonnet with superior coding and tool use.",
+        "displayName": "Claude Sonnet 4.6",
+        "enabled": false,
+        "id": "claude-sonnet-4-6",
+        "maxOutput": 32000,
+        "organization": "Anthropic",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 3.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-17",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "Gemini 3 Flash by Google — ultra-fast model with multimodal input support.",
+        "displayName": "Gemini 3 Flash",
+        "enabled": false,
+        "id": "gemini-3-flash",
+        "maxOutput": 32000,
+        "organization": "Google",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.05,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-12-17",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "Gemini 3.1 Pro by Google — premium multimodal model with 1M context window.",
+        "displayName": "Gemini 3.1 Pro",
+        "enabled": true,
+        "id": "gemini-3.1-pro",
+        "maxOutput": 32000,
+        "organization": "Google",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 12,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-19",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "GLM-5 by Zhipu AI — high-performance coding model with strong reasoning abilities.",
+        "displayName": "GLM-5",
+        "enabled": false,
+        "id": "glm-5",
+        "maxOutput": 32000,
+        "organization": "Zhipu",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-11",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "GLM-5.1 by Zhipu AI — latest generation coding model with enhanced reasoning.",
+        "displayName": "GLM-5.1",
+        "enabled": true,
+        "id": "glm-5.1",
+        "maxOutput": 32000,
+        "organization": "Zhipu",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 4.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.26,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-07",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5 by OpenAI — flagship model with advanced reasoning and multimodal input.",
+        "displayName": "GPT-5",
+        "enabled": false,
+        "id": "gpt-5",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.07,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.107,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-08-07",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5 Codex by OpenAI — coding-specialized variant with tool use support.",
+        "displayName": "GPT-5 Codex",
+        "enabled": false,
+        "id": "gpt-5-codex",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.07,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.107,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-09-15",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5 Nano by OpenAI — lightweight and cost-efficient model.",
+        "displayName": "GPT-5 Nano",
+        "enabled": false,
+        "id": "gpt-5-nano",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-08-07",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.1 by OpenAI — improved GPT-5 with better reasoning accuracy.",
+        "displayName": "GPT-5.1",
+        "enabled": false,
+        "id": "gpt-5.1",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.07,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.107,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-11-13",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.1 Codex by OpenAI — coding-focused variant with enhanced tool use.",
+        "displayName": "GPT-5.1 Codex",
+        "enabled": false,
+        "id": "gpt-5.1-codex",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.07,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.107,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-11-13",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.1 Codex Max by OpenAI — maximum capability Codex variant.",
+        "displayName": "GPT-5.1 Codex Max",
+        "enabled": false,
+        "id": "gpt-5.1-codex-max",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 10,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.125,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-11-13",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.1 Codex Mini by OpenAI — compact coding model with strong capabilities.",
+        "displayName": "GPT-5.1 Codex Mini",
+        "enabled": false,
+        "id": "gpt-5.1-codex-mini",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.025,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-11-13",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.2 by OpenAI — upgraded reasoning and multimodal processing.",
+        "displayName": "GPT-5.2",
+        "enabled": false,
+        "id": "gpt-5.2",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 14,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.175,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-12-11",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.2 Codex by OpenAI — coding-specialized with improved tool call accuracy.",
+        "displayName": "GPT-5.2 Codex",
+        "enabled": false,
+        "id": "gpt-5.2-codex",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 14,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.175,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-01-14",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.3 Codex by OpenAI — latest Codex with enhanced code understanding.",
+        "displayName": "GPT-5.3 Codex",
+        "enabled": false,
+        "id": "gpt-5.3-codex",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 14,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.175,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-24",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 128000,
+        "description": "GPT-5.3 Codex Spark by OpenAI — compact coding model optimized for speed.",
+        "displayName": "GPT-5.3 Codex Spark",
+        "enabled": false,
+        "id": "gpt-5.3-codex-spark",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 14,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.175,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-12",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-5.4 by OpenAI — next-gen model with 1M+ context window and multimodal input.",
+        "displayName": "GPT-5.4",
+        "enabled": true,
+        "id": "gpt-5.4",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 2.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-05",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.4 Mini by OpenAI — efficient model balancing cost and performance.",
+        "displayName": "GPT-5.4 Mini",
+        "enabled": false,
+        "id": "gpt-5.4-mini",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.75,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 4.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.075,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-17",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "files": true,
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 400000,
+        "description": "GPT-5.4 Nano by OpenAI — ultra-lightweight model for high-throughput tasks.",
+        "displayName": "GPT-5.4 Nano",
+        "enabled": false,
+        "id": "gpt-5.4-nano",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.02,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-17",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-5.4 Pro by OpenAI — most capable model with maximum context and reasoning.",
+        "displayName": "GPT-5.4 Pro",
+        "enabled": false,
+        "id": "gpt-5.4-pro",
+        "maxOutput": 32000,
+        "organization": "OpenAI",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 30,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 180,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 30,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-05",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Kimi K2.5 by Moonshot AI — advanced reasoning model with image and video input support.",
+        "displayName": "Kimi K2.5",
+        "enabled": false,
+        "id": "kimi-k2.5",
+        "maxOutput": 32000,
+        "organization": "Moonshot",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.6,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.08,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-01-27",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "MiniMax M2.5 — efficient coding model with strong reasoning abilities.",
+        "displayName": "MiniMax M2.5",
+        "enabled": false,
+        "id": "minimax-m2.5",
+        "maxOutput": 32000,
+        "organization": "MiniMax",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.06,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-12",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "MiniMax M2.5 Free — free tier coding model with full reasoning capabilities.",
+        "displayName": "MiniMax M2.5 Free",
+        "enabled": true,
+        "id": "minimax-m2.5-free",
+        "maxOutput": 32000,
+        "organization": "MiniMax",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-12",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 204800,
+        "description": "Nemotron 3 Super Free by Nvidia — free tier reasoning model with strong coding support.",
+        "displayName": "Nemotron 3 Super Free",
+        "enabled": true,
+        "id": "nemotron-3-super-free",
+        "maxOutput": 32000,
+        "organization": "Nvidia",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-03-11",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Qwen3.5 Plus by Alibaba — cost-effective coding model with vision support.",
+        "displayName": "Qwen3.5 Plus",
+        "enabled": false,
+        "id": "qwen3.5-plus",
+        "maxOutput": 32000,
+        "organization": "Alibaba",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.02,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-02-16",
+        "settings": {
+          "extendParams": [
+            "reasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
+        "description": "Qwen3.6 Plus by Alibaba — latest Qwen coding model with enhanced reasoning and vision.",
+        "displayName": "Qwen3.6 Plus",
+        "enabled": false,
+        "id": "qwen3.6-plus",
+        "maxOutput": 32000,
+        "organization": "Alibaba",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.05,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 0.625,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-02",
+        "settings": {
+          "extendParams": [
+            "reasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "Big Pickle by OpenCode — free open-weights model with strong coding capabilities.",
+        "displayName": "Big Pickle",
+        "enabled": true,
+        "id": "big-pickle",
+        "maxOutput": 32000,
+        "organization": "OpenCode",
+        "pricing": {
+          "currency": "USD",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 0,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2025-10-17",
+        "type": "chat"
+      }
+    ],
     "ai360": [
       {
         "abilities": {
@@ -39558,6 +44318,76 @@
       }
     ],
     "openai": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-5.5 is the frontier model for the most complex professional work, coding, and agentic tasks.",
+        "displayName": "GPT-5.5",
+        "enabled": true,
+        "id": "gpt-5.5",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.272]": 5,
+                  "[0.272, infinity]": 10
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.272]": 0.5,
+                  "[0.272, infinity]": 1
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.272]": 30,
+                  "[0.272, infinity]": 45
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-23",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
@@ -43976,32 +48806,132 @@
       {
         "abilities": {
           "functionCall": true,
+          "reasoning": true,
           "structuredOutput": true
         },
-        "contextWindowTokens": 131072,
-        "description": "DeepSeek V3.2 is DeepSeek’s latest general model with a hybrid reasoning architecture and stronger agent capabilities.",
-        "displayName": "DeepSeek V3.2",
+        "contextWindowTokens": 1000000,
+        "description": "DeepSeek V4 Flash is the cost-efficient member of the V4 family with a 1M context window and hybrid thinking. Thinking mode is on by default and can be toggled via the `thinking` parameter; non-thinking mode is optimized for latency-sensitive workflows.",
+        "displayName": "DeepSeek V4 Flash",
         "enabled": true,
-        "id": "deepseek-chat",
-        "maxOutput": 8192,
+        "id": "deepseek-v4-flash",
+        "maxOutput": 384000,
         "pricing": {
           "currency": "CNY",
           "units": [
             {
               "name": "textInput_cacheRead",
-              "rate": 0.2,
+              "rate": 0.02,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "rate": 2,
+              "rate": 1,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-24",
+        "settings": {
+          "extendParamOptions": {
+            "enableReasoning": {
+              "defaultValue": true,
+              "includeBudget": false
+            }
+          },
+          "extendParams": [
+            "enableReasoning",
+            "deepseekV4ReasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "DeepSeek V4 Pro is the flagship of the V4 family, optimized for high-intensity reasoning, agentic workflows, and long-horizon planning. Thinking mode is on by default and can be toggled via the `thinking` parameter.",
+        "displayName": "DeepSeek V4 Pro",
+        "enabled": true,
+        "id": "deepseek-v4-pro",
+        "maxOutput": 384000,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.025,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
               "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 6,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-24",
+        "settings": {
+          "extendParamOptions": {
+            "enableReasoning": {
+              "defaultValue": true,
+              "includeBudget": false
+            }
+          },
+          "extendParams": [
+            "enableReasoning",
+            "deepseekV4ReasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Compatibility alias for DeepSeek V4 Flash non-thinking mode. Slated for deprecation — use deepseek-v4-flash instead.",
+        "displayName": "DeepSeek V3.2 (routes to V4 Flash)",
+        "id": "deepseek-chat",
+        "legacy": true,
+        "maxOutput": 384000,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.02,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 2,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -44015,30 +48945,30 @@
           "functionCall": true,
           "reasoning": true
         },
-        "contextWindowTokens": 131072,
-        "description": "DeepSeek V3.2 thinking mode outputs a chain-of-thought before the final answer to improve accuracy.",
-        "displayName": "DeepSeek V3.2 Thinking",
-        "enabled": true,
+        "contextWindowTokens": 1000000,
+        "description": "Compatibility alias for DeepSeek V4 Flash thinking mode. Slated for deprecation — use deepseek-v4-flash instead.",
+        "displayName": "DeepSeek V3.2 Thinking (routes to V4 Flash)",
         "id": "deepseek-reasoner",
-        "maxOutput": 65536,
+        "legacy": true,
+        "maxOutput": 384000,
         "pricing": {
           "currency": "CNY",
           "units": [
             {
               "name": "textInput_cacheRead",
-              "rate": 0.2,
+              "rate": 0.02,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "rate": 2,
+              "rate": 1,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 3,
+              "rate": 2,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -44632,6 +49562,59 @@
           "vision": true
         },
         "contextWindowTokens": 262144,
+        "description": "Qwen3.6-35B-A3B is a large language model from the Qwen team in the Qwen3.6 series, using a Mixture-of-Experts (MoE) architecture with 35B total parameters and 3B active parameters. It balances efficient inference with excellent performance and supports both thinking and non-thinking modes, allowing flexible switching between fast response and deep reasoning.",
+        "displayName": "Qwen3.6 35B A3B",
+        "id": "Qwen/Qwen3.6-35B-A3B",
+        "organization": "Qwen",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.128]": 0.4,
+                  "[0.128, infinity]": 1.6
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.128]": 3.2,
+                  "[0.128, infinity]": 12.8
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-17",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
         "description": "Qwen3.5-397B-A17B is the latest vision-language model in the Qwen3.5 series, using a Mixture-of-Experts (MoE) architecture with 397B total parameters and 17B active parameters. It natively supports 256K context length with extensibility to approximately 1M tokens, supports 201 languages, and provides unified vision-language understanding, tool calling, and reasoning capabilities.",
         "displayName": "Qwen3.5 397B A17B",
         "id": "Qwen/Qwen3.5-397B-A17B",
@@ -44670,6 +49653,12 @@
           ]
         },
         "releasedAt": "2026-02-16",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ]
+        },
         "type": "chat"
       },
       {
@@ -44717,6 +49706,12 @@
           ]
         },
         "releasedAt": "2026-02-26",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ]
+        },
         "type": "chat"
       },
       {
@@ -44764,6 +49759,12 @@
           ]
         },
         "releasedAt": "2026-02-25",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ]
+        },
         "type": "chat"
       },
       {
@@ -44811,6 +49812,12 @@
           ]
         },
         "releasedAt": "2026-02-25",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ]
+        },
         "type": "chat"
       },
       {
@@ -44858,6 +49865,12 @@
           ]
         },
         "releasedAt": "2026-03-03",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ]
+        },
         "type": "chat"
       },
       {
@@ -44889,6 +49902,12 @@
           ]
         },
         "releasedAt": "2026-03-03",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken"
+          ]
+        },
         "type": "chat"
       },
       {
@@ -57048,9 +62067,53 @@
           "vision": true
         },
         "contextWindowTokens": 262144,
+        "description": "Kimi K2.6 is Kimi's latest and most capable model, delivering stronger long-horizon coding, instruction following, and self-correction while supporting text, image, and video inputs plus chat and agent tasks.",
+        "displayName": "Kimi K2.6",
+        "enabled": true,
+        "id": "kimi-k2.6",
+        "maxOutput": 32768,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 1.1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 6.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 27,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-20",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 262144,
         "description": "Kimi K2.5 is Kimi's most versatile model to date, featuring a native multimodal architecture that supports both vision and text inputs, \"thinking\" and \"non-thinking\" modes, and both conversational and agent tasks.",
         "displayName": "Kimi K2.5",
-        "enabled": true,
         "id": "kimi-k2.5",
         "maxOutput": 32768,
         "pricing": {
@@ -57235,7 +62298,6 @@
         "contextWindowTokens": 262144,
         "description": "kimi-k2 is an MoE foundation model with strong coding and agent capabilities (1T total params, 32B active), outperforming other mainstream open models across reasoning, programming, math, and agent benchmarks.",
         "displayName": "Kimi K2 Turbo Preview",
-        "enabled": true,
         "id": "kimi-k2-turbo-preview",
         "pricing": {
           "currency": "CNY",
