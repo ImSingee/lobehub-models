@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "b125565597e08e61d8ffd70e38623644bbf949a4",
-    "generatedAt": "2026-05-18T04:34:31.977Z",
+    "commitHash": "694a25822f32f0671cdee42dd7ba2cf23c06618e",
+    "generatedAt": "2026-05-19T04:30:20.352Z",
     "providerCount": 81,
-    "modelCount": 2072
+    "modelCount": 2074
   },
   "providers": {
     "cerebras": {
@@ -436,6 +436,7 @@
           "text": "smooth"
         },
         "sdkType": "openai",
+        "showDeployName": true,
         "showModelFetcher": false
       },
       "url": "https://www.xfyun.cn"
@@ -16328,11 +16329,37 @@
           "reasoning": true,
           "search": true
         },
+        "config": {
+          "deploymentName": "spark-x"
+        },
+        "contextWindowTokens": 262144,
+        "description": "Spark X2-Flash adopts an MoE (Mixture of Experts) architecture with 30 billion total parameters and supports up to a 256K context window. It claims significant improvements in agentic and coding capabilities, and was trained on a cluster of Ascend 910B AI processors.",
+        "displayName": "Spark X2 Flash",
+        "enabled": true,
+        "id": "spark-x2-flash",
+        "maxOutput": 262144,
+        "settings": {
+          "extendParams": [
+            "thinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true
+        },
+        "config": {
+          "deploymentName": "spark-x"
+        },
         "contextWindowTokens": 131072,
         "description": "X2 Capabilities Overview: 1. Introduces dynamic adjustment of reasoning mode, controlled via the `thinking` field. 2. Expanded context length: 64K input tokens and 128K output tokens. 3. Supports Function Call functionality.",
         "displayName": "Spark X2",
         "enabled": true,
-        "id": "spark-x",
+        "id": "spark-x2",
         "maxOutput": 131072,
         "settings": {
           "extendParams": [
@@ -16348,10 +16375,13 @@
           "reasoning": true,
           "search": true
         },
+        "config": {
+          "deploymentName": "spark-x"
+        },
         "contextWindowTokens": 65535,
         "description": "X1.5 updates: (1) adds dynamic thinking mode controlled by the `thinking` field; (2) larger context length with 64K input and 64K output; (3) supports FunctionCall.",
         "displayName": "Spark X1.5",
-        "id": "x1",
+        "id": "spark-x1.5",
         "maxOutput": 65535,
         "settings": {
           "extendParams": [
@@ -17068,21 +17098,21 @@
             {
               "name": "textInput_cacheRead",
               "originalRate": 0.0145,
-              "rate": 0.0003625,
+              "rate": 0.003625,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
               "originalRate": 1.74,
-              "rate": 0.0435,
+              "rate": 0.435,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
               "originalRate": 3.48,
-              "rate": 0.087,
+              "rate": 0.87,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -17111,19 +17141,19 @@
           "units": [
             {
               "name": "textInput_cacheRead",
-              "rate": 0.00028,
+              "rate": 0.0028,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "rate": 0.014,
+              "rate": 0.14,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 0.028,
+              "rate": 0.28,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -17151,19 +17181,19 @@
           "units": [
             {
               "name": "textInput_cacheRead",
-              "rate": 0.00028,
+              "rate": 0.0028,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "rate": 0.014,
+              "rate": 0.14,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 0.028,
+              "rate": 0.28,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -17187,19 +17217,19 @@
           "units": [
             {
               "name": "textInput_cacheRead",
-              "rate": 0.00028,
+              "rate": 0.0028,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "rate": 0.014,
+              "rate": 0.14,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 0.028,
+              "rate": 0.28,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -47864,6 +47894,57 @@
       }
     ],
     "wenxin": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true
+        },
+        "contextWindowTokens": 131072,
+        "description": "ERNIE 5.1 is the latest model in the ERNIE series, featuring comprehensive upgrades to its foundational capabilities. It demonstrates significant improvements in areas such as agents, knowledge processing, reasoning, and deep search. This release adopts a decoupled fully asynchronous reinforcement learning architecture, specifically designed to address key challenges in the evolution of large models toward autonomous agent decision-making, including training–inference numerical discrepancies, low utilization of heterogeneous computing resources, and global issues caused by long-tail effects. In addition, large-scale agent post-training techniques are employed to further enhance the model’s capabilities and generalization performance. Through a three-stage collaborative framework involving environment, expert, and fusion processes, the approach not only ensures training efficiency but also significantly improves the model’s stability and performance on complex tasks.",
+        "displayName": "ERNIE 5.1",
+        "enabled": true,
+        "id": "ernie-5.1",
+        "maxOutput": 65536,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 4,
+                  "[0.032, 0.128]": 6
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 18,
+                  "[0.032, 0.128]": 22
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-05-09",
+        "settings": {
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
