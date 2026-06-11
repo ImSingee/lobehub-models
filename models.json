@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "248a4dcab5a62da6bb4784a7a6ae194fcc1b994f",
-    "generatedAt": "2026-06-10T04:35:16.478Z",
+    "commitHash": "553d3d8fc784196a680529a7868bf782b5276bd7",
+    "generatedAt": "2026-06-11T04:36:33.399Z",
     "providerCount": 81,
-    "modelCount": 1997
+    "modelCount": 1947
   },
   "providers": {
     "search1api": {
@@ -6294,7 +6294,7 @@
               "tiers": [
                 {
                   "rate": 1.2,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 4.8,
@@ -6309,7 +6309,7 @@
               "tiers": [
                 {
                   "rate": 7.2,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 28.8,
@@ -6324,7 +6324,7 @@
               "tiers": [
                 {
                   "rate": 0.24,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 0.96,
@@ -6371,11 +6371,11 @@
               "tiers": [
                 {
                   "rate": 0.2,
-                  "upTo": 0.128
+                  "upTo": 128000
                 },
                 {
                   "rate": 0.8,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 1.2,
@@ -6390,11 +6390,11 @@
               "tiers": [
                 {
                   "rate": 2,
-                  "upTo": 0.128
+                  "upTo": 128000
                 },
                 {
                   "rate": 8,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 12,
@@ -6409,11 +6409,11 @@
               "tiers": [
                 {
                   "rate": 0.04000000000000001,
-                  "upTo": 0.128
+                  "upTo": 128000
                 },
                 {
                   "rate": 0.16000000000000003,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 0.24,
@@ -6458,11 +6458,11 @@
               "tiers": [
                 {
                   "rate": 0.15,
-                  "upTo": 0.128
+                  "upTo": 128000
                 },
                 {
                   "rate": 0.6,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 1.2,
@@ -6477,11 +6477,11 @@
               "tiers": [
                 {
                   "rate": 1.5,
-                  "upTo": 0.128
+                  "upTo": 128000
                 },
                 {
                   "rate": 6,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 12,
@@ -6496,11 +6496,11 @@
               "tiers": [
                 {
                   "rate": 0.03,
-                  "upTo": 0.128
+                  "upTo": 128000
                 },
                 {
                   "rate": 0.12,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 0.24,
@@ -6578,12 +6578,63 @@
           "vision": true
         },
         "config": {
+          "deploymentName": "qwen3.7-plus"
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Qwen3.7 Plus is a multimodal interactive hybrid agent model, building upon the Qwen3.7 series text capabilities to unify vision and language. It excels at GUI operation, visual coding, and complex agentic workflows.",
+        "displayName": "Qwen3.7 Plus",
+        "enabled": true,
+        "id": "qwen3.7-plus",
+        "maxOutput": 65536,
+        "organization": "Qwen",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-06-01",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "video": true,
+          "vision": true
+        },
+        "config": {
           "deploymentName": "qwen3.6-plus"
         },
         "contextWindowTokens": 1000000,
-        "description": "Qwen 3.6-Plus introduces major upgrades in coding capabilities, with a focus on Agentic Coding and front-end development, significantly enhancing the Vibe Coding experience. Its reasoning ability across general scenarios has been further improved. In terms of multimodality, capabilities such as universal recognition, OCR, and object localization have been substantially enhanced. It also fixes known issues from the Qwen 3.5-Plus release. Usage remains the same as Qwen 3.5-Plus.",
+        "description": "Qwen3.6 Plus supports text, image, and video input. It delivers a balanced performance across quality, speed, and cost. Its multimodal capabilities are significantly improved compared to the Qwen3 VL series.",
         "displayName": "Qwen3.6 Plus",
-        "enabled": true,
         "id": "qwen3.6-plus",
         "maxOutput": 65536,
         "organization": "Qwen",
@@ -6593,36 +6644,8 @@
             {
               "lookup": {
                 "prices": {
-                  "[0, 0.256]": 0.2,
-                  "[0.256, infinity]": 0.8
-                },
-                "pricingParams": [
-                  "textInputRange"
-                ]
-              },
-              "name": "textInput_cacheRead",
-              "strategy": "lookup",
-              "unit": "millionTokens"
-            },
-            {
-              "lookup": {
-                "prices": {
-                  "[0, 0.256]": 2.5,
-                  "[0.256, infinity]": 10
-                },
-                "pricingParams": [
-                  "textInputRange"
-                ]
-              },
-              "name": "textInput_cacheWrite",
-              "strategy": "lookup",
-              "unit": "millionTokens"
-            },
-            {
-              "lookup": {
-                "prices": {
                   "[0, 0.256]": 2,
-                  "[0.256, infinity]": 8
+                  "[0.256, 1]": 8
                 },
                 "pricingParams": [
                   "textInputRange"
@@ -6636,13 +6659,27 @@
               "lookup": {
                 "prices": {
                   "[0, 0.256]": 12,
-                  "[0.256, infinity]": 48
+                  "[0.256, 1]": 48
                 },
                 "pricingParams": [
                   "textInputRange"
                 ]
               },
               "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.256]": 0.4,
+                  "[0.256, 1]": 1.6
+                },
+                "pricingParams": [
+                  "textInputRange"
+                ]
+              },
+              "name": "textInput_cacheRead",
               "strategy": "lookup",
               "unit": "millionTokens"
             }
@@ -6652,7 +6689,8 @@
         "settings": {
           "extendParams": [
             "enableReasoning",
-            "reasoningBudgetToken"
+            "reasoningBudgetToken",
+            "preserveThinking"
           ],
           "searchImpl": "params"
         },
@@ -6927,12 +6965,61 @@
           "search": true
         },
         "config": {
+          "deploymentName": "qwen3.7-max"
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Qwen3.7 Max is the flagship omnipotent model of the AI agent era, offering comprehensive capabilities across text, image, and video understanding. It provides superior reasoning, function calling, and agent task execution performance.",
+        "displayName": "Qwen3.7 Max",
+        "enabled": true,
+        "id": "qwen3.7-max",
+        "maxOutput": 65536,
+        "organization": "Qwen",
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 2.4000000000000004,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 12,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 36,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-05-20",
+        "settings": {
+          "extendParams": [
+            "enableReasoning",
+            "reasoningBudgetToken",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true
+        },
+        "config": {
           "deploymentName": "qwen3.6-max-preview"
         },
         "contextWindowTokens": 262144,
         "description": "The largest closed-source model in the Qwen3.6 series. It delivers stronger world knowledge, instruction following, and agentic coding performance for complex tasks. It is text-only, supports thinking mode by default, explicit caching, and function calling.",
         "displayName": "Qwen3.6 Max Preview",
-        "enabled": true,
         "id": "qwen3.6-max-preview",
         "maxOutput": 65536,
         "organization": "Qwen",
@@ -6987,7 +7074,8 @@
         "settings": {
           "extendParams": [
             "enableReasoning",
-            "reasoningBudgetToken"
+            "reasoningBudgetToken",
+            "preserveThinking"
           ],
           "searchImpl": "params"
         },
@@ -12488,53 +12576,65 @@
     "cerebras": [
       {
         "abilities": {
-          "functionCall": true
+          "functionCall": true,
+          "reasoning": true
         },
         "contextWindowTokens": 131072,
-        "displayName": "Qwen 3 235B Instruct",
-        "id": "qwen-3-235b-a22b-instruct-2507",
+        "displayName": "GPT OSS 120B",
+        "enabled": true,
+        "id": "gpt-oss-120b",
+        "maxOutput": 40960,
         "pricing": {
           "units": [
             {
               "name": "textInput",
-              "rate": 0.6,
+              "rate": 0.35,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 1.2,
+              "rate": 0.75,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
+          ]
+        },
+        "settings": {
+          "extendParams": [
+            "reasoningEffort"
           ]
         },
         "type": "chat"
       },
       {
         "abilities": {
-          "functionCall": true
+          "functionCall": true,
+          "reasoning": true
         },
-        "contextWindowTokens": 32768,
-        "description": "Llama 3.1 8B: a small, low-latency Llama variant for lightweight online inference and chat.",
-        "displayName": "Llama 3.1 8B",
-        "id": "llama3.1-8b",
+        "contextWindowTokens": 131072,
+        "description": "GLM-4.7 is Zhipu's new generation flagship model with 355B total parameters and 32B active parameters, fully upgraded in general dialogue, reasoning, and agent capabilities. GLM-4.7 enhances Interleaved Thinking and introduces Preserved Thinking and Turn-level Thinking.",
+        "displayName": "GLM-4.7",
+        "id": "zai-glm-4.7",
+        "maxOutput": 40960,
         "pricing": {
+          "currency": "USD",
           "units": [
             {
               "name": "textInput",
-              "rate": 0.1,
+              "rate": 2.25,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 0.1,
+              "rate": 2.75,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
           ]
         },
+        "releasedAt": "2025-12-22",
         "type": "chat"
       }
     ],
@@ -12928,116 +13028,6 @@
       {
         "abilities": {
           "functionCall": true,
-          "reasoning": true,
-          "vision": true
-        },
-        "contextWindowTokens": 2000000,
-        "description": "Grok 4 Fast is xAI’s high-throughput, low-cost model (supports a 2M context window), ideal for high-concurrency and long-context use cases.",
-        "displayName": "Grok 4 Fast",
-        "id": "x-ai/grok-4-fast",
-        "maxOutput": 30000,
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 0.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "vision": true
-        },
-        "contextWindowTokens": 2000000,
-        "description": "Grok 4 Fast (Non-Reasoning) is xAI’s high-throughput, low-cost multimodal model (supports a 2M context window) for scenarios sensitive to latency and cost that do not require in-model reasoning. It sits alongside the reasoning version of Grok 4 Fast, and reasoning can be enabled via the API reasoning parameter when needed. Prompts and completions may be used by xAI or OpenRouter to improve future models.",
-        "displayName": "Grok 4 Fast (Non-Reasoning)",
-        "id": "x-ai/grok-4-fast-non-reasoning",
-        "maxOutput": 30000,
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 0.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "reasoning": true
-        },
-        "contextWindowTokens": 256000,
-        "description": "Grok 4 is xAI's flagship reasoning model with strong reasoning and multimodal capability.",
-        "displayName": "Grok 4",
-        "id": "x-ai/grok-4",
-        "maxOutput": 256000,
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 3,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 15,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "reasoning": true
-        },
-        "contextWindowTokens": 256000,
-        "description": "Grok Code Fast 1 is xAI's fast code model with readable, engineering-friendly output.",
-        "displayName": "Grok Code Fast 1",
-        "id": "x-ai/grok-code-fast-1",
-        "maxOutput": 10000,
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 1.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "reasoning": true,
           "vision": true
         },
@@ -16717,7 +16707,7 @@
               "tiers": [
                 {
                   "rate": 7,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 14,
@@ -16732,7 +16722,7 @@
               "tiers": [
                 {
                   "rate": 21,
-                  "upTo": 0.256
+                  "upTo": 256000
                 },
                 {
                   "rate": 42,
@@ -17376,6 +17366,112 @@
         "abilities": {
           "functionCall": true,
           "reasoning": true,
+          "search": true
+        },
+        "config": {
+          "deploymentName": "deepseek-v4-pro-260425"
+        },
+        "contextWindowTokens": 1048576,
+        "description": "DeepSeek-V4-Pro is DeepSeek’s flagship MoE model on Volcano Ark, supporting both non-thinking and thinking modes for advanced reasoning, code generation, and complex agent workflows.",
+        "displayName": "DeepSeek V4 Pro",
+        "enabled": true,
+        "id": "deepseek-v4-pro",
+        "maxOutput": 393216,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 12,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 24,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 0.017,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-24",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true
+        },
+        "config": {
+          "deploymentName": "deepseek-v4-flash-260425"
+        },
+        "contextWindowTokens": 1048576,
+        "description": "DeepSeek-V4-Flash is DeepSeek’s efficient 1M-context model on Volcano Ark, balancing speed and cost while keeping strong reasoning and agent capabilities.",
+        "displayName": "DeepSeek V4 Flash",
+        "enabled": true,
+        "id": "deepseek-v4-flash",
+        "maxOutput": 393216,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 0.017,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-04-24",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
           "video": true,
           "vision": true,
           "search": true
@@ -17996,49 +18092,6 @@
       {
         "abilities": {
           "functionCall": true,
-          "reasoning": true
-        },
-        "config": {
-          "deploymentName": "deepseek-v3-1-terminus"
-        },
-        "contextWindowTokens": 131072,
-        "description": "DeepSeek-V3.1 is a new hybrid reasoning model from DeepSeek, supporting both thinking and non-thinking modes and offering higher thinking efficiency than DeepSeek-R1-0528. Post-training optimizations greatly improve agent tool use and agent-task performance. It supports a 128k context window and up to 64k output tokens.",
-        "displayName": "DeepSeek V3.1",
-        "id": "deepseek-v3.1",
-        "maxOutput": 32768,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 0.8,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 12,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "settings": {
-          "extendParams": [
-            "enableReasoning"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
           "reasoning": true,
           "video": true,
           "vision": true,
@@ -18177,73 +18230,6 @@
           "search": true
         },
         "config": {
-          "deploymentName": "doubao-seed-1-6-lite-251015"
-        },
-        "contextWindowTokens": 256000,
-        "description": "Doubao-Seed-1.6-lite is a new multimodal deep-reasoning model with adjustable reasoning effort (Minimal, Low, Medium, High), delivering better value and a strong choice for common tasks, with a context window up to 256k.",
-        "displayName": "Doubao Seed 1.6 Lite",
-        "id": "doubao-seed-1.6-lite",
-        "maxOutput": 32000,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "lookup": {
-                "prices": {
-                  "[0, 0.032]": 0.3,
-                  "[0.032, 0.128]": 0.6,
-                  "[0.128, 0.256]": 1.2
-                },
-                "pricingParams": [
-                  "textInputRange"
-                ]
-              },
-              "name": "textInput",
-              "strategy": "lookup",
-              "unit": "millionTokens"
-            },
-            {
-              "lookup": {
-                "prices": {
-                  "[0, 0.032]_[0, 0.0002]": 0.6,
-                  "[0, 0.032]_[0.0002, infinity]": 2.4,
-                  "[0.032, 0.128]_[0, infinity]": 4,
-                  "[0.128, 0.256]_[0, infinity]": 12
-                },
-                "pricingParams": [
-                  "textInputRange",
-                  "textOutputRange"
-                ]
-              },
-              "name": "textOutput",
-              "strategy": "lookup",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput_cacheRead",
-              "rate": 0.06,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "settings": {
-          "extendParams": [
-            "gpt5ReasoningEffort"
-          ],
-          "searchImpl": "params"
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "video": true,
-          "vision": true,
-          "search": true
-        },
-        "config": {
           "deploymentName": "doubao-seed-1-6-flash-250828"
         },
         "contextWindowTokens": 256000,
@@ -18297,69 +18283,6 @@
             "enableReasoning"
           ],
           "searchImpl": "params"
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "config": {
-          "deploymentName": "deepseek-r1-250528"
-        },
-        "contextWindowTokens": 131072,
-        "description": "The latest 0528 release of DeepSeek-R1 applies large-scale reinforcement learning in post-training, greatly boosting reasoning with very little labeled data. It matches the OpenAI o1 production model on math, code, and natural language reasoning tasks.",
-        "displayName": "DeepSeek R1",
-        "id": "deepseek-r1",
-        "maxOutput": 16384,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true
-        },
-        "config": {
-          "deploymentName": "deepseek-v3-250324"
-        },
-        "contextWindowTokens": 128000,
-        "description": "DeepSeek-V3 is a MoE model developed by DeepSeek. It surpasses other open models like Qwen2.5-72B and Llama-3.1-405B on many benchmarks, and is competitive with leading closed models such as GPT-4o and Claude 3.5 Sonnet.",
-        "displayName": "DeepSeek V3",
-        "id": "deepseek-v3",
-        "maxOutput": 16384,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 8,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
         },
         "type": "chat"
       },
@@ -18698,53 +18621,6 @@
           ]
         },
         "releasedAt": "2025-09-09",
-        "type": "image"
-      },
-      {
-        "description": "Seedream 3.0 is an image generation model from ByteDance Seed, supporting text and image inputs with highly controllable, high-quality image generation. It generates images from text prompts.",
-        "displayName": "Seedream 3.0 Text-to-Image",
-        "id": "doubao-seedream-3-0-t2i-250415",
-        "parameters": {
-          "cfg": {
-            "default": 2.5,
-            "max": 10,
-            "min": 1,
-            "step": 0.1
-          },
-          "height": {
-            "default": 1024,
-            "max": 3549,
-            "min": 296,
-            "step": 1
-          },
-          "prompt": {
-            "default": ""
-          },
-          "seed": {
-            "default": null
-          },
-          "watermark": {
-            "default": false
-          },
-          "width": {
-            "default": 1024,
-            "max": 3549,
-            "min": 296,
-            "step": 1
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "imageGeneration",
-              "rate": 0.259,
-              "strategy": "fixed",
-              "unit": "image"
-            }
-          ]
-        },
-        "releasedAt": "2025-04-15",
         "type": "image"
       },
       {
@@ -19204,154 +19080,6 @@
         },
         "releasedAt": "2025-05-28",
         "type": "video"
-      },
-      {
-        "description": "Stable generation quality with high cost-effectiveness, capable of generating videos from a first frame, first-and-last frames, or reference images.",
-        "displayName": "Seedance 1.0 Lite I2V",
-        "id": "doubao-seedance-1-0-lite-i2v-250428",
-        "organization": "ByteDance",
-        "parameters": {
-          "aspectRatio": {
-            "default": "16:9",
-            "enum": [
-              "21:9",
-              "16:9",
-              "4:3",
-              "1.1",
-              "3:4",
-              "9:16"
-            ]
-          },
-          "cameraFixed": {
-            "default": false
-          },
-          "endImageUrl": {
-            "aspectRatio": {
-              "max": 2.5,
-              "min": 0.4
-            },
-            "default": null,
-            "height": {
-              "max": 6000,
-              "min": 300
-            },
-            "maxFileSize": 31457280,
-            "requiresImageUrl": true,
-            "width": {
-              "max": 6000,
-              "min": 300
-            }
-          },
-          "imageUrls": {
-            "aspectRatio": {
-              "max": 2.5,
-              "min": 0.4
-            },
-            "default": [],
-            "height": {
-              "max": 6000,
-              "min": 300
-            },
-            "maxFileSize": 31457280,
-            "maxCount": 4,
-            "width": {
-              "max": 6000,
-              "min": 300
-            }
-          },
-          "duration": {
-            "default": 5,
-            "max": 12,
-            "min": 2
-          },
-          "prompt": {
-            "default": ""
-          },
-          "resolution": {
-            "default": "720p",
-            "enum": [
-              "480p",
-              "720p",
-              "1080p"
-            ]
-          },
-          "seed": {
-            "default": null
-          },
-          "watermark": {
-            "default": false
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "videoGeneration",
-              "rate": 10,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-04-28",
-        "type": "video"
-      },
-      {
-        "description": "Stable generation quality with high cost-effectiveness, capable of generating videos based on text instructions.",
-        "displayName": "Seedance 1.0 Lite T2V",
-        "id": "doubao-seedance-1-0-lite-t2v-250428",
-        "organization": "ByteDance",
-        "parameters": {
-          "aspectRatio": {
-            "default": "16:9",
-            "enum": [
-              "21:9",
-              "16:9",
-              "4:3",
-              "1.1",
-              "3:4",
-              "9:16"
-            ]
-          },
-          "cameraFixed": {
-            "default": false
-          },
-          "duration": {
-            "default": 5,
-            "max": 12,
-            "min": 2
-          },
-          "prompt": {
-            "default": ""
-          },
-          "resolution": {
-            "default": "720p",
-            "enum": [
-              "480p",
-              "720p",
-              "1080p"
-            ]
-          },
-          "seed": {
-            "default": null
-          },
-          "watermark": {
-            "default": false
-          }
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "videoGeneration",
-              "rate": 10,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-04-28",
-        "type": "video"
       }
     ],
     "zeroone": [
@@ -19728,6 +19456,75 @@
         "abilities": {
           "functionCall": true,
           "reasoning": true,
+          "search": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 200000,
+        "description": "GLM-5V-Turbo is Zhipu’s multimodal Coding foundation model for visual programming tasks. It natively handles images, video, text, and files, and is optimized for long-horizon planning, complex coding, and agent execution in multimodal workflows.",
+        "displayName": "GLM-5V-Turbo",
+        "enabled": true,
+        "id": "glm-5v-turbo",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 1.2,
+                  "[0.032, infinity]": 1.8
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput_cacheRead",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 5,
+                  "[0.032, infinity]": 7
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textInput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "[0, 0.032]": 22,
+                  "[0.032, infinity]": 26
+                },
+                "pricingParams": [
+                  "textInput"
+                ]
+              },
+              "name": "textOutput",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
           "search": true
         },
         "contextWindowTokens": 200000,
@@ -19853,7 +19650,8 @@
         "releasedAt": "2026-02-12",
         "settings": {
           "extendParams": [
-            "enableReasoning"
+            "enableReasoning",
+            "preserveThinking"
           ],
           "searchImpl": "params"
         },
@@ -19926,7 +19724,8 @@
         "releasedAt": "2025-12-22",
         "settings": {
           "extendParams": [
-            "enableReasoning"
+            "enableReasoning",
+            "preserveThinking"
           ],
           "searchImpl": "params"
         },
@@ -20011,76 +19810,6 @@
           ]
         },
         "releasedAt": "2026-01-19",
-        "settings": {
-          "extendParams": [
-            "enableReasoning"
-          ],
-          "searchImpl": "params"
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "search": true,
-          "video": true,
-          "vision": true
-        },
-        "contextWindowTokens": 200000,
-        "description": "GLM-5V-Turbo is Zhipu’s first multimodal coding foundation model, designed for visual programming tasks. It can natively process multimodal inputs such as images, videos, and text, while excelling in long-horizon planning, complex programming, and action execution. Deeply integrated with agent workflows, it can collaborate seamlessly with agents like Claude Code and OpenClaw to complete a full closed loop of “understanding the environment → planning actions → executing tasks.”",
-        "displayName": "GLM-5V-Turbo",
-        "enabled": true,
-        "id": "glm-5v-turbo",
-        "maxOutput": 131072,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "lookup": {
-                "prices": {
-                  "[0, 0.032]": 1.2,
-                  "[0.032, infinity]": 1.8
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
-              "name": "textInput_cacheRead",
-              "strategy": "lookup",
-              "unit": "millionTokens"
-            },
-            {
-              "lookup": {
-                "prices": {
-                  "[0, 0.032]": 5,
-                  "[0.032, infinity]": 7
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
-              "name": "textInput",
-              "strategy": "lookup",
-              "unit": "millionTokens"
-            },
-            {
-              "lookup": {
-                "prices": {
-                  "[0, 0.032]": 22,
-                  "[0.032, infinity]": 26
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
-              "name": "textOutput",
-              "strategy": "lookup",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2026-04-02",
         "settings": {
           "extendParams": [
             "enableReasoning"
@@ -22217,20 +21946,6 @@
         "displayName": "Gemini 2.5 Pro",
         "id": "gemini-2.5-pro",
         "releasedAt": "2025-06-17",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "structuredOutput": true
-        },
-        "contextWindowTokens": 173000,
-        "description": "We’re excited to launch grok-code-fast-1, a fast and cost-effective reasoning model that excels at agentic coding.",
-        "displayName": "Grok Code Fast 1",
-        "enabled": true,
-        "id": "grok-code-fast-1",
-        "releasedAt": "2025-08-27",
         "type": "chat"
       },
       {
@@ -24609,75 +24324,6 @@
           "searchImpl": "params"
         },
         "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "search": true,
-          "vision": true
-        },
-        "contextWindowTokens": 2000000,
-        "description": "We’re excited to release Grok 4 Fast, our latest progress in cost-effective reasoning models.",
-        "displayName": "Grok 4 Fast",
-        "enabled": true,
-        "id": "x-ai/grok-4-fast",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 7.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 12.6,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-09",
-        "settings": {
-          "searchImpl": "params"
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 256000,
-        "description": "We’re excited to launch grok-code-fast-1, a fast and cost-effective reasoning model that excels at agentic coding.",
-        "displayName": "Grok Code Fast 1",
-        "id": "x-ai/grok-code-fast-1",
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 0.02,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 0.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 1.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-08-27",
-        "type": "chat"
       }
     ],
     "xai": [
@@ -24701,7 +24347,7 @@
               "tiers": [
                 {
                   "rate": 0.2,
-                  "upTo": 200000
+                  "upTo": 0.2
                 },
                 {
                   "rate": 0.4,
@@ -24716,7 +24362,7 @@
               "tiers": [
                 {
                   "rate": 1.25,
-                  "upTo": 200000
+                  "upTo": 0.2
                 },
                 {
                   "rate": 2.5,
@@ -24731,7 +24377,7 @@
               "tiers": [
                 {
                   "rate": 2.5,
-                  "upTo": 200000
+                  "upTo": 0.2
                 },
                 {
                   "rate": 5,
@@ -24758,7 +24404,7 @@
           "structuredOutput": true,
           "vision": true
         },
-        "contextWindowTokens": 2000000,
+        "contextWindowTokens": 1000000,
         "description": "A non-reasoning variant for simple use cases",
         "displayName": "Grok 4.20 (Non-Reasoning)",
         "enabled": true,
@@ -24771,7 +24417,7 @@
               "tiers": [
                 {
                   "rate": 0.2,
-                  "upTo": 200000
+                  "upTo": 0.2
                 },
                 {
                   "rate": 0.4,
@@ -24785,11 +24431,11 @@
               "strategy": "tiered",
               "tiers": [
                 {
-                  "rate": 2,
-                  "upTo": 200000
+                  "rate": 1.25,
+                  "upTo": 0.2
                 },
                 {
-                  "rate": 4,
+                  "rate": 2.5,
                   "upTo": "infinity"
                 }
               ],
@@ -24800,11 +24446,11 @@
               "strategy": "tiered",
               "tiers": [
                 {
-                  "rate": 6,
-                  "upTo": 200000
+                  "rate": 2.5,
+                  "upTo": 0.2
                 },
                 {
-                  "rate": 12,
+                  "rate": 5,
                   "upTo": "infinity"
                 }
               ],
@@ -24826,7 +24472,7 @@
           "structuredOutput": true,
           "vision": true
         },
-        "contextWindowTokens": 2000000,
+        "contextWindowTokens": 1000000,
         "description": "Intelligent, blazing-fast model that reasons before responding",
         "displayName": "Grok 4.20",
         "enabled": true,
@@ -24839,7 +24485,7 @@
               "tiers": [
                 {
                   "rate": 0.2,
-                  "upTo": 200000
+                  "upTo": 0.2
                 },
                 {
                   "rate": 0.4,
@@ -24853,11 +24499,11 @@
               "strategy": "tiered",
               "tiers": [
                 {
-                  "rate": 2,
-                  "upTo": 200000
+                  "rate": 1.25,
+                  "upTo": 0.2
                 },
                 {
-                  "rate": 4,
+                  "rate": 2.5,
                   "upTo": "infinity"
                 }
               ],
@@ -24868,11 +24514,11 @@
               "strategy": "tiered",
               "tiers": [
                 {
-                  "rate": 6,
-                  "upTo": 200000
+                  "rate": 2.5,
+                  "upTo": 0.2
                 },
                 {
-                  "rate": 12,
+                  "rate": 5,
                   "upTo": "infinity"
                 }
               ],
@@ -24906,7 +24552,7 @@
               "tiers": [
                 {
                   "rate": 0.2,
-                  "upTo": 200000
+                  "upTo": 0.2
                 },
                 {
                   "rate": 0.4,
@@ -24920,11 +24566,11 @@
               "strategy": "tiered",
               "tiers": [
                 {
-                  "rate": 2,
-                  "upTo": 200000
+                  "rate": 1.25,
+                  "upTo": 0.2
                 },
                 {
-                  "rate": 4,
+                  "rate": 2.5,
                   "upTo": "infinity"
                 }
               ],
@@ -24935,11 +24581,11 @@
               "strategy": "tiered",
               "tiers": [
                 {
-                  "rate": 6,
-                  "upTo": 200000
+                  "rate": 2.5,
+                  "upTo": 0.2
                 },
                 {
-                  "rate": 12,
+                  "rate": 5,
                   "upTo": "infinity"
                 }
               ],
@@ -25663,35 +25309,6 @@
           "reasoning": true
         },
         "contextWindowTokens": 192000,
-        "description": "MiniMax-M2.5 is the latest large language model from MiniMax, featuring a Mixture-of-Experts (MoE) architecture with 229 billion total parameters. It achieves industry-leading performance in programming, agent tool calling, search tasks, and office scenarios, with a SWE-Bench Verified score of 80.2% and 37% faster inference speed compared to M2.1.",
-        "displayName": "MiniMax-M2.5",
-        "id": "MiniMaxAI/MiniMax-M2.5",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 2.1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 8.4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2026-02-13",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 192000,
         "description": "MiniMax-M2.5 is the latest large language model developed by MiniMax, trained through large-scale reinforcement learning across hundreds of thousands of complex, real-world environments. Featuring an MoE architecture with 229 billion parameters, it achieves industry-leading performance in tasks such as programming, agent tool-calling, search, and office scenarios.",
         "displayName": "MiniMax-M2.5",
         "id": "MiniMaxAI/MiniMax-M2.5",
@@ -26065,48 +25682,6 @@
       },
       {
         "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "video": true,
-          "vision": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "Kimi K2.6 is Moonshot AI's open-source native multimodal agent model. Built on MoE architecture with 1T total parameters and 32B activated, supporting 256K tokens context. It supports 4,000+ tool calls with sustained autonomous execution over 12 hours, multi-agent collaboration with up to 300 parallel sub-agents, and both Thinking and Instant inference modes.",
-        "displayName": "Kimi-K2.6 (Pro)",
-        "id": "Pro/moonshotai/Kimi-K2.6",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 1.1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 6.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 27,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2026-04-21",
-        "settings": {
-          "extendParams": [
-            "enableReasoning"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "vision": true
         },
         "description": "PaddleOCR-VL-1.5 is an upgraded version of the PaddleOCR-VL series, achieving 94.5% accuracy on the OmniDocBench v1.5 document parsing benchmark, surpassing leading general large models and specialized document parsing models. It innovatively supports irregular bounding box localization for document elements, handling scanned, tilted, and screen-captured images effectively.",
@@ -26198,74 +25773,6 @@
         "settings": {
           "extendParams": [
             "enableReasoning",
-            "reasoningBudgetToken"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "Kimi K2 Thinking is the latest and most powerful open-source thinking model. It greatly extends multi-step reasoning depth and sustains stable tool use across 200–300 consecutive calls, setting new records on Humanity's Last Exam (HLE), BrowseComp, and other benchmarks. 'It excels in coding, math, logic, and agent scenarios. Built on an MoE architecture with ~1T total parameters, it supports a 256K context window and tool calling.",
-        "displayName": "Kimi K2 Thinking",
-        "id": "moonshotai/Kimi-K2-Thinking",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-11-07",
-        "settings": {
-          "extendParams": [
-            "reasoningBudgetToken"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "Kimi K2 Thinking Turbo is the Turbo variant optimized for reasoning speed and throughput while retaining K2 Thinking’s multi-step reasoning and tool use. It is an MoE model with ~1T total parameters, native 256K context, and stable large-scale tool calling for production scenarios with stricter latency and concurrency needs.",
-        "displayName": "Kimi K2 Thinking (Pro)",
-        "id": "Pro/moonshotai/Kimi-K2-Thinking",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 8,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 32,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-11-07",
-        "settings": {
-          "extendParams": [
             "reasoningBudgetToken"
           ]
         },
@@ -26487,41 +25994,6 @@
       {
         "abilities": {
           "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 198000,
-        "description": "Compared to GLM-4.5, GLM-4.6 expands context from 128K to 200K for more complex agent tasks. It scores higher on code benchmarks and shows stronger real-world performance in apps like Claude Code, Cline, Roo Code, and Kilo Code, including better frontend page generation. Reasoning is improved and tool use is supported during reasoning, strengthening overall capability. It integrates better into agent frameworks, improves tool/search agents, and has more human-preferred writing style and roleplay naturalness.",
-        "displayName": "GLM-4.6",
-        "id": "zai-org/GLM-4.6",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 3.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 14,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-30",
-        "settings": {
-          "extendParams": [
-            "enableReasoning",
-            "reasoningBudgetToken"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
           "video": true,
           "vision": true
         },
@@ -26721,40 +26193,6 @@
       },
       {
         "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 131072,
-        "description": "Ring-flash-2.0 is a high-performance thinking model optimized from Ling-flash-2.0-base. It uses an MoE architecture with 100B total parameters and only 6.1B active per inference. Its icepop algorithm stabilizes RL training for MoE models, enabling continued gains in complex reasoning. It achieves major breakthroughs on tough benchmarks (math contests, code generation, logical reasoning), surpassing top dense models under 40B and rivaling larger open MoE and closed reasoning models. It also performs well in creative writing, and its efficient architecture delivers fast inference at lower deployment cost for high concurrency.",
-        "displayName": "Ring Flash 2.0",
-        "id": "inclusionAI/Ring-flash-2.0",
-        "settings": {
-          "extendParams": [
-            "reasoningBudgetToken"
-          ]
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-19",
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "functionCall": true
         },
         "contextWindowTokens": 131072,
@@ -26942,62 +26380,6 @@
       },
       {
         "abilities": {
-          "functionCall": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "Kimi K2-Instruct-0905 is the newest and most powerful Kimi K2. It is a top-tier MoE model with 1T total and 32B active parameters. Key features include stronger agentic coding intelligence with significant gains on benchmarks and real-world agent tasks, plus improved frontend coding aesthetics and usability.",
-        "displayName": "Kimi K2 0905",
-        "id": "moonshotai/Kimi-K2-Instruct-0905",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-05",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "Kimi K2-Instruct-0905 is the newest and most powerful Kimi K2. It is a top-tier MoE model with 1T total and 32B active parameters. Key features include stronger agentic coding intelligence with significant gains on benchmarks and real-world agent tasks, plus improved frontend coding aesthetics and usability.",
-        "displayName": "Kimi K2 0905 (Pro)",
-        "id": "Pro/moonshotai/Kimi-K2-Instruct-0905",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-05",
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "reasoning": true
         },
         "contextWindowTokens": 131072,
@@ -27025,70 +26407,6 @@
         "settings": {
           "extendParams": [
             "enableReasoning",
-            "reasoningBudgetToken"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "Qwen3-235B-A22B-Instruct-2507 is a flagship Qwen3 MoE model with 235B total and 22B active parameters. It is an updated non-thinking version focused on improving instruction following, logical reasoning, text understanding, math, science, coding, and tool use. It also expands multilingual long-tail knowledge and better aligns with user preferences for subjective open-ended tasks.",
-        "displayName": "Qwen3 235B A22B Instruct 2507",
-        "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
-        "organization": "Qwen",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 2.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 10,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-07-21",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "Qwen3-30B-A3B-Thinking-2507 is the latest thinking model in the Qwen3 series. It is an MoE model with 30.5B total and 3.3B active parameters, focused on complex tasks. It shows significant gains in logic, math, science, coding, and academic benchmarks, and improves instruction following, tool use, text generation, and preference alignment. It natively supports 256K context and can extend to 1M tokens. This version is designed for thinking mode with detailed step-by-step reasoning and strong agent capabilities.",
-        "displayName": "Qwen3 30B A3B Thinking 2507",
-        "id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
-        "organization": "Qwen",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.7,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 2.8,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-07-30",
-        "settings": {
-          "extendParams": [
             "reasoningBudgetToken"
           ]
         },
@@ -27229,74 +26547,6 @@
             "reasoningBudgetToken"
           ]
         },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "reasoning": true,
-          "vision": true
-        },
-        "contextWindowTokens": 65536,
-        "description": "GLM-4.1V-9B-Thinking is an open-source VLM from Zhipu AI and Tsinghua KEG Lab, designed for complex multimodal cognition. Built on GLM-4-9B-0414, it adds chain-of-thought reasoning and RL to significantly improve cross-modal reasoning and stability.",
-        "displayName": "GLM-4.1V 9B Thinking (Free)",
-        "id": "THUDM/GLM-4.1V-9B-Thinking",
-        "settings": {
-          "extendParams": [
-            "reasoningBudgetToken"
-          ]
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 0,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-07-02",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 131072,
-        "description": "GLM-Z1-32B-0414 is a deep-thinking reasoning model built from GLM-4-32B-0414 with cold-start data and expanded RL, further trained on math, code, and logic. It significantly improves math ability and complex task solving over the base model.",
-        "displayName": "GLM-Z1 32B 0414",
-        "id": "THUDM/GLM-Z1-32B-0414",
-        "settings": {
-          "extendParams": [
-            "reasoningBudgetToken"
-          ]
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-04-14",
         "type": "chat"
       },
       {
@@ -27701,42 +26951,6 @@
             }
           ]
         },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "vision": true
-        },
-        "contextWindowTokens": 131072,
-        "description": "GLM-4.6V achieves SOTA visual understanding accuracy at the same parameter scale, and is the first to natively integrate Function Call capability into vision models in the model architecture, connecting the chain from visual perception to executable action (Action), providing a unified technical foundation for multimodal Agents in real business scenarios. Visual context window expanded to 128K, supporting long video stream processing and high-resolution multi-image analysis.",
-        "displayName": "GLM-4.6V",
-        "id": "zai-org/GLM-4.6V",
-        "settings": {
-          "extendParams": [
-            "enableReasoning",
-            "reasoningBudgetToken"
-          ]
-        },
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 3.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 14,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-12-08",
         "type": "chat"
       },
       {
@@ -34528,124 +33742,12 @@
       },
       {
         "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 204800,
-        "displayName": "MiniMax-M2.5",
-        "id": "minimaxai/minimax-m2.5",
-        "maxOutput": 131072,
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 131072,
-        "description": "DeepSeek V3.2 is a next-gen reasoning model with stronger complex reasoning and chain-of-thought capabilities.",
-        "displayName": "DeepSeek V3.2",
-        "enabled": true,
-        "id": "deepseek-ai/deepseek-v3.2",
-        "maxOutput": 65536,
-        "settings": {
-          "extendParams": [
-            "enableReasoning"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 200000,
-        "description": "GLM-4.7 is Zhipu latest flagship model, enhanced for Agentic Coding scenarios with improved coding capabilities.",
-        "displayName": "GLM-4.7",
-        "id": "z-ai/glm4.7",
-        "maxOutput": 131072,
-        "settings": {
-          "extendParams": [
-            "enableReasoning"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 200000,
-        "description": "GLM-5 is Zhipu AI's new flagship foundation model for agent engineering, achieving open-source SOTA performance in coding and agent capabilities. It matches Claude Opus 4.5 in performance.",
-        "displayName": "GLM-5",
-        "id": "z-ai/glm5",
-        "maxOutput": 131072,
-        "settings": {
-          "extendParams": [
-            "enableReasoning"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "Kimi K2.5 is the most intelligent Kimi model to date, featuring native multimodal architecture.",
-        "displayName": "Kimi K2.5",
-        "enabled": true,
-        "id": "moonshotai/kimi-k2.5",
-        "maxOutput": 65536,
-        "settings": {
-          "extendParams": [
-            "enableReasoning"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 131072,
-        "description": "DeepSeek V3.1 is a next-gen reasoning model with stronger complex reasoning and chain-of-thought for deep analysis tasks.",
-        "displayName": "DeepSeek V3.1 Terminus",
-        "id": "deepseek-ai/deepseek-v3.1-terminus",
-        "maxOutput": 16384,
-        "settings": {
-          "extendParams": [
-            "enableReasoning"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "functionCall": true
         },
         "contextWindowTokens": 128000,
         "description": "An advanced LLM strong at reasoning, math, common sense, and function calling.",
         "displayName": "Llama 3.3 70B Instruct",
         "id": "meta/llama-3.3-70b-instruct",
-        "type": "chat"
-      },
-      {
-        "contextWindowTokens": 128000,
-        "description": "A cutting-edge small language model with strong understanding, reasoning, and text generation.",
-        "displayName": "Llama 3.2 1B Instruct",
-        "id": "meta/llama-3.2-1b-instruct",
-        "type": "chat"
-      },
-      {
-        "contextWindowTokens": 128000,
-        "description": "A cutting-edge small language model with strong understanding, reasoning, and text generation.",
-        "displayName": "Llama 3.2 3B Instruct",
-        "id": "meta/llama-3.2-3b-instruct",
         "type": "chat"
       },
       {
@@ -34707,30 +33809,6 @@
         "description": "An advanced small language model designed for edge applications.",
         "displayName": "Gemma 2 2B Instruct",
         "id": "google/gemma-2-2b-it",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true
-        },
-        "contextWindowTokens": 32768,
-        "description": "A bilingual LLM for Chinese and English across language, coding, math, and reasoning.",
-        "displayName": "Qwen2.5 7B Instruct",
-        "id": "qwen/qwen2.5-7b-instruct",
-        "type": "chat"
-      },
-      {
-        "contextWindowTokens": 32768,
-        "description": "A strong mid-sized code model with 32K context, excelling at multilingual programming.",
-        "displayName": "Qwen2.5 Coder 7B Instruct",
-        "id": "qwen/qwen2.5-coder-7b-instruct",
-        "type": "chat"
-      },
-      {
-        "contextWindowTokens": 32768,
-        "description": "An advanced LLM for code generation, reasoning, and repair across mainstream programming languages.",
-        "displayName": "Qwen2.5 Coder 32B Instruct",
-        "id": "qwen/qwen2.5-coder-32b-instruct",
         "type": "chat"
       }
     ],
@@ -36159,35 +35237,6 @@
       },
       {
         "abilities": {
-          "video": true,
-          "vision": true
-        },
-        "contextWindowTokens": 32768,
-        "description": "Qwen2.5 VL 32B Instruct is an open-source multimodal model suitable for private deployment and multi-scenario use.",
-        "displayName": "Qwen2.5 VL 32B Instruct",
-        "id": "qwen2.5-vl-32b-instruct",
-        "maxOutput": 8192,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 8,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 24,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "vision": true
         },
         "contextWindowTokens": 65536,
@@ -36924,99 +35973,6 @@
             {
               "name": "textOutput",
               "rate": 2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "settings": {
-          "extendParams": [
-            "enableReasoning",
-            "reasoningBudgetToken"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "contextWindowTokens": 32768,
-        "description": "Qwen3 4B is suitable for small-to-mid apps and local inference.",
-        "displayName": "Qwen3 4B",
-        "id": "qwen3-4b",
-        "maxOutput": 8192,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.3,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 1.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "settings": {
-          "extendParams": [
-            "enableReasoning",
-            "reasoningBudgetToken"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "contextWindowTokens": 32768,
-        "description": "Qwen3 1.7B is an ultra-light model for edge and device deployment.",
-        "displayName": "Qwen3 1.7B",
-        "id": "qwen3-1.7b",
-        "maxOutput": 8192,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.3,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 1.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "settings": {
-          "extendParams": [
-            "enableReasoning",
-            "reasoningBudgetToken"
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "contextWindowTokens": 32768,
-        "description": "Qwen3 0.6B is an entry-level model for simple reasoning and very constrained environments.",
-        "displayName": "Qwen3 0.6B",
-        "id": "qwen3-0.6b",
-        "maxOutput": 8192,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.3,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 1.2,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -38856,100 +37812,6 @@
       },
       {
         "abilities": {
-          "functionCall": true,
-          "search": true,
-          "vision": true
-        },
-        "contextWindowTokens": 2000000,
-        "description": "We’re excited to release Grok 4 Fast, our latest progress in cost-effective reasoning models.",
-        "displayName": "Grok 4 Fast (Non-Reasoning)",
-        "id": "grok-4-fast-non-reasoning",
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 0.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-09",
-        "settings": {
-          "searchImpl": "params"
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "search": true,
-          "vision": true
-        },
-        "contextWindowTokens": 2000000,
-        "description": "We’re excited to release Grok 4 Fast, our latest progress in cost-effective reasoning models.",
-        "displayName": "Grok 4 Fast",
-        "id": "grok-4-fast-reasoning",
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.2,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 0.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-09",
-        "settings": {
-          "searchImpl": "params"
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "vision": true
-        },
-        "contextWindowTokens": 256000,
-        "description": "Latest Grok flagship with unmatched performance in language, math, and reasoning — a true all-rounder. Currently points to grok-4-0709; due to limited resources it is temporarily 10% higher than official pricing and is expected to return to official price later.",
-        "displayName": "Grok 4 0709",
-        "id": "grok-4",
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 3.3,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-07-09",
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "functionCall": true
         },
         "contextWindowTokens": 131072,
@@ -39678,33 +38540,6 @@
             {
               "name": "textOutput",
               "rate": 1.68,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true
-        },
-        "contextWindowTokens": 131072,
-        "description": "DeepSeek V3.1 Fast is the high-TPS fast variant of DeepSeek V3.1. Hybrid thinking mode: via chat templates, one model supports both thinking and non-thinking. Smarter tool use: post-training boosts tool and agent task performance.",
-        "displayName": "DeepSeek V3.1 (Fast)",
-        "id": "DeepSeek-V3.1-Fast",
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 1.096,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 3.288,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -44508,6 +43343,63 @@
           "vision": true
         },
         "contextWindowTokens": 1000000,
+        "description": "Claude Fable 5 is Anthropic's most capable model — a new tier above Opus for the most demanding reasoning and long-horizon agentic work.",
+        "displayName": "Claude Fable 5",
+        "enabled": true,
+        "id": "claude-fable-5",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 10,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 50,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 12.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-06-09",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "disableContextCaching",
+            "enableAdaptiveThinking",
+            "opus47Effort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
         "description": "Claude Opus 4.8 is Anthropic's most capable model, building on Opus 4.7 with improvements across reasoning, agentic coding, and tool use.",
         "displayName": "Claude Opus 4.8",
         "enabled": true,
@@ -45106,47 +43998,20 @@
           "units": [
             {
               "name": "textInput_cacheRead",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 1.4,
-                  "upTo": 0.256
-                },
-                {
-                  "rate": 2.8,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 0.025,
+              "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 7,
-                  "upTo": 0.256
-                },
-                {
-                  "rate": 14,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 3,
+              "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 21,
-                  "upTo": 0.256
-                },
-                {
-                  "rate": 42,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 6,
+              "strategy": "fixed",
               "unit": "millionTokens"
             }
           ]
@@ -45180,47 +44045,20 @@
           "units": [
             {
               "name": "textInput_cacheRead",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 0.56,
-                  "upTo": 0.256
-                },
-                {
-                  "rate": 1.12,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 0.02,
+              "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 2.8,
-                  "upTo": 0.256
-                },
-                {
-                  "rate": 5.6,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 1,
+              "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 14,
-                  "upTo": 0.256
-                },
-                {
-                  "rate": 28,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 2,
+              "strategy": "fixed",
               "unit": "millionTokens"
             }
           ]
@@ -45244,7 +44082,6 @@
         "contextWindowTokens": 262144,
         "description": "MiMo-V2-Flash is now officially open source! This is a MoE (Mixture-of-Experts) model purpose-built for extreme inference efficiency, with 309B total parameters (15B activated). Through innovations in a hybrid attention architecture and multi-layer MTP inference acceleration, it ranks among the global Top 2 open-source models across multiple agent benchmarking suites. Its coding capabilities surpass all open-source models and rival leading closed-source models such as Claude 4.5 Sonnet, while incurring only 2.5% of the inference cost and delivering 2× faster generation speed—pushing large-model inference efficiency to the limit.",
         "displayName": "MiMo-V2 Flash",
-        "enabled": true,
         "id": "mimo-v2-flash",
         "maxOutput": 65536,
         "pricing": {
@@ -57757,47 +56594,20 @@
           "units": [
             {
               "name": "textInput",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 0.4,
-                  "upTo": 256000
-                },
-                {
-                  "rate": 0.8,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 0.14,
+              "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 2,
-                  "upTo": 256000
-                },
-                {
-                  "rate": 4,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 0.28,
+              "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput_cacheRead",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 0.08,
-                  "upTo": 256000
-                },
-                {
-                  "rate": 0.16,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 0.0028,
+              "strategy": "fixed",
               "unit": "millionTokens"
             }
           ]
@@ -57827,47 +56637,20 @@
           "units": [
             {
               "name": "textInput",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 1,
-                  "upTo": 256000
-                },
-                {
-                  "rate": 2,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 1.74,
+              "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 3,
-                  "upTo": 256000
-                },
-                {
-                  "rate": 6,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 3.48,
+              "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput_cacheRead",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 0.2,
-                  "upTo": 256000
-                },
-                {
-                  "rate": 0.4,
-                  "upTo": "infinity"
-                }
-              ],
+              "rate": 0.0145,
+              "strategy": "fixed",
               "unit": "millionTokens"
             }
           ]
@@ -57972,46 +56755,40 @@
           "reasoning": true,
           "vision": true
         },
-        "contextWindowTokens": 262144,
-        "description": "Qwen3.5-Plus by Alibaba — cost-effective coding model with vision support for image and video input.",
-        "displayName": "Qwen3.5 Plus",
+        "contextWindowTokens": 512000,
+        "description": "MiniMax M3 — latest MiniMax model with vision support, strong reasoning, and improved tool use.",
+        "displayName": "MiniMax M3",
         "enabled": false,
-        "id": "qwen3.5-plus",
-        "maxOutput": 65536,
-        "organization": "Alibaba",
+        "id": "minimax-m3",
+        "maxOutput": 131072,
+        "organization": "MiniMax",
         "pricing": {
           "currency": "USD",
           "units": [
             {
               "name": "textInput",
-              "rate": 0.2,
+              "rate": 0.6,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 1.2,
+              "rate": 2.4,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput_cacheRead",
-              "rate": 0.02,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput_cacheWrite",
-              "rate": 0.25,
+              "rate": 0.12,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
           ]
         },
-        "releasedAt": "2026-02-16",
+        "releasedAt": "2026-05-31",
         "settings": {
           "extendParams": [
-            "reasoningEffort"
+            "reasoningBudgetToken32k"
           ]
         },
         "type": "chat"
@@ -59953,62 +58730,6 @@
       },
       {
         "abilities": {
-          "functionCall": true
-        },
-        "contextWindowTokens": 128000,
-        "description": "GPT-4o Audio Preview model with audio input and output.",
-        "displayName": "GPT-4o Audio Preview",
-        "id": "gpt-4o-audio-preview",
-        "maxOutput": 16384,
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 2.5,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 10,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2024-12-17",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true
-        },
-        "contextWindowTokens": 128000,
-        "description": "GPT-4o mini Audio model with audio input and output.",
-        "displayName": "GPT-4o mini Audio",
-        "id": "gpt-4o-mini-audio-preview",
-        "maxOutput": 16384,
-        "pricing": {
-          "units": [
-            {
-              "name": "textInput",
-              "rate": 0.15,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 0.6,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2024-12-17",
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "functionCall": true,
           "vision": true
         },
@@ -60669,96 +59390,6 @@
           ]
         },
         "releasedAt": "2025-10-06",
-        "type": "image"
-      },
-      {
-        "description": "The latest DALL·E model, released in November 2023, supports more realistic, accurate image generation with stronger detail.",
-        "displayName": "DALL·E 3",
-        "id": "dall-e-3",
-        "parameters": {
-          "prompt": {
-            "default": ""
-          },
-          "quality": {
-            "default": "standard",
-            "enum": [
-              "standard",
-              "hd"
-            ]
-          },
-          "size": {
-            "default": "1024x1024",
-            "enum": [
-              "1024x1024",
-              "1792x1024",
-              "1024x1792"
-            ]
-          }
-        },
-        "pricing": {
-          "units": [
-            {
-              "lookup": {
-                "prices": {
-                  "hd_1024x1024": 0.08,
-                  "hd_1024x1792": 0.12,
-                  "hd_1792x1024": 0.12,
-                  "standard_1024x1024": 0.04,
-                  "standard_1024x1792": 0.08,
-                  "standard_1792x1024": 0.08
-                },
-                "pricingParams": [
-                  "quality",
-                  "size"
-                ]
-              },
-              "name": "imageGeneration",
-              "strategy": "lookup",
-              "unit": "image"
-            }
-          ]
-        },
-        "type": "image"
-      },
-      {
-        "description": "Second-generation DALL·E model with more realistic, accurate image generation and 4× the resolution of the first generation.",
-        "displayName": "DALL·E 2",
-        "id": "dall-e-2",
-        "parameters": {
-          "imageUrl": {
-            "default": null
-          },
-          "prompt": {
-            "default": ""
-          },
-          "size": {
-            "default": "1024x1024",
-            "enum": [
-              "256x256",
-              "512x512",
-              "1024x1024"
-            ]
-          }
-        },
-        "pricing": {
-          "units": [
-            {
-              "lookup": {
-                "prices": {
-                  "1024x1024": 0.02,
-                  "256x256": 0.016,
-                  "512x512": 0.018
-                },
-                "pricingParams": [
-                  "size"
-                ]
-              },
-              "name": "imageGeneration",
-              "strategy": "lookup",
-              "unit": "image"
-            }
-          ]
-        },
         "type": "image"
       },
       {
@@ -63501,184 +62132,6 @@
       },
       {
         "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "structuredOutput": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "K2 long-thinking model with 256k context, supporting multi-step tool use and reasoning for complex problems.",
-        "displayName": "Kimi K2 Thinking",
-        "id": "kimi-k2-thinking",
-        "maxOutput": 65536,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-11-06",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "reasoning": true,
-          "structuredOutput": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "High-speed K2 long-thinking variant with 256k context, strong deep reasoning, and 60–100 tokens/sec output.",
-        "displayName": "Kimi K2 Thinking Turbo",
-        "id": "kimi-k2-thinking-turbo",
-        "maxOutput": 65536,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 8,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 58,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-11-06",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true,
-          "structuredOutput": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "kimi-k2-0905-preview offers a 256k context window, stronger agentic coding, better front-end code quality, and improved context understanding.",
-        "displayName": "Kimi K2 0905 Preview",
-        "id": "kimi-k2-0905-preview",
-        "maxOutput": 65536,
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-05",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true
-        },
-        "contextWindowTokens": 131072,
-        "description": "kimi-k2 is an MoE foundation model with strong coding and agent capabilities (1T total params, 32B active), outperforming other mainstream open models across reasoning, programming, math, and agent benchmarks.",
-        "displayName": "Kimi K2 0711 Preview",
-        "id": "kimi-k2-0711-preview",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 4,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 16,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-07-11",
-        "type": "chat"
-      },
-      {
-        "abilities": {
-          "functionCall": true
-        },
-        "contextWindowTokens": 262144,
-        "description": "kimi-k2 is an MoE foundation model with strong coding and agent capabilities (1T total params, 32B active), outperforming other mainstream open models across reasoning, programming, math, and agent benchmarks.",
-        "displayName": "Kimi K2 Turbo Preview",
-        "id": "kimi-k2-turbo-preview",
-        "pricing": {
-          "currency": "CNY",
-          "units": [
-            {
-              "name": "textInput_cacheRead",
-              "rate": 1,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput",
-              "rate": 8,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textOutput",
-              "rate": 58,
-              "strategy": "fixed",
-              "unit": "millionTokens"
-            }
-          ]
-        },
-        "releasedAt": "2025-09-05",
-        "type": "chat"
-      },
-      {
-        "abilities": {
           "functionCall": true
         },
         "contextWindowTokens": 8192,
@@ -63900,7 +62353,6 @@
         "contextWindowTokens": 256000,
         "description": "Built on Step 3.5 Flash and optimized for high-frequency agent scenarios, it further improves token efficiency and inference speed while retaining flagship-level reasoning and tool-calling capabilities. It also supports switching to a low-reasoning mode to reduce resource consumption. Additionally, targeted optimizations have been made to enhance compatibility with coding tasks and agent frameworks.",
         "displayName": "Step 3.5 Flash 2603",
-        "enabled": true,
         "id": "step-3.5-flash-2603",
         "pricing": {
           "currency": "CNY",
@@ -63986,7 +62438,7 @@
               "tiers": [
                 {
                   "rate": 0.3,
-                  "upTo": 0.004
+                  "upTo": 4000
                 },
                 {
                   "rate": 0.8,
@@ -64001,7 +62453,7 @@
               "tiers": [
                 {
                   "rate": 1.5,
-                  "upTo": 0.004
+                  "upTo": 4000
                 },
                 {
                   "rate": 4,
@@ -64016,7 +62468,7 @@
               "tiers": [
                 {
                   "rate": 4,
-                  "upTo": 0.004
+                  "upTo": 4000
                 },
                 {
                   "rate": 8,
