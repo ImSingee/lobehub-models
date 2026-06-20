@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "commitHash": "a7fac87b02f5f57bc0c6bc4f75fda88f14116f81",
-    "generatedAt": "2026-06-19T04:37:28.693Z",
+    "commitHash": "30a7efa01bb65a3341ec78f2ba00272df1ca4070",
+    "generatedAt": "2026-06-20T04:34:08.057Z",
     "providerCount": 82,
     "modelCount": 1928
   },
@@ -40861,6 +40861,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -40952,6 +40953,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -41002,6 +41004,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -41091,6 +41094,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -45326,6 +45330,7 @@
         "family": "claude-mythos",
         "generation": "mythos-5",
         "id": "claude-fable-5",
+        "knowledgeCutoff": "2026-01",
         "maxOutput": 128000,
         "pricing": {
           "units": [
@@ -55625,6 +55630,7 @@
     "vertexai": [
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -55764,6 +55770,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -55900,6 +55907,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -55981,6 +55989,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -56049,6 +56058,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -56058,7 +56068,10 @@
         "contextWindowTokens": 1114112,
         "description": "Gemini 3 Pro is Google’s most powerful agent and vibe-coding model, delivering richer visuals and deeper interaction on top of state-of-the-art reasoning.",
         "displayName": "Gemini 3 Pro Preview",
+        "family": "gemini",
+        "generation": "gemini-3",
         "id": "gemini-3-pro-preview",
+        "knowledgeCutoff": "2025-01",
         "maxOutput": 65536,
         "pricing": {
           "units": [
@@ -56135,6 +56148,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -57219,6 +57233,7 @@
     "google": [
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -57294,6 +57309,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -57341,6 +57357,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -57388,6 +57405,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -57527,6 +57545,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -57663,6 +57682,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -57744,6 +57764,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -57812,6 +57833,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -58037,6 +58059,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -58171,6 +58194,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -58288,6 +58312,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true,
           "reasoning": true,
           "search": true,
@@ -62094,7 +62119,7 @@
             }
           ]
         },
-        "type": "stt"
+        "type": "asr"
       },
       {
         "contextWindowTokens": 16000,
@@ -62124,7 +62149,7 @@
             }
           ]
         },
-        "type": "stt"
+        "type": "asr"
       },
       {
         "contextWindowTokens": 16000,
@@ -62154,7 +62179,7 @@
             }
           ]
         },
-        "type": "stt"
+        "type": "asr"
       },
       {
         "description": "OpenAI's next-generation multimodal image model with native reasoning, up to 4K resolution, near-perfect text rendering, and high-fidelity multilingual support.",
