@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "5b4cef6e5f57080747906af1dc6d5e38e5cb432b",
-    "generatedAt": "2026-07-28T05:51:49.538Z",
-    "providerCount": 83,
-    "modelCount": 1923
+    "commitHash": "a5769c22b6a80945c671130e42cde45a2e84fe61",
+    "generatedAt": "2026-07-29T05:56:20.910Z",
+    "providerCount": 84,
+    "modelCount": 1932
   },
   "providers": {
     "qiniu": {
@@ -303,6 +303,33 @@
         "supportResponsesApi": true
       },
       "url": "https://www.volcengine.com/product/ark"
+    },
+    "chatGPT": {
+      "chatModels": [],
+      "checkModel": "gpt-5.5",
+      "description": "Use models included with your ChatGPT subscription through Codex, without an OpenAI Platform API key.",
+      "disableBrowserRequest": true,
+      "id": "chatgpt",
+      "modelsUrl": "https://learn.chatgpt.com/docs/models",
+      "name": "ChatGPT",
+      "settings": {
+        "authType": "oauthDeviceFlow",
+        "disableBrowserRequest": true,
+        "oauthDeviceFlow": {
+          "clientId": "app_EMoamEEZ73f0CkXaXp7hrann",
+          "defaultPollingInterval": 8,
+          "deviceCodeEndpoint": "https://auth.openai.com/api/accounts/deviceauth/usercode",
+          "refreshTokenGrant": true,
+          "scopes": [],
+          "tokenEndpoint": "https://auth.openai.com/oauth/token",
+          "tokenExchangeEndpoint": "https://auth.openai.com/api/accounts/deviceauth/token"
+        },
+        "sdkType": "openai",
+        "showApiKey": false,
+        "showChecker": true,
+        "showModelFetcher": false
+      },
+      "url": "https://chatgpt.com"
     },
     "v0": {
       "chatModels": [],
@@ -779,10 +806,10 @@
       "apiKeyUrl": "https://lobe.li/9mZhb4T",
       "chatModels": [],
       "checkModel": "gpt-4.1-nano",
-      "description": "AiHubMix provides access to multiple AI models through a unified API.",
+      "description": "AIHubMix provides access to multiple AI models through a unified API.",
       "id": "aihubmix",
       "modelsUrl": "https://docs.aihubmix.com/cn/api/Model-List",
-      "name": "AiHubMix",
+      "name": "AIHubMix",
       "settings": {
         "proxyUrl": {
           "placeholder": "https://aihubmix.com"
@@ -1005,6 +1032,7 @@
           "tokenEndpoint": "https://auth.x.ai/oauth2/token"
         },
         "sdkType": "openai",
+        "searchMode": "params",
         "showApiKey": false,
         "showChecker": true
       },
@@ -10228,6 +10256,123 @@
         },
         "releasedAt": "2025-05-28",
         "type": "video"
+      }
+    ],
+    "chatGPT": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
+        "description": "GPT-5.6 Sol is OpenAI's latest flagship and most capable model, the top choice in the GPT family for coding and agentic work.",
+        "displayName": "GPT-5.6 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-5.6",
+        "id": "gpt-5.6-sol",
+        "knowledgeCutoff": "2026-02",
+        "maxOutput": 128000,
+        "releasedAt": "2026-07-09",
+        "settings": {
+          "extendParams": [
+            "reasoningMode",
+            "gpt5_6ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
+        "description": "GPT-5.6 Terra balances intelligence and cost for everyday professional work, competitive with GPT-5.5 at about half the price.",
+        "displayName": "GPT-5.6 Terra",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-5.6",
+        "id": "gpt-5.6-terra",
+        "knowledgeCutoff": "2026-02",
+        "maxOutput": 128000,
+        "releasedAt": "2026-07-09",
+        "settings": {
+          "extendParams": [
+            "reasoningMode",
+            "gpt5_6ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
+        "description": "GPT-5.6 Luna is optimized for cost-sensitive, high-volume workloads with the lowest price in the GPT-5.6 family.",
+        "displayName": "GPT-5.6 Luna",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-5.6",
+        "id": "gpt-5.6-luna",
+        "knowledgeCutoff": "2026-02",
+        "maxOutput": 128000,
+        "releasedAt": "2026-07-09",
+        "settings": {
+          "extendParams": [
+            "reasoningMode",
+            "gpt5_6ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
+        "description": "GPT-5.5 is OpenAI's previous-generation frontier model for complex professional work.",
+        "displayName": "GPT-5.5",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-5.5",
+        "id": "gpt-5.5",
+        "knowledgeCutoff": "2025-12",
+        "maxOutput": 128000,
+        "releasedAt": "2026-04-23",
+        "settings": {
+          "extendParams": [
+            "gpt5_2ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
       }
     ],
     "v0": [
@@ -20361,9 +20506,95 @@
           "vision": true
         },
         "contextWindowTokens": 1114112,
+        "description": "Gemini 3.6 Flash balances speed with intelligence for agentic and multimodal tasks, with lower output cost than 3.5 Flash.",
+        "displayName": "Gemini 3.6 Flash",
+        "enabled": true,
+        "family": "gemini",
+        "generation": "gemini-3.6",
+        "id": "gemini-3.6-flash",
+        "knowledgeCutoff": "2026-03",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "videoInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 7.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "1h": 1
+                },
+                "pricingParams": [
+                  "ttl"
+                ]
+              },
+              "name": "textInput_cacheWrite",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-07-21",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "thinkingLevel",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1114112,
         "description": "Gemini's most intelligent model built for speed, combining frontier intelligence with superior search and grounding.",
         "displayName": "Gemini 3.5 Flash",
-        "enabled": true,
         "family": "gemini",
         "generation": "gemini-3.5",
         "id": "gemini-3.5-flash",
@@ -20424,6 +20655,93 @@
         },
         "releasedAt": "2026-05-19",
         "settings": {
+          "extendParams": [
+            "thinkingLevel",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1114112,
+        "description": "Gemini 3.5 Flash-Lite is Google's fastest, most cost-efficient 3.5 model for high-throughput agentic tasks, document parsing, and simple data extraction.",
+        "displayName": "Gemini 3.5 Flash-Lite",
+        "enabled": true,
+        "family": "gemini",
+        "generation": "gemini-3.5",
+        "id": "gemini-3.5-flash-lite",
+        "knowledgeCutoff": "2026-03",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.03,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "videoInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 2.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "1h": 1
+                },
+                "pricingParams": [
+                  "ttl"
+                ]
+              },
+              "name": "textInput_cacheWrite",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-07-21",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
           "extendParams": [
             "thinkingLevel",
             "urlContext"
@@ -20640,7 +20958,6 @@
         "contextWindowTokens": 1114112,
         "description": "Gemini 3.1 Flash-Lite is Google's most cost-efficient multimodal model, optimized for high-volume agentic tasks, translation, and data processing.",
         "displayName": "Gemini 3.1 Flash-Lite",
-        "enabled": true,
         "family": "gemini",
         "generation": "gemini-3.1",
         "id": "gemini-3.1-flash-lite",
@@ -22679,45 +22996,48 @@
         "pricing": {
           "units": [
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 5,
-                  "[0.272, infinity]": 10
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 10,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 0.5,
-                  "[0.272, infinity]": 1
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput_cacheRead",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 1,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 30,
-                  "[0.272, infinity]": 45
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textOutput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 30,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 45,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             }
           ]
@@ -22751,45 +23071,48 @@
         "pricing": {
           "units": [
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 2.5,
-                  "[0.272, infinity]": 5
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 0.25,
-                  "[0.272, infinity]": 0.5
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput_cacheRead",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.25,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.5,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 15,
-                  "[0.272, infinity]": 22.5
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textOutput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 15,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 22.5,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             }
           ]
@@ -22919,31 +23242,33 @@
         "pricing": {
           "units": [
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 30,
-                  "[0.272, infinity]": 60
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 30,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 60,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 180,
-                  "[0.272, infinity]": 270
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textOutput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 180,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 270,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             }
           ]
@@ -42242,39 +42567,75 @@
           "functionCall": true,
           "reasoning": true,
           "search": true,
+          "structuredOutput": true,
           "video": true,
           "vision": true
         },
         "contextWindowTokens": 1114112,
-        "description": "Points to gemini-3-flash-preview",
+        "description": "Points to gemini-3.6-flash",
         "displayName": "Gemini Flash Latest",
         "family": "gemini",
         "id": "gemini-flash-latest",
-        "knowledgeCutoff": "2025-01",
+        "knowledgeCutoff": "2026-03",
         "maxOutput": 65536,
         "pricing": {
           "units": [
             {
               "name": "textInput_cacheRead",
-              "rate": 0.075,
+              "rate": 0.15,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "rate": 0.3,
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "videoInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 1.5,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 2.5,
+              "rate": 7.5,
               "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "1h": 1
+                },
+                "pricingParams": [
+                  "ttl"
+                ]
+              },
+              "name": "textInput_cacheWrite",
+              "strategy": "lookup",
               "unit": "millionTokens"
             }
           ]
         },
         "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
           "extendParams": [
             "thinkingLevel",
             "urlContext"
@@ -42290,39 +42651,162 @@
           "functionCall": true,
           "reasoning": true,
           "search": true,
+          "structuredOutput": true,
           "video": true,
           "vision": true
         },
         "contextWindowTokens": 1114112,
-        "description": "Points to gemini-3.1-flash-lite",
+        "description": "Points to gemini-3.5-flash-lite",
         "displayName": "Gemini Flash-Lite Latest",
         "family": "gemini",
         "id": "gemini-flash-lite-latest",
-        "knowledgeCutoff": "2025-01",
+        "knowledgeCutoff": "2026-03",
         "maxOutput": 65536,
         "pricing": {
           "units": [
             {
               "name": "textInput_cacheRead",
-              "rate": 0.025,
+              "rate": 0.03,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "rate": 0.1,
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "videoInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 0.3,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 0.4,
+              "rate": 2.5,
               "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "1h": 1
+                },
+                "pricingParams": [
+                  "ttl"
+                ]
+              },
+              "name": "textInput_cacheWrite",
+              "strategy": "lookup",
               "unit": "millionTokens"
             }
           ]
         },
         "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "thinkingLevel",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1114112,
+        "description": "Gemini 3.6 Flash balances speed with intelligence for agentic and multimodal tasks, with lower output cost than 3.5 Flash.",
+        "displayName": "Gemini 3.6 Flash",
+        "enabled": true,
+        "family": "gemini",
+        "generation": "gemini-3.6",
+        "id": "gemini-3.6-flash",
+        "knowledgeCutoff": "2026-03",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "videoInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 7.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "1h": 1
+                },
+                "pricingParams": [
+                  "ttl"
+                ]
+              },
+              "name": "textInput_cacheWrite",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-07-21",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
           "extendParams": [
             "thinkingLevel",
             "urlContext"
@@ -42345,7 +42829,6 @@
         "contextWindowTokens": 1114112,
         "description": "Gemini's most intelligent model built for speed, combining frontier intelligence with superior search and grounding.",
         "displayName": "Gemini 3.5 Flash",
-        "enabled": true,
         "family": "gemini",
         "generation": "gemini-3.5",
         "id": "gemini-3.5-flash",
@@ -42406,6 +42889,93 @@
         },
         "releasedAt": "2026-05-19",
         "settings": {
+          "extendParams": [
+            "thinkingLevel",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1114112,
+        "description": "Gemini 3.5 Flash-Lite is Google's fastest, most cost-efficient 3.5 model for high-throughput agentic tasks, document parsing, and simple data extraction.",
+        "displayName": "Gemini 3.5 Flash-Lite",
+        "enabled": true,
+        "family": "gemini",
+        "generation": "gemini-3.5",
+        "id": "gemini-3.5-flash-lite",
+        "knowledgeCutoff": "2026-03",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.03,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "videoInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 0.3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 2.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "lookup": {
+                "prices": {
+                  "1h": 1
+                },
+                "pricingParams": [
+                  "ttl"
+                ]
+              },
+              "name": "textInput_cacheWrite",
+              "strategy": "lookup",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-07-21",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
           "extendParams": [
             "thinkingLevel",
             "urlContext"
@@ -42674,7 +43244,6 @@
         "contextWindowTokens": 1114112,
         "description": "Gemini 3.1 Flash-Lite is Google's most cost-efficient multimodal model, optimized for high-volume agentic tasks, translation, and data processing.",
         "displayName": "Gemini 3.1 Flash-Lite",
-        "enabled": true,
         "family": "gemini",
         "generation": "gemini-3.1",
         "id": "gemini-3.1-flash-lite",
@@ -44558,45 +45127,48 @@
         "pricing": {
           "units": [
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 5,
-                  "[0.272, infinity]": 10
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 10,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 0.5,
-                  "[0.272, infinity]": 1
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput_cacheRead",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 1,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 30,
-                  "[0.272, infinity]": 45
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textOutput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 30,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 45,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             }
           ]
@@ -44673,45 +45245,48 @@
         "pricing": {
           "units": [
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 2.5,
-                  "[0.272, infinity]": 5
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 0.25,
-                  "[0.272, infinity]": 0.5
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput_cacheRead",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.25,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.5,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 15,
-                  "[0.272, infinity]": 22.5
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textOutput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 15,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 22.5,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             }
           ]
@@ -44744,31 +45319,33 @@
         "pricing": {
           "units": [
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 30,
-                  "[0.272, infinity]": 60
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textInput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 30,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 60,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             },
             {
-              "lookup": {
-                "prices": {
-                  "[0, 0.272]": 180,
-                  "[0.272, infinity]": 270
-                },
-                "pricingParams": [
-                  "textInput"
-                ]
-              },
               "name": "textOutput",
-              "strategy": "lookup",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 180,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 270,
+                  "upTo": "infinity"
+                }
+              ],
               "unit": "millionTokens"
             }
           ]
@@ -53040,6 +53617,66 @@
           ]
         },
         "releasedAt": "2026-06-09",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "disableContextCaching",
+            "enableAdaptiveThinking",
+            "opus47Effort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Opus 5 is Anthropic's strongest Opus model, built for deep reasoning, agentic coding, and long-horizon professional work.",
+        "displayName": "Claude Opus 5",
+        "enabled": true,
+        "family": "claude-opus",
+        "generation": "claude-5",
+        "id": "claude-opus-5",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 6.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-07-24",
         "settings": {
           "disabledParams": [
             "temperature",
