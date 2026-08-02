@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "commitHash": "a5769c22b6a80945c671130e42cde45a2e84fe61",
-    "generatedAt": "2026-08-01T06:03:23.898Z",
+    "commitHash": "ca27228d55bb604f8bcf455a18f5e87d3ba9f9a5",
+    "generatedAt": "2026-08-02T06:06:40.530Z",
     "providerCount": 84,
     "modelCount": 1932
   },
@@ -33911,19 +33911,19 @@
           "units": [
             {
               "name": "textInput_cacheRead",
-              "rate": 0.3,
+              "rate": 2,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textInput",
-              "rate": 3,
+              "rate": 20,
               "strategy": "fixed",
               "unit": "millionTokens"
             },
             {
               "name": "textOutput",
-              "rate": 15,
+              "rate": 100,
               "strategy": "fixed",
               "unit": "millionTokens"
             }
@@ -33936,6 +33936,9 @@
             "presence_penalty",
             "temperature",
             "top_p"
+          ],
+          "extendParams": [
+            "kimiK3ReasoningEffort"
           ]
         },
         "type": "chat"
@@ -34034,7 +34037,6 @@
         "contextWindowTokens": 262144,
         "description": "Kimi K2.6 is Kimi's latest and most capable model, delivering stronger long-horizon coding, instruction following, and self-correction while supporting text, image, and video inputs plus chat and agent tasks.",
         "displayName": "Kimi K2.6",
-        "enabled": true,
         "family": "kimi",
         "generation": "kimi-k2.6",
         "id": "kimi-k2.6",
