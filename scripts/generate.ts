@@ -5,11 +5,13 @@ import { basename, join } from "node:path";
 
 const ROOT = join(import.meta.dirname, "..");
 const CACHE_DIR = join(ROOT, ".cache");
-const REPO_DIR = join(CACHE_DIR, "lobe-chat");
+const REPO_URL = "https://github.com/lobehub/lobehub.git";
+const TARGET_BRANCH = "canary";
+const REPO_DIR = join(CACHE_DIR, "lobehub");
 const MODEL_BANK_SRC = join(REPO_DIR, "packages/model-bank/src");
 
 // ---------------------------------------------------------------------------
-// 1. Clone or update lobehub/lobe-chat (sparse checkout, model-bank only)
+// 1. Clone or update lobehub/lobehub (sparse checkout, model-bank only)
 // ---------------------------------------------------------------------------
 
 if (!existsSync(CACHE_DIR)) mkdirSync(CACHE_DIR, { recursive: true });
@@ -27,18 +29,17 @@ function run(cmd: string[], opts?: { cwd?: string }) {
 }
 
 if (!existsSync(join(REPO_DIR, ".git"))) {
-  console.log("Cloning lobehub/lobe-chat (sparse, model-bank only)...");
+  console.log("Cloning lobehub/lobehub (sparse, model-bank only)...");
   mkdirSync(REPO_DIR, { recursive: true });
   run(["git", "init"], { cwd: REPO_DIR });
-  run(["git", "remote", "add", "origin", "https://github.com/lobehub/lobe-chat.git"], {
-    cwd: REPO_DIR,
-  });
+  run(["git", "remote", "add", "origin", REPO_URL], { cwd: REPO_DIR });
   run(["git", "config", "core.sparseCheckout", "true"], { cwd: REPO_DIR });
   await Bun.write(join(REPO_DIR, ".git/info/sparse-checkout"), "packages/model-bank/\n");
-  run(["git", "pull", "--depth", "1", "origin", "main"], { cwd: REPO_DIR });
+  run(["git", "pull", "--depth", "1", "origin", TARGET_BRANCH], { cwd: REPO_DIR });
 } else {
-  console.log("Updating .cache/lobe-chat...");
-  run(["git", "pull", "--depth", "1", "origin", "main"], { cwd: REPO_DIR });
+  console.log("Updating .cache/lobehub...");
+  run(["git", "remote", "set-url", "origin", REPO_URL], { cwd: REPO_DIR });
+  run(["git", "pull", "--depth", "1", "origin", TARGET_BRANCH], { cwd: REPO_DIR });
 }
 
 // ---------------------------------------------------------------------------
