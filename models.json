@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "d633b07a20f547b874db6eeed53c6dfa1ead2fe6",
-    "generatedAt": "2026-08-09T04:20:36.543Z",
+    "commitHash": "a58d1813096e61026df14de80bb38fce6d5b0517",
+    "generatedAt": "2026-08-10T04:42:30.037Z",
     "providerCount": 84,
-    "modelCount": 1872
+    "modelCount": 1873
   },
   "providers": {
     "qiniu": {
@@ -24849,6 +24849,71 @@
         "type": "chat"
       },
       {
+        "description": "Gemini 3.1 Flash Lite Image (Nano Banana 2 Lite) is Google's fastest and most cost-efficient image generation model, built for high-volume generation and editing.",
+        "displayName": "Nano Banana 2 Lite",
+        "enabled": true,
+        "id": "gemini-3.1-flash-lite-image:image",
+        "parameters": {
+          "aspectRatio": {
+            "default": "auto",
+            "enum": [
+              "auto",
+              "1:1",
+              "2:3",
+              "3:2",
+              "3:4",
+              "4:3",
+              "4:5",
+              "5:4",
+              "9:16",
+              "16:9",
+              "21:9",
+              "1:4",
+              "4:1",
+              "1:8",
+              "8:1"
+            ]
+          },
+          "imageUrls": {
+            "default": []
+          },
+          "prompt": {
+            "default": ""
+          }
+        },
+        "pricing": {
+          "approximatePricePerImage": 0.034,
+          "units": [
+            {
+              "name": "imageOutput",
+              "rate": 30,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-06-30",
+        "type": "image"
+      },
+      {
         "description": "OpenAI's next-generation multimodal image model with native reasoning, up to 4K resolution, near-perfect text rendering, and high-fidelity multilingual support.",
         "displayName": "GPT Image 2",
         "enabled": true,
@@ -45407,6 +45472,7 @@
       },
       {
         "abilities": {
+          "audio": true,
           "functionCall": true
         },
         "contextWindowTokens": 128000,
