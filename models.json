@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "commitHash": "aa92ba239e82cf3da6ef8801d2418918d5e82385",
-    "generatedAt": "2026-08-23T03:53:37.500Z",
+    "commitHash": "3c64a7edb712316c4d5677e5fd20964e8c153bc9",
+    "generatedAt": "2026-08-24T03:57:28.626Z",
     "providerCount": 84,
     "modelCount": 1877
   },
@@ -60772,6 +60772,36 @@
               "strategy": "tiered",
               "tiers": [
                 {
+                  "rate": 4,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 8,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.4,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.8,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
                   "rate": 5,
                   "upTo": 272000
                 },
@@ -60783,45 +60813,15 @@
               "unit": "millionTokens"
             },
             {
-              "name": "textInput_cacheRead",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 0.5,
-                  "upTo": 272000
-                },
-                {
-                  "rate": 1,
-                  "upTo": "infinity"
-                }
-              ],
-              "unit": "millionTokens"
-            },
-            {
-              "name": "textInput_cacheWrite",
-              "strategy": "tiered",
-              "tiers": [
-                {
-                  "rate": 6.25,
-                  "upTo": 272000
-                },
-                {
-                  "rate": 12.5,
-                  "upTo": "infinity"
-                }
-              ],
-              "unit": "millionTokens"
-            },
-            {
               "name": "textOutput",
               "strategy": "tiered",
               "tiers": [
                 {
-                  "rate": 30,
+                  "rate": 20,
                   "upTo": 272000
                 },
                 {
-                  "rate": 45,
+                  "rate": 30,
                   "upTo": "infinity"
                 }
               ],
