@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "commitHash": "3c64a7edb712316c4d5677e5fd20964e8c153bc9",
-    "generatedAt": "2026-08-24T03:57:28.626Z",
-    "providerCount": 84,
+    "commitHash": "0a44f1b23fdc6af52bcdbe7199ae5937d43722a1",
+    "generatedAt": "2026-08-25T03:51:51.051Z",
+    "providerCount": 83,
     "modelCount": 1877
   },
   "providers": {
@@ -87,21 +87,6 @@
         "showModelFetcher": true
       },
       "url": "https://cloud.infini-ai.com/genstudio"
-    },
-    "lobehub": {
-      "chatModels": [],
-      "description": "LobeHub Cloud uses official APIs to access AI models and measures usage with Credits tied to model tokens.",
-      "enabled": true,
-      "id": "lobehub",
-      "modelsUrl": "https://lobehub.com/zh/docs/usage/subscription/model-pricing",
-      "name": "LobeHub",
-      "settings": {
-        "modelEditable": false,
-        "showAddNewModel": false,
-        "showModelFetcher": false
-      },
-      "showConfig": false,
-      "url": "https://lobehub.com"
     },
     "sensenova": {
       "chatModels": [],
