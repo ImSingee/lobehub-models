@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "4c83a05b4988e74c00b2593576aa258f6085240e",
-    "generatedAt": "2026-09-01T08:28:42.455Z",
+    "commitHash": "4719b958adcb7141a69c2aeb31f346def747f54f",
+    "generatedAt": "2026-09-02T07:46:13.418Z",
     "providerCount": 83,
-    "modelCount": 1877
+    "modelCount": 1880
   },
   "providers": {
     "openrouter": {
@@ -36837,6 +36837,52 @@
           ]
         },
         "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "DeepSeek V4 Flash Vision Exp is an experimental multimodal model built on V4 Flash. It matches V4 Flash on text and adds native image understanding for visual agent workflows, billed at the same rates.",
+        "displayName": "DeepSeek V4 Flash Vision Exp",
+        "enabled": true,
+        "family": "deepseek",
+        "generation": "deepseek-v4",
+        "id": "deepseek-v4-flash-vision-exp",
+        "maxOutput": 393216,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.05,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 1.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 4.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-08-21",
+        "settings": {
+          "extendParams": [
+            "deepseekV4GAReasoningEffort"
+          ]
+        },
+        "type": "chat"
       }
     ],
     "ai21": [
@@ -41201,6 +41247,56 @@
         "settings": {
           "extendParams": [
             "glm5_3ReasoningEffort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "GLM-5.3-Flash is the first natively multimodal GLM-5 model. It inherits the GLM-5.3 text contract with always-on thinking, adds image and video understanding, and lands coding quality close to the flagship at roughly one-tenth of the price.",
+        "displayName": "GLM-5.3-Flash",
+        "enabled": true,
+        "family": "glm",
+        "generation": "glm-5.3",
+        "id": "glm-5.3-flash",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.23,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 2.8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-08-26",
+        "settings": {
+          "extendParams": [
+            "glm5_3ReasoningEffort",
+            "preserveThinking"
           ],
           "searchImpl": "params"
         },
@@ -57433,6 +57529,65 @@
       }
     ],
     "anthropic": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Fable 5.1 is Anthropic's most capable generally available model. It outperforms Fable 5 on long-running coding and research at the same base price, with cache reads at a quarter of the cost.",
+        "displayName": "Claude Fable 5.1",
+        "enabled": true,
+        "family": "claude-mythos",
+        "generation": "mythos-5.1",
+        "id": "claude-fable-5-1",
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 10,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 50,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 12.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-01",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "disableContextCaching",
+            "opus47Effort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
