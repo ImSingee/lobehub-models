@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "c7968ebcebd6b98cdc496cfb942772edb357960b",
-    "generatedAt": "2026-09-22T08:23:02.417Z",
+    "commitHash": "d322793048eee2c1b7c494fe0b4fd525bed6c12f",
+    "generatedAt": "2026-09-23T08:25:05.457Z",
     "providerCount": 85,
-    "modelCount": 1856
+    "modelCount": 1884
   },
   "providers": {
     "anthropic": {
@@ -3179,6 +3179,65 @@
   },
   "models": {
     "anthropic": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Opus 5.5 is built for long-running agentic coding and knowledge work, outperforming Claude Fable 5.1 on Terminal-Bench 4.0 at a lower price than Claude Opus 5.",
+        "displayName": "Claude Opus 5.5",
+        "enabled": true,
+        "family": "claude-opus",
+        "generation": "claude-5.5",
+        "id": "claude-opus-5-5",
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 20,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "disableContextCaching",
+            "opus47Effort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
@@ -10228,6 +10287,288 @@
           "vision": true
         },
         "config": {
+          "deploymentName": "gpt-6-astra"
+        },
+        "contextWindowTokens": 1050000,
+        "description": "OpenAI’s most capable model for complex reasoning, coding, computer use, research, and document creation.",
+        "displayName": "GPT-6 Astra",
+        "enabled": true,
+        "id": "gpt-6-astra",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 20,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheRead",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 2,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 12.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 25,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textOutput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 50,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 75,
+                  "upTo": "infinity"
+                }
+              ]
+            }
+          ]
+        },
+        "releasedAt": "2026-09-03",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat",
+        "family": "gpt",
+        "generation": "gpt-6",
+        "knowledgeCutoff": "2026-04"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-6-sol"
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6 Sol is built for complex coding and agentic workflows.",
+        "displayName": "GPT-6 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "gpt-6-sol",
+        "knowledgeCutoff": "2026-04",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheRead",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.4,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textOutput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 15,
+                  "upTo": "infinity"
+                }
+              ]
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-6-luna"
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6 Luna is OpenAI’s most efficient model for focused, high-volume tasks.",
+        "displayName": "GPT-6 Luna",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "gpt-6-luna",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.2,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheRead",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.01,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.02,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.125,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.25,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textOutput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.75,
+                  "upTo": "infinity"
+                }
+              ]
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
           "deploymentName": "gpt-5.4"
         },
         "contextWindowTokens": 1050000,
@@ -14113,6 +14454,188 @@
           "vision": true
         },
         "contextWindowTokens": 1050000,
+        "description": "GPT-6 Sol is built for complex coding and agentic workflows.",
+        "displayName": "GPT-6 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "gpt-6-sol",
+        "knowledgeCutoff": "2026-04",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 15,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6 Luna is OpenAI’s most efficient model for focused, high-volume tasks.",
+        "displayName": "GPT-6 Luna",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "gpt-6-luna",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.2,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.01,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.02,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.125,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.25,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.75,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
         "description": "GPT-5.5 is our newest frontier model for the most complex professional work.",
         "displayName": "GPT-5.5",
         "enabled": true,
@@ -15401,6 +15924,80 @@
       {
         "abilities": {
           "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 500000,
+        "description": "Grok 4.7 is more reliable than Grok 4.6 on long-running coding and knowledge work, at the same price and speed, with a 500K context window.",
+        "displayName": "Grok 4.7",
+        "enabled": true,
+        "family": "grok",
+        "generation": "grok-4.7",
+        "id": "grok-4.7",
+        "knowledgeCutoff": "2026-05",
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.55,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 1.1,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.2,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 4.4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 6.6,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 13.2,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-21",
+        "settings": {
+          "extendParams": [
+            "grok4_7ReasoningEffort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
           "search": true,
           "structuredOutput": true,
           "vision": true
@@ -15600,6 +16197,65 @@
           "extendParams": [
             "reasoningEffort"
           ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Opus 5.5 is built for long-running agentic coding and knowledge work, outperforming Claude Fable 5.1 on Terminal-Bench 4.0 at a lower price than Claude Opus 5.",
+        "displayName": "Claude Opus 5.5",
+        "enabled": true,
+        "family": "claude-opus",
+        "generation": "claude-5.5",
+        "id": "claude-opus-5-5",
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 20,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "disableContextCaching",
+            "opus47Effort"
+          ],
+          "searchImpl": "params"
         },
         "type": "chat"
       },
@@ -15980,6 +16636,132 @@
       },
       {
         "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "MiMo-V2.6-Pro is Xiaomi's open-source multimodal flagship (1.02T total / 42B active) for long-horizon coding and computer use, accepting text, image, video, and audio input with a 1M context window at the previous Pro price.",
+        "displayName": "MiMo-V2.6 Pro",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "mimo-v2.6-pro",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.00384,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.48,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0.96,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "MiMo-V2.6-Pro-UltraSpeed serves the same weights as MiMo-V2.6-Pro at up to 20x the output speed for latency-sensitive agents.",
+        "displayName": "MiMo-V2.6 Pro UltraSpeed",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "mimo-v2.6-pro-ultraspeed",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.0384,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 4.8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 9.6,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "MiMo-V2.6-Flash is a low-cost omni-modal agent model (about 310B total / 15B active) that surpasses MiMo-V2.5-Pro on agent benchmarks at the previous MiMo-V2.5 price, with a 1M context window.",
+        "displayName": "MiMo-V2.6 Flash",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "mimo-v2.6-flash",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.0031,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.155,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0.31,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "type": "chat"
+      },
+      {
+        "abilities": {
           "functionCall": true,
           "reasoning": true
         },
@@ -16200,7 +16982,7 @@
               "tiers": [
                 {
                   "rate": 0.2,
-                  "upTo": 200000
+                  "upTo": 199999
                 },
                 {
                   "rate": 0.4,
@@ -16215,7 +16997,7 @@
               "tiers": [
                 {
                   "rate": 2,
-                  "upTo": 200000
+                  "upTo": 199999
                 },
                 {
                   "rate": 4,
@@ -16230,7 +17012,7 @@
               "tiers": [
                 {
                   "rate": 12,
-                  "upTo": 200000
+                  "upTo": 199999
                 },
                 {
                   "rate": 18,
@@ -16341,7 +17123,7 @@
               "tiers": [
                 {
                   "rate": 0.2,
-                  "upTo": 200000
+                  "upTo": 199999
                 },
                 {
                   "rate": 0.4,
@@ -16356,7 +17138,7 @@
               "tiers": [
                 {
                   "rate": 2,
-                  "upTo": 200000
+                  "upTo": 199999
                 },
                 {
                   "rate": 4,
@@ -16371,7 +17153,7 @@
               "tiers": [
                 {
                   "rate": 12,
-                  "upTo": 200000
+                  "upTo": 199999
                 },
                 {
                   "rate": 18,
@@ -22758,6 +23540,156 @@
       }
     ],
     "xiaomimimo": [
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "MiMo-V2.6-Pro is Xiaomi's open-source multimodal flagship (1.02T total / 42B active) for long-horizon coding and computer use, accepting text, image, video, and audio input with a 1M context window at the previous Pro price.",
+        "displayName": "MiMo-V2.6 Pro",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "mimo-v2.6-pro",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.025,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 6,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "MiMo-V2.6-Pro-UltraSpeed serves the same weights as MiMo-V2.6-Pro at up to 20x the output speed for latency-sensitive agents.",
+        "displayName": "MiMo-V2.6 Pro UltraSpeed",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "mimo-v2.6-pro-ultraspeed",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 30,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 60,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "MiMo-V2.6-Flash is a low-cost omni-modal agent model (about 310B total / 15B active) that surpasses MiMo-V2.5-Pro on agent benchmarks at the previous MiMo-V2.5 price, with a 1M context window.",
+        "displayName": "MiMo-V2.6 Flash",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "mimo-v2.6-flash",
+        "maxOutput": 131072,
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.02,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
@@ -46736,6 +47668,62 @@
           "vision": true
         },
         "contextWindowTokens": 272000,
+        "description": "GPT-6 Sol is built for complex coding and agentic workflows.",
+        "displayName": "GPT-6 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "gpt-6-sol",
+        "knowledgeCutoff": "2026-04",
+        "maxOutput": 128000,
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
+        "description": "GPT-6 Luna is OpenAI’s most efficient model for focused, high-volume tasks.",
+        "displayName": "GPT-6 Luna",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "gpt-6-luna",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
         "description": "GPT-5.6 Sol is OpenAI's latest flagship and most capable model, the top choice in the GPT family for coding and agentic work.",
         "displayName": "GPT-5.6 Sol",
         "enabled": true,
@@ -47059,6 +48047,80 @@
       }
     ],
     "xai": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "vision": true,
+          "structuredOutput": true
+        },
+        "contextWindowTokens": 500000,
+        "description": "Grok 4.7 is more reliable than Grok 4.6 on long-running coding and knowledge work, at the same price and speed, with a 500K context window.",
+        "displayName": "Grok 4.7",
+        "enabled": true,
+        "id": "grok-4.7",
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.5,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 1,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textOutput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 6,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 12,
+                  "upTo": "infinity"
+                }
+              ]
+            }
+          ]
+        },
+        "releasedAt": "2026-09-21",
+        "settings": {
+          "extendParams": [
+            "grok4_7ReasoningEffort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat",
+        "family": "grok",
+        "generation": "grok-4.7",
+        "knowledgeCutoff": "2026-05"
+      },
       {
         "abilities": {
           "functionCall": true,
@@ -50099,6 +51161,457 @@
       {
         "abilities": {
           "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Opus 5.5 is built for long-running agentic coding and knowledge work, outperforming Claude Fable 5.1 on Terminal-Bench 4.0 at a lower price than Claude Opus 5.",
+        "displayName": "Claude Opus 5.5",
+        "enabled": true,
+        "family": "claude-opus",
+        "generation": "claude-5.5",
+        "id": "anthropic/claude-opus-5.5",
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 20,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "disableContextCaching"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6 Sol is built for complex coding and agentic workflows.",
+        "displayName": "GPT-6 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "openai/gpt-6-sol",
+        "knowledgeCutoff": "2026-04",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 15,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6 Luna is OpenAI’s most efficient model for focused, high-volume tasks.",
+        "displayName": "GPT-6 Luna",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "openai/gpt-6-luna",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.2,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.01,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.02,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.125,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.25,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.75,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 500000,
+        "description": "Grok 4.7 is more reliable than Grok 4.6 on long-running coding and knowledge work, at the same price and speed, with a 500K context window.",
+        "displayName": "Grok 4.7",
+        "enabled": true,
+        "family": "grok",
+        "generation": "grok-4.7",
+        "id": "x-ai/grok-4.7",
+        "knowledgeCutoff": "2026-05",
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.4,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 0.8,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 1.6,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 3.2,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 4.8,
+                  "upTo": 199999
+                },
+                {
+                  "rate": 9.6,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-21",
+        "settings": {
+          "extendParams": [
+            "grok4_7ReasoningEffort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "MiMo-V2.6-Pro is Xiaomi's open-source multimodal flagship (1.02T total / 42B active) for long-horizon coding and computer use, accepting text, image, video, and audio input with a 1M context window at the previous Pro price.",
+        "displayName": "MiMo-V2.6 Pro",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "xiaomi/mimo-v2.6-pro",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.0036,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.435,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0.87,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "MiMo-V2.6-Pro-UltraSpeed serves the same weights as MiMo-V2.6-Pro at up to 20x the output speed for latency-sensitive agents.",
+        "displayName": "MiMo-V2.6 Pro UltraSpeed",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.036,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 4.35,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 8.7,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "MiMo-V2.6-Flash is a low-cost omni-modal agent model (about 310B total / 15B active) that surpasses MiMo-V2.5-Pro on agent benchmarks at the previous MiMo-V2.5 price, with a 1M context window.",
+        "displayName": "MiMo-V2.6 Flash",
+        "enabled": true,
+        "family": "mimo",
+        "generation": "mimo-v2.6",
+        "id": "xiaomi/mimo-v2.6-flash",
+        "maxOutput": 131072,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.0028,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 0.14,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 0.28,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "enableReasoning"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
           "reasoning": true
         },
         "contextWindowTokens": 163840,
@@ -51553,6 +53066,188 @@
         "family": "gpt",
         "generation": "gpt-6",
         "knowledgeCutoff": "2026-04"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6 Sol is built for complex coding and agentic workflows.",
+        "displayName": "GPT-6 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "gpt-6-sol",
+        "knowledgeCutoff": "2026-04",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheRead",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.4,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textOutput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 15,
+                  "upTo": "infinity"
+                }
+              ]
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6 Luna is OpenAI’s most efficient model for focused, high-volume tasks.",
+        "displayName": "GPT-6 Luna",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6",
+        "id": "gpt-6-luna",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.2,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheRead",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.01,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.02,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.125,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.25,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textOutput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.75,
+                  "upTo": "infinity"
+                }
+              ]
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "extendParams": [
+            "gpt5_6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
       },
       {
         "abilities": {
@@ -55360,6 +57055,31 @@
       }
     ],
     "superGrok": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 500000,
+        "description": "SpaceXAI's flagship model for long-running coding, agentic tasks, and knowledge work — configurable reasoning (low/medium/high/xhigh).",
+        "displayName": "Grok 4.7",
+        "enabled": true,
+        "family": "grok",
+        "generation": "grok-4.7",
+        "id": "grok-4.7",
+        "knowledgeCutoff": "2026-05",
+        "releasedAt": "2026-09-21",
+        "settings": {
+          "extendParams": [
+            "grok4_7ReasoningEffort"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
@@ -64626,6 +66346,63 @@
       }
     ],
     "bedrock": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "Claude Opus 5.5 is built for long-running agentic coding and knowledge work, outperforming Claude Fable 5.1 on Terminal-Bench 4.0 at a lower price than Claude Opus 5.",
+        "displayName": "Claude Opus 5.5",
+        "enabled": true,
+        "family": "claude-opus",
+        "generation": "claude-5.5",
+        "id": "global.anthropic.claude-opus-5-5",
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 4,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 20,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-09-22",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "disableContextCaching",
+            "opus47Effort"
+          ]
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
