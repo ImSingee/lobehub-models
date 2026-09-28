@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "commitHash": "d0d3f86625ab006a6eaf3f9f7aa59aaa2b066a37",
-    "generatedAt": "2026-09-27T09:05:48.705Z",
+    "commitHash": "353fc3a47b86798e3fe3c37ebb4a59b137b374ae",
+    "generatedAt": "2026-09-28T09:33:35.255Z",
     "providerCount": 85,
     "modelCount": 1884
   },
@@ -58060,6 +58060,7 @@
       {
         "description": "A general speech recognition model supporting multilingual ASR, speech translation, and language identification.",
         "displayName": "Whisper",
+        "enabled": true,
         "id": "whisper-1",
         "pricing": {
           "units": [
@@ -58107,6 +58108,7 @@
         "contextWindowTokens": 16000,
         "description": "GPT-4o Mini Transcribe is a speech-to-text model that transcribes audio with GPT-4o, improving word error rate, language ID, and accuracy over the original Whisper model.",
         "displayName": "GPT-4o Mini Transcribe",
+        "enabled": true,
         "id": "gpt-4o-mini-transcribe",
         "maxOutput": 2000,
         "pricing": {
