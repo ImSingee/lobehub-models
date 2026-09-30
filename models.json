@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "64e7fdc1163feebb65c48c0c77364a0b9d0798db",
-    "generatedAt": "2026-09-29T09:37:53.648Z",
+    "commitHash": "82c7c1086ce48e729ebf31b14fe87d2c020ff82b",
+    "generatedAt": "2026-09-30T09:29:38.790Z",
     "providerCount": 85,
-    "modelCount": 1884
+    "modelCount": 1886
   },
   "providers": {
     "volcengineCodingPlan": {
@@ -55778,6 +55778,97 @@
           "vision": true
         },
         "contextWindowTokens": 1050000,
+        "description": "GPT-6.1 Sol delivers near-Astra performance for complex coding, computer use, and professional work at a lower cost.",
+        "displayName": "GPT-6.1 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.1",
+        "id": "gpt-6.1-sol",
+        "knowledgeCutoff": "2026-04",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheRead",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.2,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ]
+            },
+            {
+              "name": "textOutput",
+              "unit": "millionTokens",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 15,
+                  "upTo": "infinity"
+                }
+              ]
+            }
+          ]
+        },
+        "releasedAt": "2026-09-29",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
         "description": "OpenAI’s most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "displayName": "GPT-6 Astra",
         "enabled": true,
@@ -66850,6 +66941,34 @@
       }
     ],
     "chatGPT": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
+        "description": "GPT-6.1 Sol delivers near-Astra performance for complex coding, computer use, and professional work at a lower cost.",
+        "displayName": "GPT-6.1 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.1",
+        "id": "gpt-6.1-sol",
+        "knowledgeCutoff": "2026-04",
+        "maxOutput": 128000,
+        "releasedAt": "2026-09-29",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
