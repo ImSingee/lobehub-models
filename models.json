@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "commitHash": "0c83660567b246210010c82d879a82b784a9305b",
-    "generatedAt": "2026-10-09T10:16:48.763Z",
+    "commitHash": "7262db0f10f922385cb50ad9cb07fb8f94260666",
+    "generatedAt": "2026-10-10T09:36:56.273Z",
     "providerCount": 85,
     "modelCount": 1892
   },
@@ -1005,7 +1005,7 @@
     "aihubmix": {
       "apiKeyUrl": "https://lobe.li/9mZhb4T",
       "chatModels": [],
-      "checkModel": "gpt-4.1-nano",
+      "checkModel": "gpt-6-luna",
       "description": "AIHubMix provides access to multiple AI models through a unified API.",
       "id": "aihubmix",
       "modelsUrl": "https://docs.aihubmix.com/cn/api/Model-List",
