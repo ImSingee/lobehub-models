@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "commitHash": "3b42bb88b15a2f3944d871bc6a11b17be7f93472",
-    "generatedAt": "2026-10-26T08:41:36.932Z",
+    "commitHash": "d8799acb4a7317dae71390c479553f13bf5c9517",
+    "generatedAt": "2026-10-27T08:48:00.746Z",
     "providerCount": 85,
     "modelCount": 1896
   },
@@ -2987,12 +2987,16 @@
       "chatModels": [],
       "description": "A generative media platform built for developers.",
       "id": "fal",
+      "modelList": {
+        "showModelFetcher": true
+      },
+      "modelsUrl": "https://fal.ai/models",
       "name": "Fal",
       "settings": {
         "disableBrowserRequest": true,
         "showAddNewModel": false,
         "showChecker": false,
-        "showModelFetcher": false
+        "showModelFetcher": true
       },
       "url": "https://fal.ai"
     },
