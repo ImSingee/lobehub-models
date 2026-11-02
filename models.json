@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "commitHash": "ba31b4020417a1155d6694dc8ea26d9358b9ec54",
-    "generatedAt": "2026-11-01T10:15:45.066Z",
+    "commitHash": "919b827fb303fcbe39de10e01c15f23d4bc50ce4",
+    "generatedAt": "2026-11-02T10:46:08.159Z",
     "providerCount": 86,
     "modelCount": 1914
   },
@@ -12675,7 +12675,7 @@
                   "[0.032, infinity]": 2
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -12690,7 +12690,7 @@
                   "[0.032, infinity]": 8
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -12731,7 +12731,7 @@
                   "[0.032, infinity]": 5.3
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -12745,7 +12745,7 @@
                   "[0.032, infinity]": 21.2
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -12783,7 +12783,7 @@
                   "[0.032, infinity]": 4.505
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -12797,7 +12797,7 @@
                   "[0.032, infinity]": 11.13
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -12876,7 +12876,7 @@
                   "[0.032, infinity]": 8
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -12890,7 +12890,7 @@
                   "[0.032, infinity]": 28
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -12944,7 +12944,7 @@
                   "[0.032, infinity]": 7
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -12958,7 +12958,7 @@
                   "[0.032, infinity]": 26
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -13011,7 +13011,7 @@
                   "[0.032, infinity]": 6
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -13025,7 +13025,7 @@
                   "[0.032, infinity]": 22
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -13081,7 +13081,7 @@
                   "[0.032, infinity]": 7
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -13095,7 +13095,7 @@
                   "[0.032, infinity]": 26
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -44690,7 +44690,7 @@
                   "[0.032, 0.128]": 6
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -44704,7 +44704,7 @@
                   "[0.032, 0.128]": 22
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -44745,7 +44745,7 @@
                   "[0.032, 0.128]": 10
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -44759,7 +44759,7 @@
                   "[0.032, 0.128]": 40
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -44799,7 +44799,7 @@
                   "[0.032, 0.128]": 10
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -44813,7 +44813,7 @@
                   "[0.032, 0.128]": 40
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -44853,7 +44853,7 @@
                   "[0.032, 0.128]": 10
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -44867,7 +44867,7 @@
                   "[0.032, 0.128]": 40
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -45703,7 +45703,7 @@
                   "[0.032, 0.064]": 4
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -45717,7 +45717,7 @@
                   "[0.032, 0.064]": 12
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -57094,7 +57094,7 @@
                   "[0.128, infinity]": 2
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -57108,7 +57108,7 @@
                   "[0.128, infinity]": 12
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -57149,7 +57149,7 @@
                   "[0.128, infinity]": 2
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -57163,7 +57163,7 @@
                   "[0.128, infinity]": 16
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -57204,7 +57204,7 @@
                   "[0.128, infinity]": 1.6
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -57218,7 +57218,7 @@
                   "[0.128, infinity]": 12.8
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -57259,7 +57259,7 @@
                   "[0.128, infinity]": 1.8
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -57273,7 +57273,7 @@
                   "[0.128, infinity]": 14.4
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -57314,7 +57314,7 @@
                   "[0.128, infinity]": 1.5
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -57328,7 +57328,7 @@
                   "[0.128, infinity]": 12
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -57485,7 +57485,7 @@
                   "[0.032, infinity]": 2
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput_cacheRead",
@@ -57499,7 +57499,7 @@
                   "[0.032, infinity]": 8
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -57513,7 +57513,7 @@
                   "[0.032, infinity]": 28
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -57552,7 +57552,7 @@
                   "[0.032, infinity]": 2
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput_cacheRead",
@@ -57566,7 +57566,7 @@
                   "[0.032, infinity]": 8
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -57580,7 +57580,7 @@
                   "[0.032, infinity]": 28
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -70303,7 +70303,7 @@
                   "[0.032, infinity]": 1.8
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput_cacheRead",
@@ -70317,7 +70317,7 @@
                   "[0.032, infinity]": 7
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -70331,7 +70331,7 @@
                   "[0.032, infinity]": 26
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
@@ -70370,7 +70370,7 @@
                   "[0.032, infinity]": 1.5
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput_cacheRead",
@@ -70384,7 +70384,7 @@
                   "[0.032, infinity]": 6
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textInput",
@@ -70398,7 +70398,7 @@
                   "[0.032, infinity]": 22
                 },
                 "pricingParams": [
-                  "textInput"
+                  "textInputRange"
                 ]
               },
               "name": "textOutput",
