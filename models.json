@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "fdbe281ae00b1a11fdd36997cc965da78556c845",
-    "generatedAt": "2026-11-12T10:48:37.740Z",
-    "providerCount": 86,
-    "modelCount": 1918
+    "commitHash": "0f25cc53e99627443ecc7d0c3542e3ee8d3359fb",
+    "generatedAt": "2026-11-13T10:44:18.424Z",
+    "providerCount": 87,
+    "modelCount": 1924
   },
   "providers": {
     "akashchat": {
@@ -329,6 +329,24 @@
         "showModelFetcher": true
       },
       "url": "https://www.together.ai"
+    },
+    "elevenlabs": {
+      "apiKeyUrl": "https://elevenlabs.io/app/settings/api-keys",
+      "chatModels": [],
+      "description": "ElevenLabs is an AI audio company whose text-to-speech models generate lifelike, expressive speech in 90+ languages, with a large voice library and voice cloning.",
+      "id": "elevenlabs",
+      "modelsUrl": "https://elevenlabs.io/docs/overview/models",
+      "name": "ElevenLabs",
+      "settings": {
+        "disableBrowserRequest": true,
+        "proxyUrl": {
+          "placeholder": "https://api.elevenlabs.io"
+        },
+        "showAddNewModel": false,
+        "showChecker": false,
+        "showModelFetcher": false
+      },
+      "url": "https://elevenlabs.io"
     },
     "novita": {
       "chatModels": [],
@@ -17677,6 +17695,1074 @@
         "displayName": "StripedHyena Nous (7B)",
         "id": "togethercomputer/StripedHyena-Nous-7B",
         "type": "chat"
+      }
+    ],
+    "elevenlabs": [
+      {
+        "description": "ElevenLabs’ most expressive, highest-quality speech model, with audio tags, high-fidelity voice cloning and 90+ languages. Up to 10,000 characters per request.",
+        "displayName": "Eleven v4",
+        "enabled": true,
+        "id": "eleven_v4",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "voice": {
+            "default": "CwhRBWXzGAHq8TQ4Fs17"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 80,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Laid-back, casual, resonant",
+            "displayName": "Roger",
+            "gender": "male",
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, grounded storyteller",
+            "displayName": "Darian",
+            "gender": "male",
+            "id": "gOupLcAkjEnguROwi4oS",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, soft guide",
+            "displayName": "Talia",
+            "gender": "female",
+            "id": "OZ0L6eISlOejga3XjDFt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp professional narrator",
+            "displayName": "Elara",
+            "gender": "female",
+            "id": "WQP7cQUF5aAS6Axh5yaa",
+            "language": "multilingual"
+          },
+          {
+            "description": "Dry, calm Australian",
+            "displayName": "Baxter",
+            "gender": "male",
+            "id": "jSuBIjxMKhqIfb0wCK1F",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp British baritone",
+            "displayName": "Eldrin",
+            "gender": "male",
+            "id": "6WwXjDDEMyNmFG95zycZ",
+            "language": "multilingual"
+          },
+          {
+            "description": "Husky trickster",
+            "displayName": "Callum",
+            "gender": "male",
+            "id": "fs2OqxduwXgp9foh2xjK",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat modern narrator",
+            "displayName": "Elowen",
+            "gender": "neutral",
+            "id": "dvbL7qkNGZY1IqPGZAjM",
+            "language": "multilingual"
+          },
+          {
+            "description": "Amateur warrior",
+            "displayName": "Kaelen",
+            "gender": "male",
+            "id": "10NkTYmU7tSz3Kkl3Lex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright and informative",
+            "displayName": "Lawrence",
+            "gender": "male",
+            "id": "ktkP7Nsj67dw2zcplQYt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Polished global anchor",
+            "displayName": "Alicia",
+            "gender": "female",
+            "id": "BFd5oBc2DDna33pSi4Gf",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly, casual neighbor",
+            "displayName": "Maisie",
+            "gender": "female",
+            "id": "QtY3JBOUKEB5xzrRfOKc",
+            "language": "multilingual"
+          },
+          {
+            "description": "Effortless and cool",
+            "displayName": "Warren",
+            "gender": "male",
+            "id": "7QN34D2r3hCNwbOYIeK0",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat and natural",
+            "displayName": "Jade",
+            "gender": "female",
+            "id": "g7LVvkPWALzPxOQbF6OE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Natural and helpful",
+            "displayName": "Eddie",
+            "gender": "male",
+            "id": "l7kNoIfnJKPg7779LI2t",
+            "language": "multilingual"
+          },
+          {
+            "description": "Trusted guide",
+            "displayName": "Caleb",
+            "gender": "male",
+            "id": "AaOhDHYJ1XLZk74lXhdE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Midnight storyteller",
+            "displayName": "Sawyer",
+            "gender": "male",
+            "id": "8dEUmyPMdDdK91vboYih",
+            "language": "multilingual"
+          },
+          {
+            "description": "Articulate anchor",
+            "displayName": "Finley",
+            "gender": "male",
+            "id": "fnYMz3F5gMEDGMWcH1ex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Atmospheric storyteller",
+            "displayName": "Florence",
+            "gender": "female",
+            "id": "22N9cF8z0o7y23njdyaY",
+            "language": "multilingual"
+          },
+          {
+            "description": "Seasoned mentor",
+            "displayName": "Wyatt",
+            "gender": "male",
+            "id": "FrS6cKLB1wg4WYgPa9GW",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Lifelike speech with rich emotional expression across 29 languages. Up to 10,000 characters per request.",
+        "displayName": "Eleven Multilingual v2",
+        "enabled": true,
+        "id": "eleven_multilingual_v2",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 1.2,
+            "min": 0.7,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "CwhRBWXzGAHq8TQ4Fs17"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 80,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Laid-back, casual, resonant",
+            "displayName": "Roger",
+            "gender": "male",
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, grounded storyteller",
+            "displayName": "Darian",
+            "gender": "male",
+            "id": "gOupLcAkjEnguROwi4oS",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, soft guide",
+            "displayName": "Talia",
+            "gender": "female",
+            "id": "OZ0L6eISlOejga3XjDFt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp professional narrator",
+            "displayName": "Elara",
+            "gender": "female",
+            "id": "WQP7cQUF5aAS6Axh5yaa",
+            "language": "multilingual"
+          },
+          {
+            "description": "Dry, calm Australian",
+            "displayName": "Baxter",
+            "gender": "male",
+            "id": "jSuBIjxMKhqIfb0wCK1F",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp British baritone",
+            "displayName": "Eldrin",
+            "gender": "male",
+            "id": "6WwXjDDEMyNmFG95zycZ",
+            "language": "multilingual"
+          },
+          {
+            "description": "Husky trickster",
+            "displayName": "Callum",
+            "gender": "male",
+            "id": "fs2OqxduwXgp9foh2xjK",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat modern narrator",
+            "displayName": "Elowen",
+            "gender": "neutral",
+            "id": "dvbL7qkNGZY1IqPGZAjM",
+            "language": "multilingual"
+          },
+          {
+            "description": "Amateur warrior",
+            "displayName": "Kaelen",
+            "gender": "male",
+            "id": "10NkTYmU7tSz3Kkl3Lex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright and informative",
+            "displayName": "Lawrence",
+            "gender": "male",
+            "id": "ktkP7Nsj67dw2zcplQYt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Polished global anchor",
+            "displayName": "Alicia",
+            "gender": "female",
+            "id": "BFd5oBc2DDna33pSi4Gf",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly, casual neighbor",
+            "displayName": "Maisie",
+            "gender": "female",
+            "id": "QtY3JBOUKEB5xzrRfOKc",
+            "language": "multilingual"
+          },
+          {
+            "description": "Effortless and cool",
+            "displayName": "Warren",
+            "gender": "male",
+            "id": "7QN34D2r3hCNwbOYIeK0",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat and natural",
+            "displayName": "Jade",
+            "gender": "female",
+            "id": "g7LVvkPWALzPxOQbF6OE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Natural and helpful",
+            "displayName": "Eddie",
+            "gender": "male",
+            "id": "l7kNoIfnJKPg7779LI2t",
+            "language": "multilingual"
+          },
+          {
+            "description": "Trusted guide",
+            "displayName": "Caleb",
+            "gender": "male",
+            "id": "AaOhDHYJ1XLZk74lXhdE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Midnight storyteller",
+            "displayName": "Sawyer",
+            "gender": "male",
+            "id": "8dEUmyPMdDdK91vboYih",
+            "language": "multilingual"
+          },
+          {
+            "description": "Articulate anchor",
+            "displayName": "Finley",
+            "gender": "male",
+            "id": "fnYMz3F5gMEDGMWcH1ex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Atmospheric storyteller",
+            "displayName": "Florence",
+            "gender": "female",
+            "id": "22N9cF8z0o7y23njdyaY",
+            "language": "multilingual"
+          },
+          {
+            "description": "Seasoned mentor",
+            "displayName": "Wyatt",
+            "gender": "male",
+            "id": "FrS6cKLB1wg4WYgPa9GW",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Ultra-low-latency (~100 ms) speech model for real-time use across 32 languages, at half the price of the quality models. Up to 40,000 characters per request.",
+        "displayName": "Eleven Flash v2.5",
+        "enabled": true,
+        "id": "eleven_flash_v2_5",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 1.2,
+            "min": 0.7,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "CwhRBWXzGAHq8TQ4Fs17"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 40,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Laid-back, casual, resonant",
+            "displayName": "Roger",
+            "gender": "male",
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, grounded storyteller",
+            "displayName": "Darian",
+            "gender": "male",
+            "id": "gOupLcAkjEnguROwi4oS",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, soft guide",
+            "displayName": "Talia",
+            "gender": "female",
+            "id": "OZ0L6eISlOejga3XjDFt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp professional narrator",
+            "displayName": "Elara",
+            "gender": "female",
+            "id": "WQP7cQUF5aAS6Axh5yaa",
+            "language": "multilingual"
+          },
+          {
+            "description": "Dry, calm Australian",
+            "displayName": "Baxter",
+            "gender": "male",
+            "id": "jSuBIjxMKhqIfb0wCK1F",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp British baritone",
+            "displayName": "Eldrin",
+            "gender": "male",
+            "id": "6WwXjDDEMyNmFG95zycZ",
+            "language": "multilingual"
+          },
+          {
+            "description": "Husky trickster",
+            "displayName": "Callum",
+            "gender": "male",
+            "id": "fs2OqxduwXgp9foh2xjK",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat modern narrator",
+            "displayName": "Elowen",
+            "gender": "neutral",
+            "id": "dvbL7qkNGZY1IqPGZAjM",
+            "language": "multilingual"
+          },
+          {
+            "description": "Amateur warrior",
+            "displayName": "Kaelen",
+            "gender": "male",
+            "id": "10NkTYmU7tSz3Kkl3Lex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright and informative",
+            "displayName": "Lawrence",
+            "gender": "male",
+            "id": "ktkP7Nsj67dw2zcplQYt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Polished global anchor",
+            "displayName": "Alicia",
+            "gender": "female",
+            "id": "BFd5oBc2DDna33pSi4Gf",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly, casual neighbor",
+            "displayName": "Maisie",
+            "gender": "female",
+            "id": "QtY3JBOUKEB5xzrRfOKc",
+            "language": "multilingual"
+          },
+          {
+            "description": "Effortless and cool",
+            "displayName": "Warren",
+            "gender": "male",
+            "id": "7QN34D2r3hCNwbOYIeK0",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat and natural",
+            "displayName": "Jade",
+            "gender": "female",
+            "id": "g7LVvkPWALzPxOQbF6OE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Natural and helpful",
+            "displayName": "Eddie",
+            "gender": "male",
+            "id": "l7kNoIfnJKPg7779LI2t",
+            "language": "multilingual"
+          },
+          {
+            "description": "Trusted guide",
+            "displayName": "Caleb",
+            "gender": "male",
+            "id": "AaOhDHYJ1XLZk74lXhdE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Midnight storyteller",
+            "displayName": "Sawyer",
+            "gender": "male",
+            "id": "8dEUmyPMdDdK91vboYih",
+            "language": "multilingual"
+          },
+          {
+            "description": "Articulate anchor",
+            "displayName": "Finley",
+            "gender": "male",
+            "id": "fnYMz3F5gMEDGMWcH1ex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Atmospheric storyteller",
+            "displayName": "Florence",
+            "gender": "female",
+            "id": "22N9cF8z0o7y23njdyaY",
+            "language": "multilingual"
+          },
+          {
+            "description": "Seasoned mentor",
+            "displayName": "Wyatt",
+            "gender": "male",
+            "id": "FrS6cKLB1wg4WYgPa9GW",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Previous-generation expressive speech model with audio tags and 70+ languages. Up to 5,000 characters per request.",
+        "displayName": "Eleven v3",
+        "id": "eleven_v3",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "voice": {
+            "default": "CwhRBWXzGAHq8TQ4Fs17"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 80,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Laid-back, casual, resonant",
+            "displayName": "Roger",
+            "gender": "male",
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, grounded storyteller",
+            "displayName": "Darian",
+            "gender": "male",
+            "id": "gOupLcAkjEnguROwi4oS",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, soft guide",
+            "displayName": "Talia",
+            "gender": "female",
+            "id": "OZ0L6eISlOejga3XjDFt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp professional narrator",
+            "displayName": "Elara",
+            "gender": "female",
+            "id": "WQP7cQUF5aAS6Axh5yaa",
+            "language": "multilingual"
+          },
+          {
+            "description": "Dry, calm Australian",
+            "displayName": "Baxter",
+            "gender": "male",
+            "id": "jSuBIjxMKhqIfb0wCK1F",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp British baritone",
+            "displayName": "Eldrin",
+            "gender": "male",
+            "id": "6WwXjDDEMyNmFG95zycZ",
+            "language": "multilingual"
+          },
+          {
+            "description": "Husky trickster",
+            "displayName": "Callum",
+            "gender": "male",
+            "id": "fs2OqxduwXgp9foh2xjK",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat modern narrator",
+            "displayName": "Elowen",
+            "gender": "neutral",
+            "id": "dvbL7qkNGZY1IqPGZAjM",
+            "language": "multilingual"
+          },
+          {
+            "description": "Amateur warrior",
+            "displayName": "Kaelen",
+            "gender": "male",
+            "id": "10NkTYmU7tSz3Kkl3Lex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright and informative",
+            "displayName": "Lawrence",
+            "gender": "male",
+            "id": "ktkP7Nsj67dw2zcplQYt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Polished global anchor",
+            "displayName": "Alicia",
+            "gender": "female",
+            "id": "BFd5oBc2DDna33pSi4Gf",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly, casual neighbor",
+            "displayName": "Maisie",
+            "gender": "female",
+            "id": "QtY3JBOUKEB5xzrRfOKc",
+            "language": "multilingual"
+          },
+          {
+            "description": "Effortless and cool",
+            "displayName": "Warren",
+            "gender": "male",
+            "id": "7QN34D2r3hCNwbOYIeK0",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat and natural",
+            "displayName": "Jade",
+            "gender": "female",
+            "id": "g7LVvkPWALzPxOQbF6OE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Natural and helpful",
+            "displayName": "Eddie",
+            "gender": "male",
+            "id": "l7kNoIfnJKPg7779LI2t",
+            "language": "multilingual"
+          },
+          {
+            "description": "Trusted guide",
+            "displayName": "Caleb",
+            "gender": "male",
+            "id": "AaOhDHYJ1XLZk74lXhdE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Midnight storyteller",
+            "displayName": "Sawyer",
+            "gender": "male",
+            "id": "8dEUmyPMdDdK91vboYih",
+            "language": "multilingual"
+          },
+          {
+            "description": "Articulate anchor",
+            "displayName": "Finley",
+            "gender": "male",
+            "id": "fnYMz3F5gMEDGMWcH1ex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Atmospheric storyteller",
+            "displayName": "Florence",
+            "gender": "female",
+            "id": "22N9cF8z0o7y23njdyaY",
+            "language": "multilingual"
+          },
+          {
+            "description": "Seasoned mentor",
+            "displayName": "Wyatt",
+            "gender": "male",
+            "id": "FrS6cKLB1wg4WYgPa9GW",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "English-only ultra-low-latency (~135 ms) speech model for real-time use. Up to 30,000 characters per request.",
+        "displayName": "Eleven Flash v2",
+        "id": "eleven_flash_v2",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 1.2,
+            "min": 0.7,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "CwhRBWXzGAHq8TQ4Fs17"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 40,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Laid-back, casual, resonant",
+            "displayName": "Roger",
+            "gender": "male",
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, grounded storyteller",
+            "displayName": "Darian",
+            "gender": "male",
+            "id": "gOupLcAkjEnguROwi4oS",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, soft guide",
+            "displayName": "Talia",
+            "gender": "female",
+            "id": "OZ0L6eISlOejga3XjDFt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp professional narrator",
+            "displayName": "Elara",
+            "gender": "female",
+            "id": "WQP7cQUF5aAS6Axh5yaa",
+            "language": "multilingual"
+          },
+          {
+            "description": "Dry, calm Australian",
+            "displayName": "Baxter",
+            "gender": "male",
+            "id": "jSuBIjxMKhqIfb0wCK1F",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp British baritone",
+            "displayName": "Eldrin",
+            "gender": "male",
+            "id": "6WwXjDDEMyNmFG95zycZ",
+            "language": "multilingual"
+          },
+          {
+            "description": "Husky trickster",
+            "displayName": "Callum",
+            "gender": "male",
+            "id": "fs2OqxduwXgp9foh2xjK",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat modern narrator",
+            "displayName": "Elowen",
+            "gender": "neutral",
+            "id": "dvbL7qkNGZY1IqPGZAjM",
+            "language": "multilingual"
+          },
+          {
+            "description": "Amateur warrior",
+            "displayName": "Kaelen",
+            "gender": "male",
+            "id": "10NkTYmU7tSz3Kkl3Lex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright and informative",
+            "displayName": "Lawrence",
+            "gender": "male",
+            "id": "ktkP7Nsj67dw2zcplQYt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Polished global anchor",
+            "displayName": "Alicia",
+            "gender": "female",
+            "id": "BFd5oBc2DDna33pSi4Gf",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly, casual neighbor",
+            "displayName": "Maisie",
+            "gender": "female",
+            "id": "QtY3JBOUKEB5xzrRfOKc",
+            "language": "multilingual"
+          },
+          {
+            "description": "Effortless and cool",
+            "displayName": "Warren",
+            "gender": "male",
+            "id": "7QN34D2r3hCNwbOYIeK0",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat and natural",
+            "displayName": "Jade",
+            "gender": "female",
+            "id": "g7LVvkPWALzPxOQbF6OE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Natural and helpful",
+            "displayName": "Eddie",
+            "gender": "male",
+            "id": "l7kNoIfnJKPg7779LI2t",
+            "language": "multilingual"
+          },
+          {
+            "description": "Trusted guide",
+            "displayName": "Caleb",
+            "gender": "male",
+            "id": "AaOhDHYJ1XLZk74lXhdE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Midnight storyteller",
+            "displayName": "Sawyer",
+            "gender": "male",
+            "id": "8dEUmyPMdDdK91vboYih",
+            "language": "multilingual"
+          },
+          {
+            "description": "Articulate anchor",
+            "displayName": "Finley",
+            "gender": "male",
+            "id": "fnYMz3F5gMEDGMWcH1ex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Atmospheric storyteller",
+            "displayName": "Florence",
+            "gender": "female",
+            "id": "22N9cF8z0o7y23njdyaY",
+            "language": "multilingual"
+          },
+          {
+            "description": "Seasoned mentor",
+            "displayName": "Wyatt",
+            "gender": "male",
+            "id": "FrS6cKLB1wg4WYgPa9GW",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Low-latency speech model across 32 languages. ElevenLabs has deprecated it in favor of Eleven Flash v2.5, which matches it at lower latency.",
+        "displayName": "Eleven Turbo v2.5",
+        "id": "eleven_turbo_v2_5",
+        "isOfficial": true,
+        "legacy": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 1.2,
+            "min": 0.7,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "CwhRBWXzGAHq8TQ4Fs17"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 40,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Laid-back, casual, resonant",
+            "displayName": "Roger",
+            "gender": "male",
+            "id": "CwhRBWXzGAHq8TQ4Fs17",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, grounded storyteller",
+            "displayName": "Darian",
+            "gender": "male",
+            "id": "gOupLcAkjEnguROwi4oS",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm, soft guide",
+            "displayName": "Talia",
+            "gender": "female",
+            "id": "OZ0L6eISlOejga3XjDFt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp professional narrator",
+            "displayName": "Elara",
+            "gender": "female",
+            "id": "WQP7cQUF5aAS6Axh5yaa",
+            "language": "multilingual"
+          },
+          {
+            "description": "Dry, calm Australian",
+            "displayName": "Baxter",
+            "gender": "male",
+            "id": "jSuBIjxMKhqIfb0wCK1F",
+            "language": "multilingual"
+          },
+          {
+            "description": "Crisp British baritone",
+            "displayName": "Eldrin",
+            "gender": "male",
+            "id": "6WwXjDDEMyNmFG95zycZ",
+            "language": "multilingual"
+          },
+          {
+            "description": "Husky trickster",
+            "displayName": "Callum",
+            "gender": "male",
+            "id": "fs2OqxduwXgp9foh2xjK",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat modern narrator",
+            "displayName": "Elowen",
+            "gender": "neutral",
+            "id": "dvbL7qkNGZY1IqPGZAjM",
+            "language": "multilingual"
+          },
+          {
+            "description": "Amateur warrior",
+            "displayName": "Kaelen",
+            "gender": "male",
+            "id": "10NkTYmU7tSz3Kkl3Lex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright and informative",
+            "displayName": "Lawrence",
+            "gender": "male",
+            "id": "ktkP7Nsj67dw2zcplQYt",
+            "language": "multilingual"
+          },
+          {
+            "description": "Polished global anchor",
+            "displayName": "Alicia",
+            "gender": "female",
+            "id": "BFd5oBc2DDna33pSi4Gf",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly, casual neighbor",
+            "displayName": "Maisie",
+            "gender": "female",
+            "id": "QtY3JBOUKEB5xzrRfOKc",
+            "language": "multilingual"
+          },
+          {
+            "description": "Effortless and cool",
+            "displayName": "Warren",
+            "gender": "male",
+            "id": "7QN34D2r3hCNwbOYIeK0",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat and natural",
+            "displayName": "Jade",
+            "gender": "female",
+            "id": "g7LVvkPWALzPxOQbF6OE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Natural and helpful",
+            "displayName": "Eddie",
+            "gender": "male",
+            "id": "l7kNoIfnJKPg7779LI2t",
+            "language": "multilingual"
+          },
+          {
+            "description": "Trusted guide",
+            "displayName": "Caleb",
+            "gender": "male",
+            "id": "AaOhDHYJ1XLZk74lXhdE",
+            "language": "multilingual"
+          },
+          {
+            "description": "Midnight storyteller",
+            "displayName": "Sawyer",
+            "gender": "male",
+            "id": "8dEUmyPMdDdK91vboYih",
+            "language": "multilingual"
+          },
+          {
+            "description": "Articulate anchor",
+            "displayName": "Finley",
+            "gender": "male",
+            "id": "fnYMz3F5gMEDGMWcH1ex",
+            "language": "multilingual"
+          },
+          {
+            "description": "Atmospheric storyteller",
+            "displayName": "Florence",
+            "gender": "female",
+            "id": "22N9cF8z0o7y23njdyaY",
+            "language": "multilingual"
+          },
+          {
+            "description": "Seasoned mentor",
+            "displayName": "Wyatt",
+            "gender": "male",
+            "id": "FrS6cKLB1wg4WYgPa9GW",
+            "language": "multilingual"
+          }
+        ]
       }
     ],
     "novita": [
