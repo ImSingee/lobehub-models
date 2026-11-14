@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "0f25cc53e99627443ecc7d0c3542e3ee8d3359fb",
-    "generatedAt": "2026-11-13T10:44:18.424Z",
+    "commitHash": "e25bcbd8ea35a64c0ecec449e6bfa5ddb0c1613b",
+    "generatedAt": "2026-11-14T09:58:22.135Z",
     "providerCount": 87,
-    "modelCount": 1924
+    "modelCount": 1933
   },
   "providers": {
     "akashchat": {
@@ -205,8 +205,8 @@
     },
     "minimaxCodingPlan": {
       "chatModels": [],
-      "checkModel": "MiniMax-M2.7",
-      "description": "MiniMax Token Plan provides access to MiniMax models including M2.7 for coding tasks via a fixed-fee subscription.",
+      "checkModel": "MiniMax-M3.1-Flash",
+      "description": "MiniMax Token Plan provides access to MiniMax models including M3.1 Flash for coding tasks via a fixed-fee subscription.",
       "disableBrowserRequest": true,
       "id": "minimaxcodingplan",
       "modelList": {
@@ -569,7 +569,7 @@
     },
     "minimax": {
       "chatModels": [],
-      "checkModel": "MiniMax-M2.1",
+      "checkModel": "MiniMax-M3",
       "description": "Founded in 2021, MiniMax builds general-purpose AI with multimodal foundation models, including trillion-parameter MoE text models, speech models, and vision models, along with apps like Hailuo AI.",
       "id": "minimax",
       "modelsUrl": "https://platform.minimaxi.com/document/Models",
@@ -3157,9 +3157,9 @@
       "modelsUrl": "https://fal.ai/models",
       "name": "Fal",
       "settings": {
+        "checkMode": "credentials",
         "disableBrowserRequest": true,
         "showAddNewModel": false,
-        "showChecker": false,
         "showModelFetcher": true
       },
       "url": "https://fal.ai"
@@ -14504,12 +14504,38 @@
     "minimaxCodingPlan": [
       {
         "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1000000,
+        "description": "MiniMax M3.1 Flash is a fast, low-cost multimodal model with native image and video understanding and tunable thinking depth.",
+        "displayName": "MiniMax M3.1 Flash",
+        "enabled": true,
+        "family": "minimax",
+        "generation": "minimax-m3.1",
+        "id": "MiniMax-M3.1-Flash",
+        "maxOutput": 524288,
+        "organization": "MiniMax",
+        "releasedAt": "2026-10-19",
+        "settings": {
+          "disabledParams": [
+            "temperature"
+          ],
+          "extendParams": [
+            "gpt6ReasoningEffort"
+          ]
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
           "functionCall": true
         },
         "contextWindowTokens": 204800,
         "description": "MiniMax M2.7: Beginning the journey of recursive self-improvement, top real-world engineering capabilities.",
         "displayName": "MiniMax M2.7",
-        "enabled": true,
         "family": "minimax",
         "generation": "minimax-m2.7",
         "id": "MiniMax-M2.7",
@@ -14540,7 +14566,6 @@
         "contextWindowTokens": 204800,
         "description": "MiniMax M2.5: Flagship open-source large model focusing on solving complex real-world tasks.",
         "displayName": "MiniMax M2.5",
-        "enabled": true,
         "family": "minimax",
         "generation": "minimax-m2.5",
         "id": "MiniMax-M2.5",
@@ -59865,6 +59890,1018 @@
         },
         "releasedAt": "2026-08-27",
         "type": "video"
+      },
+      {
+        "description": "Gemini 3.8 Flash TTS turns text into natural, controllable speech with 30 prebuilt voices; style, pace and tone follow natural-language instructions.",
+        "displayName": "Gemini 3.8 Flash TTS",
+        "enabled": true,
+        "id": "gemini-3.8-flash-tts",
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "wav",
+              "pcm"
+            ]
+          },
+          "instructions": {
+            "default": "",
+            "description": "Style, tone or pace, e.g. \"speak slowly in a warm, calm voice\""
+          },
+          "voice": {
+            "default": "Kore"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "originalRate": 1,
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioOutput",
+              "originalRate": 18,
+              "rate": 9,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Soft",
+            "displayName": "Achernar",
+            "gender": "female",
+            "id": "Achernar",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly",
+            "displayName": "Achird",
+            "gender": "male",
+            "id": "Achird",
+            "language": "multilingual"
+          },
+          {
+            "description": "Gravelly",
+            "displayName": "Algenib",
+            "gender": "male",
+            "id": "Algenib",
+            "language": "multilingual"
+          },
+          {
+            "description": "Smooth",
+            "displayName": "Algieba",
+            "gender": "male",
+            "id": "Algieba",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Alnilam",
+            "gender": "male",
+            "id": "Alnilam",
+            "language": "multilingual"
+          },
+          {
+            "description": "Breezy",
+            "displayName": "Aoede",
+            "gender": "female",
+            "id": "Aoede",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright",
+            "displayName": "Autonoe",
+            "gender": "female",
+            "id": "Autonoe",
+            "language": "multilingual"
+          },
+          {
+            "description": "Easy-going",
+            "displayName": "Callirrhoe",
+            "gender": "female",
+            "id": "Callirrhoe",
+            "language": "multilingual"
+          },
+          {
+            "description": "Informative",
+            "displayName": "Charon",
+            "gender": "male",
+            "id": "Charon",
+            "language": "multilingual"
+          },
+          {
+            "description": "Smooth",
+            "displayName": "Despina",
+            "gender": "female",
+            "id": "Despina",
+            "language": "multilingual"
+          },
+          {
+            "description": "Breathy",
+            "displayName": "Enceladus",
+            "gender": "male",
+            "id": "Enceladus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Clear",
+            "displayName": "Erinome",
+            "gender": "female",
+            "id": "Erinome",
+            "language": "multilingual"
+          },
+          {
+            "description": "Excitable",
+            "displayName": "Fenrir",
+            "gender": "male",
+            "id": "Fenrir",
+            "language": "multilingual"
+          },
+          {
+            "description": "Mature",
+            "displayName": "Gacrux",
+            "gender": "female",
+            "id": "Gacrux",
+            "language": "multilingual"
+          },
+          {
+            "description": "Clear",
+            "displayName": "Iapetus",
+            "gender": "male",
+            "id": "Iapetus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Kore",
+            "gender": "female",
+            "id": "Kore",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat",
+            "displayName": "Laomedeia",
+            "gender": "female",
+            "id": "Laomedeia",
+            "language": "multilingual"
+          },
+          {
+            "description": "Youthful",
+            "displayName": "Leda",
+            "gender": "female",
+            "id": "Leda",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Orus",
+            "gender": "male",
+            "id": "Orus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat",
+            "displayName": "Puck",
+            "gender": "male",
+            "id": "Puck",
+            "language": "multilingual"
+          },
+          {
+            "description": "Forward",
+            "displayName": "Pulcherrima",
+            "gender": "female",
+            "id": "Pulcherrima",
+            "language": "multilingual"
+          },
+          {
+            "description": "Informative",
+            "displayName": "Rasalgethi",
+            "gender": "male",
+            "id": "Rasalgethi",
+            "language": "multilingual"
+          },
+          {
+            "description": "Lively",
+            "displayName": "Sadachbia",
+            "gender": "male",
+            "id": "Sadachbia",
+            "language": "multilingual"
+          },
+          {
+            "description": "Knowledgeable",
+            "displayName": "Sadaltager",
+            "gender": "male",
+            "id": "Sadaltager",
+            "language": "multilingual"
+          },
+          {
+            "description": "Even",
+            "displayName": "Schedar",
+            "gender": "male",
+            "id": "Schedar",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm",
+            "displayName": "Sulafat",
+            "gender": "female",
+            "id": "Sulafat",
+            "language": "multilingual"
+          },
+          {
+            "description": "Easy-going",
+            "displayName": "Umbriel",
+            "gender": "male",
+            "id": "Umbriel",
+            "language": "multilingual"
+          },
+          {
+            "description": "Gentle",
+            "displayName": "Vindemiatrix",
+            "gender": "female",
+            "id": "Vindemiatrix",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright",
+            "displayName": "Zephyr",
+            "gender": "female",
+            "id": "Zephyr",
+            "language": "multilingual"
+          },
+          {
+            "description": "Casual",
+            "displayName": "Zubenelgenubi",
+            "gender": "male",
+            "id": "Zubenelgenubi",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Gemini 3.8 Flash-Lite TTS is the low-cost, low-latency Gemini speech model with the same 30 prebuilt voices and instruction-driven style control.",
+        "displayName": "Gemini 3.8 Flash-Lite TTS",
+        "enabled": true,
+        "id": "gemini-3.8-flash-lite-tts",
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "wav",
+              "pcm"
+            ]
+          },
+          "instructions": {
+            "default": "",
+            "description": "Style, tone or pace, e.g. \"speak slowly in a warm, calm voice\""
+          },
+          "voice": {
+            "default": "Kore"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "originalRate": 1,
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioOutput",
+              "originalRate": 12,
+              "rate": 6,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Soft",
+            "displayName": "Achernar",
+            "gender": "female",
+            "id": "Achernar",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly",
+            "displayName": "Achird",
+            "gender": "male",
+            "id": "Achird",
+            "language": "multilingual"
+          },
+          {
+            "description": "Gravelly",
+            "displayName": "Algenib",
+            "gender": "male",
+            "id": "Algenib",
+            "language": "multilingual"
+          },
+          {
+            "description": "Smooth",
+            "displayName": "Algieba",
+            "gender": "male",
+            "id": "Algieba",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Alnilam",
+            "gender": "male",
+            "id": "Alnilam",
+            "language": "multilingual"
+          },
+          {
+            "description": "Breezy",
+            "displayName": "Aoede",
+            "gender": "female",
+            "id": "Aoede",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright",
+            "displayName": "Autonoe",
+            "gender": "female",
+            "id": "Autonoe",
+            "language": "multilingual"
+          },
+          {
+            "description": "Easy-going",
+            "displayName": "Callirrhoe",
+            "gender": "female",
+            "id": "Callirrhoe",
+            "language": "multilingual"
+          },
+          {
+            "description": "Informative",
+            "displayName": "Charon",
+            "gender": "male",
+            "id": "Charon",
+            "language": "multilingual"
+          },
+          {
+            "description": "Smooth",
+            "displayName": "Despina",
+            "gender": "female",
+            "id": "Despina",
+            "language": "multilingual"
+          },
+          {
+            "description": "Breathy",
+            "displayName": "Enceladus",
+            "gender": "male",
+            "id": "Enceladus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Clear",
+            "displayName": "Erinome",
+            "gender": "female",
+            "id": "Erinome",
+            "language": "multilingual"
+          },
+          {
+            "description": "Excitable",
+            "displayName": "Fenrir",
+            "gender": "male",
+            "id": "Fenrir",
+            "language": "multilingual"
+          },
+          {
+            "description": "Mature",
+            "displayName": "Gacrux",
+            "gender": "female",
+            "id": "Gacrux",
+            "language": "multilingual"
+          },
+          {
+            "description": "Clear",
+            "displayName": "Iapetus",
+            "gender": "male",
+            "id": "Iapetus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Kore",
+            "gender": "female",
+            "id": "Kore",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat",
+            "displayName": "Laomedeia",
+            "gender": "female",
+            "id": "Laomedeia",
+            "language": "multilingual"
+          },
+          {
+            "description": "Youthful",
+            "displayName": "Leda",
+            "gender": "female",
+            "id": "Leda",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Orus",
+            "gender": "male",
+            "id": "Orus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat",
+            "displayName": "Puck",
+            "gender": "male",
+            "id": "Puck",
+            "language": "multilingual"
+          },
+          {
+            "description": "Forward",
+            "displayName": "Pulcherrima",
+            "gender": "female",
+            "id": "Pulcherrima",
+            "language": "multilingual"
+          },
+          {
+            "description": "Informative",
+            "displayName": "Rasalgethi",
+            "gender": "male",
+            "id": "Rasalgethi",
+            "language": "multilingual"
+          },
+          {
+            "description": "Lively",
+            "displayName": "Sadachbia",
+            "gender": "male",
+            "id": "Sadachbia",
+            "language": "multilingual"
+          },
+          {
+            "description": "Knowledgeable",
+            "displayName": "Sadaltager",
+            "gender": "male",
+            "id": "Sadaltager",
+            "language": "multilingual"
+          },
+          {
+            "description": "Even",
+            "displayName": "Schedar",
+            "gender": "male",
+            "id": "Schedar",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm",
+            "displayName": "Sulafat",
+            "gender": "female",
+            "id": "Sulafat",
+            "language": "multilingual"
+          },
+          {
+            "description": "Easy-going",
+            "displayName": "Umbriel",
+            "gender": "male",
+            "id": "Umbriel",
+            "language": "multilingual"
+          },
+          {
+            "description": "Gentle",
+            "displayName": "Vindemiatrix",
+            "gender": "female",
+            "id": "Vindemiatrix",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright",
+            "displayName": "Zephyr",
+            "gender": "female",
+            "id": "Zephyr",
+            "language": "multilingual"
+          },
+          {
+            "description": "Casual",
+            "displayName": "Zubenelgenubi",
+            "gender": "male",
+            "id": "Zubenelgenubi",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Gemini 2.5 Flash Preview TTS is the earlier low-latency Gemini speech model. Google shuts it down on 2026-11-17; use Gemini 3.8 Flash TTS instead.",
+        "displayName": "Gemini 2.5 Flash Preview TTS",
+        "id": "gemini-2.5-flash-preview-tts",
+        "legacy": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "wav",
+              "pcm"
+            ]
+          },
+          "instructions": {
+            "default": "",
+            "description": "Style, tone or pace, e.g. \"speak slowly in a warm, calm voice\""
+          },
+          "voice": {
+            "default": "Kore"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 0.5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioOutput",
+              "rate": 10,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Soft",
+            "displayName": "Achernar",
+            "gender": "female",
+            "id": "Achernar",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly",
+            "displayName": "Achird",
+            "gender": "male",
+            "id": "Achird",
+            "language": "multilingual"
+          },
+          {
+            "description": "Gravelly",
+            "displayName": "Algenib",
+            "gender": "male",
+            "id": "Algenib",
+            "language": "multilingual"
+          },
+          {
+            "description": "Smooth",
+            "displayName": "Algieba",
+            "gender": "male",
+            "id": "Algieba",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Alnilam",
+            "gender": "male",
+            "id": "Alnilam",
+            "language": "multilingual"
+          },
+          {
+            "description": "Breezy",
+            "displayName": "Aoede",
+            "gender": "female",
+            "id": "Aoede",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright",
+            "displayName": "Autonoe",
+            "gender": "female",
+            "id": "Autonoe",
+            "language": "multilingual"
+          },
+          {
+            "description": "Easy-going",
+            "displayName": "Callirrhoe",
+            "gender": "female",
+            "id": "Callirrhoe",
+            "language": "multilingual"
+          },
+          {
+            "description": "Informative",
+            "displayName": "Charon",
+            "gender": "male",
+            "id": "Charon",
+            "language": "multilingual"
+          },
+          {
+            "description": "Smooth",
+            "displayName": "Despina",
+            "gender": "female",
+            "id": "Despina",
+            "language": "multilingual"
+          },
+          {
+            "description": "Breathy",
+            "displayName": "Enceladus",
+            "gender": "male",
+            "id": "Enceladus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Clear",
+            "displayName": "Erinome",
+            "gender": "female",
+            "id": "Erinome",
+            "language": "multilingual"
+          },
+          {
+            "description": "Excitable",
+            "displayName": "Fenrir",
+            "gender": "male",
+            "id": "Fenrir",
+            "language": "multilingual"
+          },
+          {
+            "description": "Mature",
+            "displayName": "Gacrux",
+            "gender": "female",
+            "id": "Gacrux",
+            "language": "multilingual"
+          },
+          {
+            "description": "Clear",
+            "displayName": "Iapetus",
+            "gender": "male",
+            "id": "Iapetus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Kore",
+            "gender": "female",
+            "id": "Kore",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat",
+            "displayName": "Laomedeia",
+            "gender": "female",
+            "id": "Laomedeia",
+            "language": "multilingual"
+          },
+          {
+            "description": "Youthful",
+            "displayName": "Leda",
+            "gender": "female",
+            "id": "Leda",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Orus",
+            "gender": "male",
+            "id": "Orus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat",
+            "displayName": "Puck",
+            "gender": "male",
+            "id": "Puck",
+            "language": "multilingual"
+          },
+          {
+            "description": "Forward",
+            "displayName": "Pulcherrima",
+            "gender": "female",
+            "id": "Pulcherrima",
+            "language": "multilingual"
+          },
+          {
+            "description": "Informative",
+            "displayName": "Rasalgethi",
+            "gender": "male",
+            "id": "Rasalgethi",
+            "language": "multilingual"
+          },
+          {
+            "description": "Lively",
+            "displayName": "Sadachbia",
+            "gender": "male",
+            "id": "Sadachbia",
+            "language": "multilingual"
+          },
+          {
+            "description": "Knowledgeable",
+            "displayName": "Sadaltager",
+            "gender": "male",
+            "id": "Sadaltager",
+            "language": "multilingual"
+          },
+          {
+            "description": "Even",
+            "displayName": "Schedar",
+            "gender": "male",
+            "id": "Schedar",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm",
+            "displayName": "Sulafat",
+            "gender": "female",
+            "id": "Sulafat",
+            "language": "multilingual"
+          },
+          {
+            "description": "Easy-going",
+            "displayName": "Umbriel",
+            "gender": "male",
+            "id": "Umbriel",
+            "language": "multilingual"
+          },
+          {
+            "description": "Gentle",
+            "displayName": "Vindemiatrix",
+            "gender": "female",
+            "id": "Vindemiatrix",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright",
+            "displayName": "Zephyr",
+            "gender": "female",
+            "id": "Zephyr",
+            "language": "multilingual"
+          },
+          {
+            "description": "Casual",
+            "displayName": "Zubenelgenubi",
+            "gender": "male",
+            "id": "Zubenelgenubi",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Gemini 2.5 Pro Preview TTS is the earlier high-quality Gemini speech model. Google shuts it down on 2026-11-17; use Gemini 3.8 Flash TTS instead.",
+        "displayName": "Gemini 2.5 Pro Preview TTS",
+        "id": "gemini-2.5-pro-preview-tts",
+        "legacy": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "wav",
+              "pcm"
+            ]
+          },
+          "instructions": {
+            "default": "",
+            "description": "Style, tone or pace, e.g. \"speak slowly in a warm, calm voice\""
+          },
+          "voice": {
+            "default": "Kore"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 1,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioOutput",
+              "rate": 20,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Soft",
+            "displayName": "Achernar",
+            "gender": "female",
+            "id": "Achernar",
+            "language": "multilingual"
+          },
+          {
+            "description": "Friendly",
+            "displayName": "Achird",
+            "gender": "male",
+            "id": "Achird",
+            "language": "multilingual"
+          },
+          {
+            "description": "Gravelly",
+            "displayName": "Algenib",
+            "gender": "male",
+            "id": "Algenib",
+            "language": "multilingual"
+          },
+          {
+            "description": "Smooth",
+            "displayName": "Algieba",
+            "gender": "male",
+            "id": "Algieba",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Alnilam",
+            "gender": "male",
+            "id": "Alnilam",
+            "language": "multilingual"
+          },
+          {
+            "description": "Breezy",
+            "displayName": "Aoede",
+            "gender": "female",
+            "id": "Aoede",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright",
+            "displayName": "Autonoe",
+            "gender": "female",
+            "id": "Autonoe",
+            "language": "multilingual"
+          },
+          {
+            "description": "Easy-going",
+            "displayName": "Callirrhoe",
+            "gender": "female",
+            "id": "Callirrhoe",
+            "language": "multilingual"
+          },
+          {
+            "description": "Informative",
+            "displayName": "Charon",
+            "gender": "male",
+            "id": "Charon",
+            "language": "multilingual"
+          },
+          {
+            "description": "Smooth",
+            "displayName": "Despina",
+            "gender": "female",
+            "id": "Despina",
+            "language": "multilingual"
+          },
+          {
+            "description": "Breathy",
+            "displayName": "Enceladus",
+            "gender": "male",
+            "id": "Enceladus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Clear",
+            "displayName": "Erinome",
+            "gender": "female",
+            "id": "Erinome",
+            "language": "multilingual"
+          },
+          {
+            "description": "Excitable",
+            "displayName": "Fenrir",
+            "gender": "male",
+            "id": "Fenrir",
+            "language": "multilingual"
+          },
+          {
+            "description": "Mature",
+            "displayName": "Gacrux",
+            "gender": "female",
+            "id": "Gacrux",
+            "language": "multilingual"
+          },
+          {
+            "description": "Clear",
+            "displayName": "Iapetus",
+            "gender": "male",
+            "id": "Iapetus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Kore",
+            "gender": "female",
+            "id": "Kore",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat",
+            "displayName": "Laomedeia",
+            "gender": "female",
+            "id": "Laomedeia",
+            "language": "multilingual"
+          },
+          {
+            "description": "Youthful",
+            "displayName": "Leda",
+            "gender": "female",
+            "id": "Leda",
+            "language": "multilingual"
+          },
+          {
+            "description": "Firm",
+            "displayName": "Orus",
+            "gender": "male",
+            "id": "Orus",
+            "language": "multilingual"
+          },
+          {
+            "description": "Upbeat",
+            "displayName": "Puck",
+            "gender": "male",
+            "id": "Puck",
+            "language": "multilingual"
+          },
+          {
+            "description": "Forward",
+            "displayName": "Pulcherrima",
+            "gender": "female",
+            "id": "Pulcherrima",
+            "language": "multilingual"
+          },
+          {
+            "description": "Informative",
+            "displayName": "Rasalgethi",
+            "gender": "male",
+            "id": "Rasalgethi",
+            "language": "multilingual"
+          },
+          {
+            "description": "Lively",
+            "displayName": "Sadachbia",
+            "gender": "male",
+            "id": "Sadachbia",
+            "language": "multilingual"
+          },
+          {
+            "description": "Knowledgeable",
+            "displayName": "Sadaltager",
+            "gender": "male",
+            "id": "Sadaltager",
+            "language": "multilingual"
+          },
+          {
+            "description": "Even",
+            "displayName": "Schedar",
+            "gender": "male",
+            "id": "Schedar",
+            "language": "multilingual"
+          },
+          {
+            "description": "Warm",
+            "displayName": "Sulafat",
+            "gender": "female",
+            "id": "Sulafat",
+            "language": "multilingual"
+          },
+          {
+            "description": "Easy-going",
+            "displayName": "Umbriel",
+            "gender": "male",
+            "id": "Umbriel",
+            "language": "multilingual"
+          },
+          {
+            "description": "Gentle",
+            "displayName": "Vindemiatrix",
+            "gender": "female",
+            "id": "Vindemiatrix",
+            "language": "multilingual"
+          },
+          {
+            "description": "Bright",
+            "displayName": "Zephyr",
+            "gender": "female",
+            "id": "Zephyr",
+            "language": "multilingual"
+          },
+          {
+            "description": "Casual",
+            "displayName": "Zubenelgenubi",
+            "gender": "male",
+            "id": "Zubenelgenubi",
+            "language": "multilingual"
+          }
+        ]
       }
     ],
     "modelscope": [
@@ -69733,6 +70770,171 @@
         },
         "releasedAt": "2026-09-01",
         "type": "video"
+      },
+      {
+        "description": "MiniMax Music 2.6 on fal: full songs with vocals and arrangement from lyrics and a style description. Leave the lyrics empty to have them written from the description, or switch on instrumental.",
+        "displayName": "MiniMax Music 2.6",
+        "enabled": true,
+        "id": "fal-ai/minimax-music/v2.6",
+        "parameters": {
+          "autoLyrics": {
+            "default": false
+          },
+          "bitrate": {
+            "default": 256000,
+            "enum": [
+              32000,
+              64000,
+              128000,
+              256000
+            ]
+          },
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "wav"
+            ]
+          },
+          "instrumental": {
+            "default": false
+          },
+          "lyrics": {
+            "default": null,
+            "maxLength": 3500
+          },
+          "prompt": {
+            "default": "",
+            "maxLength": 2000,
+            "minLength": 10,
+            "required": true
+          },
+          "sampleRate": {
+            "default": 44100,
+            "enum": [
+              16000,
+              24000,
+              32000,
+              44100
+            ]
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "musicGeneration",
+              "rate": 0.15,
+              "strategy": "fixed",
+              "unit": "song"
+            }
+          ]
+        },
+        "type": "text2music"
+      },
+      {
+        "description": "MiniMax Music 3 on fal: complete songs up to five minutes from a structured style description and lyrics, billed by the generated length.",
+        "displayName": "MiniMax Music 3",
+        "enabled": true,
+        "id": "minimax/music-3",
+        "parameters": {
+          "duration": {
+            "default": 60,
+            "max": 300,
+            "min": 1,
+            "step": 1
+          },
+          "lyrics": {
+            "default": null,
+            "required": true
+          },
+          "prompt": {
+            "default": "",
+            "required": true
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "musicGeneration",
+              "rate": 0.002,
+              "strategy": "fixed",
+              "unit": "second"
+            }
+          ]
+        },
+        "type": "text2music"
+      },
+      {
+        "description": "MiniMax Music 01 on fal: sings your lyrics (up to 600 characters) in the style of a reference song. The reference must be an MP3 or WAV with music and vocals, longer than 15 seconds.",
+        "displayName": "MiniMax Music 01 (Reference Audio)",
+        "enabled": true,
+        "id": "fal-ai/minimax-music",
+        "parameters": {
+          "lyrics": {
+            "default": null,
+            "maxLength": 600,
+            "required": true
+          },
+          "prompt": {
+            "default": ""
+          },
+          "referenceAudioUrl": {
+            "default": null,
+            "minDuration": 15,
+            "required": true
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "musicGeneration",
+              "rate": 0.035,
+              "strategy": "fixed",
+              "unit": "song"
+            }
+          ]
+        },
+        "type": "text2music"
+      },
+      {
+        "description": "ACE-Step 1.5 on fal: open-source song generation in 50+ languages with lyrics, style tags, instrumental mode and lengths up to 10 minutes, billed by the generated length.",
+        "displayName": "ACE-Step 1.5",
+        "enabled": true,
+        "id": "fal-ai/ace-step-1.5",
+        "parameters": {
+          "duration": {
+            "default": 30,
+            "max": 600,
+            "min": 10,
+            "step": 1
+          },
+          "instrumental": {
+            "default": false
+          },
+          "lyrics": {
+            "default": null,
+            "maxLength": 4096
+          },
+          "prompt": {
+            "default": "",
+            "maxLength": 512
+          },
+          "style": {
+            "default": null,
+            "maxLength": 256
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "musicGeneration",
+              "rate": 0.0006,
+              "strategy": "fixed",
+              "unit": "second"
+            }
+          ]
+        },
+        "type": "text2music"
       }
     ],
     "vertexai": [
