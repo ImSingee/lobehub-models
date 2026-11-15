@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "e25bcbd8ea35a64c0ecec449e6bfa5ddb0c1613b",
-    "generatedAt": "2026-11-14T09:58:22.135Z",
-    "providerCount": 87,
-    "modelCount": 1933
+    "commitHash": "c8b1cda6f64dae3fbbf4a56db81e3386996ef15f",
+    "generatedAt": "2026-11-15T10:34:39.181Z",
+    "providerCount": 89,
+    "modelCount": 1938
   },
   "providers": {
     "akashchat": {
@@ -566,6 +566,24 @@
         "showModelFetcher": true
       },
       "url": "https://platform.baichuan-ai.com"
+    },
+    "doubaospeech": {
+      "apiKeyUrl": "https://console.volcengine.com/speech/new",
+      "chatModels": [],
+      "description": "Doubao Speech (ByteDance Volcengine) synthesizes natural Mandarin and English speech with the Seed-TTS 2.0 model and official voices.",
+      "id": "doubaospeech",
+      "modelsUrl": "https://www.volcengine.com/docs/6561/1257544",
+      "name": "Doubao Speech",
+      "settings": {
+        "disableBrowserRequest": true,
+        "proxyUrl": {
+          "placeholder": "https://openspeech.bytedance.com"
+        },
+        "showAddNewModel": false,
+        "showChecker": false,
+        "showModelFetcher": false
+      },
+      "url": "https://www.volcengine.com/product/tts"
     },
     "minimax": {
       "chatModels": [],
@@ -3020,6 +3038,24 @@
         "showModelFetcher": true
       },
       "url": "https://stepfun.com"
+    },
+    "fishaudio": {
+      "apiKeyUrl": "https://fish.audio/app/api-keys",
+      "chatModels": [],
+      "description": "Fish Audio offers expressive multilingual text-to-speech (S2.1 Pro, Drama 3) with natural-language delivery directions and voice cloning.",
+      "id": "fishaudio",
+      "modelsUrl": "https://docs.fish.audio/developer-guide/models-pricing/models-overview",
+      "name": "Fish Audio",
+      "settings": {
+        "disableBrowserRequest": true,
+        "proxyUrl": {
+          "placeholder": "https://api.fish.audio"
+        },
+        "showAddNewModel": false,
+        "showChecker": false,
+        "showModelFetcher": false
+      },
+      "url": "https://fish.audio"
     },
     "wenxin": {
       "chatModels": [],
@@ -33778,6 +33814,170 @@
           ]
         },
         "type": "chat"
+      }
+    ],
+    "doubaospeech": [
+      {
+        "description": "Doubao Speech Synthesis 2.0 (Seed-TTS 2.0): natural, expressive Mandarin and English speech with official 2.0 voices.",
+        "displayName": "Doubao Speech 2.0",
+        "enabled": true,
+        "id": "seed-tts-2.0",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "pitch": {
+            "default": 0,
+            "max": 12,
+            "min": -12,
+            "step": 1
+          },
+          "sampleRate": {
+            "default": 24000,
+            "enum": [
+              8000,
+              16000,
+              22050,
+              24000,
+              32000,
+              44100,
+              48000
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 2,
+            "min": 0.5,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "zh_female_vv_uranus_bigtts"
+          },
+          "volume": {
+            "default": 1,
+            "max": 2,
+            "min": 0.5,
+            "step": 0.05
+          }
+        },
+        "pricing": {
+          "currency": "CNY",
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 300,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "Lively, multilingual",
+            "displayName": "Vivi 2.0",
+            "gender": "female",
+            "id": "zh_female_vv_uranus_bigtts",
+            "language": "multilingual"
+          },
+          {
+            "displayName": "小何 2.0",
+            "gender": "female",
+            "id": "zh_female_xiaohe_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "云舟 2.0",
+            "gender": "male",
+            "id": "zh_male_m191_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "小天 2.0",
+            "gender": "male",
+            "id": "zh_male_taocheng_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "团子 2.0",
+            "gender": "female",
+            "id": "zh_female_tuanzi_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "爽快思思 2.0",
+            "gender": "female",
+            "id": "zh_female_shuangkuaisisi_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "知性灿灿 2.0",
+            "gender": "female",
+            "id": "zh_female_cancan_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "清新女声 2.0",
+            "gender": "female",
+            "id": "zh_female_qingxinnvsheng_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "暖阳女声 2.0",
+            "gender": "female",
+            "id": "zh_female_kefunvsheng_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "深夜播客 2.0",
+            "gender": "male",
+            "id": "zh_male_shenyeboke_uranus_bigtts",
+            "language": "zh-CN"
+          },
+          {
+            "displayName": "Tim",
+            "gender": "male",
+            "id": "en_male_tim_uranus_bigtts",
+            "language": "en-US"
+          },
+          {
+            "displayName": "Dacey",
+            "gender": "female",
+            "id": "en_female_dacey_uranus_bigtts",
+            "language": "en-US"
+          },
+          {
+            "displayName": "Stokie",
+            "gender": "female",
+            "id": "en_female_stokie_uranus_bigtts",
+            "language": "en-US"
+          },
+          {
+            "displayName": "Alex",
+            "gender": "male",
+            "id": "en_male_alex_uranus_bigtts",
+            "language": "en-US"
+          },
+          {
+            "displayName": "Charlotte",
+            "gender": "female",
+            "id": "en_female_authoritative-british_uranus_bigtts",
+            "language": "en-GB"
+          },
+          {
+            "displayName": "Ryan",
+            "gender": "male",
+            "id": "en_male_ryan_uranus_bigtts",
+            "language": "en-US"
+          }
+        ]
       }
     ],
     "minimax": [
@@ -66324,6 +66524,255 @@
         },
         "releasedAt": "2025-03-04",
         "type": "image"
+      }
+    ],
+    "fishaudio": [
+      {
+        "description": "Fish Audio’s recommended production speech model: 80+ languages, natural-language [directions] for delivery, multi-speaker and voice cloning.",
+        "displayName": "Fish Audio S2.1 Pro",
+        "enabled": true,
+        "id": "s2.1-pro",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "sampleRate": {
+            "default": 44100,
+            "description": "mp3: 32000 or 44100; opus: 48000; wav and pcm: 8000 to 44100",
+            "enum": [
+              8000,
+              16000,
+              24000,
+              32000,
+              44100,
+              48000
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 2,
+            "min": 0.5,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "default"
+          },
+          "instructions": {
+            "default": "",
+            "maxLength": 200
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "The voice Fish Audio uses when no reference voice is given",
+            "displayName": "Fish Audio default",
+            "gender": "neutral",
+            "id": "default",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Fish Audio’s most expressive model: direct each line in natural language, with sound effects, pauses and per-word tags.",
+        "displayName": "Fish Audio Drama 3",
+        "enabled": true,
+        "id": "drama-3",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "sampleRate": {
+            "default": 44100,
+            "description": "mp3: 32000 or 44100; opus: 48000; wav and pcm: 8000 to 44100",
+            "enum": [
+              8000,
+              16000,
+              24000,
+              32000,
+              44100,
+              48000
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 2,
+            "min": 0.5,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "default"
+          },
+          "instructions": {
+            "default": "",
+            "maxLength": 200
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 10,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "The voice Fish Audio uses when no reference voice is given",
+            "displayName": "Fish Audio default",
+            "gender": "neutral",
+            "id": "default",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Previous-generation open-weights speech model with 80+ languages and [bracketed] delivery directions.",
+        "displayName": "Fish Audio S2 Pro",
+        "id": "s2-pro",
+        "isOfficial": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "sampleRate": {
+            "default": 44100,
+            "description": "mp3: 32000 or 44100; opus: 48000; wav and pcm: 8000 to 44100",
+            "enum": [
+              8000,
+              16000,
+              24000,
+              32000,
+              44100,
+              48000
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 2,
+            "min": 0.5,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "default"
+          },
+          "instructions": {
+            "default": "",
+            "maxLength": 200
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "The voice Fish Audio uses when no reference voice is given",
+            "displayName": "Fish Audio default",
+            "gender": "neutral",
+            "id": "default",
+            "language": "multilingual"
+          }
+        ]
+      },
+      {
+        "description": "Deprecated speech model with 13 languages and (parenthesis) emotion tags. Fish Audio retires it on 2026-12-31 and then serves requests with S2.1 Pro.",
+        "displayName": "Fish Audio S1",
+        "id": "s1",
+        "isOfficial": true,
+        "legacy": true,
+        "parameters": {
+          "format": {
+            "default": "mp3",
+            "enum": [
+              "mp3",
+              "opus",
+              "wav",
+              "pcm"
+            ]
+          },
+          "sampleRate": {
+            "default": 44100,
+            "description": "mp3: 32000 or 44100; opus: 48000; wav and pcm: 8000 to 44100",
+            "enum": [
+              8000,
+              16000,
+              24000,
+              32000,
+              44100,
+              48000
+            ]
+          },
+          "speed": {
+            "default": 1,
+            "max": 2,
+            "min": 0.5,
+            "step": 0.05
+          },
+          "voice": {
+            "default": "default"
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionCharacters"
+            }
+          ]
+        },
+        "type": "tts",
+        "voices": [
+          {
+            "description": "The voice Fish Audio uses when no reference voice is given",
+            "displayName": "Fish Audio default",
+            "gender": "neutral",
+            "id": "default",
+            "language": "multilingual"
+          }
+        ]
       }
     ],
     "wenxin": [
