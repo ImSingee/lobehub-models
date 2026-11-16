@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "commitHash": "c8b1cda6f64dae3fbbf4a56db81e3386996ef15f",
-    "generatedAt": "2026-11-15T10:34:39.181Z",
+    "commitHash": "ca094dd5af32997c452303272e1d3420a0c6d04a",
+    "generatedAt": "2026-11-16T10:51:12.799Z",
     "providerCount": 89,
     "modelCount": 1938
   },
@@ -28364,6 +28364,7 @@
         "id": "gpt-4o",
         "isOfficial": true,
         "knowledgeCutoff": "2023-10",
+        "maxOutput": 16384,
         "pricing": {
           "units": [
             {
@@ -28525,6 +28526,7 @@
         "id": "gpt-4-turbo",
         "isOfficial": true,
         "knowledgeCutoff": "2023-12",
+        "maxOutput": 4096,
         "pricing": {
           "units": [
             {
@@ -69083,6 +69085,7 @@
         "enabled": true,
         "id": "grok-4.7",
         "isOfficial": true,
+        "maxOutput": 500000,
         "pricing": {
           "units": [
             {
@@ -69158,6 +69161,7 @@
         "enabled": true,
         "id": "grok-4.6",
         "isOfficial": true,
+        "maxOutput": 500000,
         "pricing": {
           "units": [
             {
@@ -69235,6 +69239,7 @@
         "generation": "grok-4.5",
         "id": "grok-4.5",
         "isOfficial": true,
+        "maxOutput": 500000,
         "pricing": {
           "units": [
             {
@@ -69309,6 +69314,7 @@
         "id": "grok-4.3",
         "isOfficial": true,
         "knowledgeCutoff": "2025-12",
+        "maxOutput": 30000,
         "pricing": {
           "units": [
             {
