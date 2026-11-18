@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "9c18f1cf800f8a113e44b69dd122fa22af0c1034",
-    "generatedAt": "2026-11-17T11:37:06.007Z",
+    "commitHash": "d1dbfdbb822d88fb0cfa20b03e5a544a77f7f1cb",
+    "generatedAt": "2026-11-18T11:22:43.461Z",
     "providerCount": 89,
-    "modelCount": 1940
+    "modelCount": 1948
   },
   "providers": {
     "akashchat": {
@@ -12911,6 +12911,194 @@
       }
     ],
     "azure": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-6.2-astra"
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6.2 Astra is built for demanding projects in software development, computer use, and professional documents.",
+        "displayName": "GPT-6.2 Astra",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.2",
+        "id": "gpt-6.2-astra",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 8,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 16,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.4,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.8,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 20,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 40,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 60,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-17",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "config": {
+          "deploymentName": "gpt-6.2-sol"
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6.2 Sol is an efficient model for everyday work, from coding to running agent workflows at scale.",
+        "displayName": "GPT-6.2 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.2",
+        "id": "gpt-6.2-sol",
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.2,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 15,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-17",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
@@ -26419,6 +26607,190 @@
       }
     ],
     "openai": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6.2 Astra is built for demanding projects in software development, computer use, and professional documents.",
+        "displayName": "GPT-6.2 Astra",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.2",
+        "id": "gpt-6.2-astra",
+        "isOfficial": true,
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 8,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 16,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.4,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.8,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 20,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 40,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 60,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-17",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6.2 Sol is an efficient model for everyday work, from coding to running agent workflows at scale.",
+        "displayName": "GPT-6.2 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.2",
+        "id": "gpt-6.2-sol",
+        "isOfficial": true,
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.2,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 15,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-17",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
@@ -46625,6 +46997,188 @@
           "vision": true
         },
         "contextWindowTokens": 1050000,
+        "description": "GPT-6.2 Astra is built for demanding projects in software development, computer use, and professional documents.",
+        "displayName": "GPT-6.2 Astra",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.2",
+        "id": "openai/gpt-6.2-astra",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 8,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 16,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.4,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.8,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 20,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 40,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 60,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-17",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
+        "description": "GPT-6.2 Sol is an efficient model for everyday work, from coding to running agent workflows at scale.",
+        "displayName": "GPT-6.2 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.2",
+        "id": "openai/gpt-6.2-sol",
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 4,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 0.1,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 0.2,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 2.5,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 5,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "strategy": "tiered",
+              "tiers": [
+                {
+                  "rate": 10,
+                  "upTo": 272000
+                },
+                {
+                  "rate": 15,
+                  "upTo": "infinity"
+                }
+              ],
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-17",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1050000,
         "description": "GPT-6 Sol is built for complex coding and agentic workflows.",
         "displayName": "GPT-6 Sol",
         "enabled": true,
@@ -62924,6 +63478,62 @@
       }
     ],
     "chatGPT": [
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
+        "description": "GPT-6.2 Astra is built for demanding projects in software development, computer use, and professional documents.",
+        "displayName": "GPT-6.2 Astra",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.2",
+        "id": "gpt-6.2-astra",
+        "knowledgeCutoff": "2026-05",
+        "maxOutput": 128000,
+        "releasedAt": "2026-11-17",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 272000,
+        "description": "GPT-6.2 Sol is an efficient model for everyday work, from coding to running agent workflows at scale.",
+        "displayName": "GPT-6.2 Sol",
+        "enabled": true,
+        "family": "gpt",
+        "generation": "gpt-6.2",
+        "id": "gpt-6.2-sol",
+        "knowledgeCutoff": "2026-06",
+        "maxOutput": 128000,
+        "releasedAt": "2026-11-17",
+        "settings": {
+          "extendParams": [
+            "gpt6ReasoningEffort",
+            "textVerbosity",
+            "preserveThinking"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
       {
         "abilities": {
           "functionCall": true,
