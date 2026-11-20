@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "069a4df8e717dd51136f7b996680302cdc2fd241",
-    "generatedAt": "2026-11-19T11:20:27.014Z",
+    "commitHash": "50522b782c6394bb740972297a8b7b750bfdf717",
+    "generatedAt": "2026-11-20T11:09:06.390Z",
     "providerCount": 89,
-    "modelCount": 1948
+    "modelCount": 1951
   },
   "providers": {
     "akashchat": {
@@ -47668,6 +47668,75 @@
       },
       {
         "abilities": {
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "Gemini 4 Neon sits between Hydrogen and Carbon, bringing near-Carbon quality to complex software engineering, knowledge work and science workflows at faster speeds and lower cost.",
+        "displayName": "Gemini 4 Neon",
+        "enabled": true,
+        "family": "gemini",
+        "generation": "gemini-4",
+        "id": "google/gemini-4-neon",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheWrite",
+              "rate": 0.0833,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-18",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "thinkingLevel5"
+          ],
+          "searchImpl": "params"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
           "imageOutput": true,
           "reasoning": true,
           "vision": true
@@ -58542,6 +58611,80 @@
           ],
           "extendParams": [
             "thinkingLevel3",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "Gemini 4 Neon sits between Hydrogen and Carbon, bringing near-Carbon quality to complex software engineering, knowledge work and science workflows at faster speeds and lower cost.",
+        "displayName": "Gemini 4 Neon",
+        "enabled": true,
+        "family": "gemini",
+        "generation": "gemini-4",
+        "id": "gemini-4-neon",
+        "isOfficial": true,
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "videoInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-18",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "thinkingLevel5",
             "urlContext"
           ],
           "searchImpl": "params",
@@ -72189,6 +72332,79 @@
           ],
           "extendParams": [
             "thinkingLevel3",
+            "urlContext"
+          ],
+          "searchImpl": "params",
+          "searchProvider": "google"
+        },
+        "type": "chat"
+      },
+      {
+        "abilities": {
+          "audio": true,
+          "functionCall": true,
+          "reasoning": true,
+          "search": true,
+          "structuredOutput": true,
+          "video": true,
+          "vision": true
+        },
+        "contextWindowTokens": 1048576,
+        "description": "Gemini 4 Neon sits between Hydrogen and Carbon, bringing near-Carbon quality to complex software engineering, knowledge work and science workflows at faster speeds and lower cost.",
+        "displayName": "Gemini 4 Neon",
+        "enabled": true,
+        "family": "gemini",
+        "generation": "gemini-4",
+        "id": "gemini-4-neon",
+        "maxOutput": 65536,
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput_cacheRead",
+              "rate": 0.15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "videoInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "audioInput",
+              "rate": 3,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textOutput",
+              "rate": 15,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-18",
+        "settings": {
+          "disabledParams": [
+            "temperature",
+            "top_p"
+          ],
+          "extendParams": [
+            "thinkingLevel5",
             "urlContext"
           ],
           "searchImpl": "params",
