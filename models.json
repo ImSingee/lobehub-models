@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "commitHash": "5779bbdd3d0f04bba82f88e2581f41d19e1eda52",
-    "generatedAt": "2026-11-21T10:48:12.055Z",
+    "commitHash": "fb17b58f63ba0b737affb750306bef54bdc4999e",
+    "generatedAt": "2026-11-22T10:56:25.359Z",
     "providerCount": 89,
-    "modelCount": 1951
+    "modelCount": 1953
   },
   "providers": {
     "giteeai": {
@@ -68627,6 +68627,198 @@
           ]
         },
         "type": "asr"
+      },
+      {
+        "description": "GPT Image 2.6 Sunburst generates and edits images from text and image inputs for detailed compositions and precise visual editing.",
+        "displayName": "GPT Image 2.6 Sunburst",
+        "enabled": true,
+        "id": "gpt-image-2.6-sunburst",
+        "isOfficial": true,
+        "parameters": {
+          "frameCount": {
+            "default": 9,
+            "max": 16,
+            "min": 2,
+            "step": 1
+          },
+          "frameDurationMs": {
+            "default": 200,
+            "max": 2000,
+            "min": 20,
+            "step": 10
+          },
+          "imageUrls": {
+            "default": [],
+            "maxCount": 1,
+            "maxFileSize": 5242880
+          },
+          "outputFormat": {
+            "default": "png",
+            "enum": [
+              "png",
+              "gif"
+            ]
+          },
+          "prompt": {
+            "default": ""
+          },
+          "quality": {
+            "default": "auto",
+            "enum": [
+              "auto",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          },
+          "size": {
+            "default": "auto",
+            "enum": [
+              "auto",
+              "1024x1024",
+              "1536x1024",
+              "1024x1536",
+              "2048x2048",
+              "2048x1152",
+              "3840x2160",
+              "2160x3840"
+            ]
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 1.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput_cacheRead",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageOutput",
+              "rate": 30,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-04",
+        "type": "image"
+      },
+      {
+        "description": "GPT Image 2.6 Flare generates and edits images from text and image inputs for fast, interactive visual workflows.",
+        "displayName": "GPT Image 2.6 Flare",
+        "enabled": true,
+        "id": "gpt-image-2.6-flare",
+        "isOfficial": true,
+        "parameters": {
+          "frameCount": {
+            "default": 9,
+            "max": 16,
+            "min": 2,
+            "step": 1
+          },
+          "frameDurationMs": {
+            "default": 200,
+            "max": 2000,
+            "min": 20,
+            "step": 10
+          },
+          "imageUrls": {
+            "default": [],
+            "maxCount": 1,
+            "maxFileSize": 5242880
+          },
+          "outputFormat": {
+            "default": "png",
+            "enum": [
+              "png",
+              "gif"
+            ]
+          },
+          "prompt": {
+            "default": ""
+          },
+          "quality": {
+            "default": "auto",
+            "enum": [
+              "auto",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          },
+          "size": {
+            "default": "auto",
+            "enum": [
+              "auto",
+              "1024x1024",
+              "1536x1024",
+              "1024x1536",
+              "2048x2048",
+              "2048x1152",
+              "3840x2160",
+              "2160x3840"
+            ]
+          }
+        },
+        "pricing": {
+          "units": [
+            {
+              "name": "textInput",
+              "rate": 5,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "textInput_cacheRead",
+              "rate": 1.25,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput",
+              "rate": 8,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageInput_cacheRead",
+              "rate": 2,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            },
+            {
+              "name": "imageOutput",
+              "rate": 30,
+              "strategy": "fixed",
+              "unit": "millionTokens"
+            }
+          ]
+        },
+        "releasedAt": "2026-11-04",
+        "type": "image"
       },
       {
         "description": "OpenAI's most capable image generation and editing model, built for workflows where editing precision matters most, with quality up to max and up to 4K output.",
